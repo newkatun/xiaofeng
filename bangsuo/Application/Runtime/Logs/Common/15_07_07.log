@@ -1,0 +1,24 @@
+[ 2015-07-07T05:17:30+08:00 ] 188.138.1.218 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+ERR: 无法加载模块:Robots
+
+[ 2015-07-07T05:17:32+08:00 ] 188.138.1.218 /sitemap.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+ERR: 无法加载模块:Sitemap
+
+[ 2015-07-07T09:05:47+08:00 ] 141.212.121.33 /thisfiledne
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+ERR: 无法加载模块:Thisfiledne
+
+[ 2015-07-07T21:38:42+08:00 ] 180.234.144.36 /Ringing.at.your.dorbell!
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002502s ]
+ERR: 无法加载模块:Ringing.at.your
+

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:15:{s:6:"autoid";i:1;s:10:"sy_company";s:39:"广州市旭睿塑料制品有限公司";s:11:"sy_hostname";s:16:"http://localhost";s:12:"sy_telephone";s:25:"020-84550855|020-84550655";s:12:"sy_faxnumber";s:12:"020-34561488";s:10:"sy_address";s:69:"广州市番禺区大龙街新桥泰安路23号韵之彩工业园C座";s:9:"sy_memail";s:13:"admin@163.com";s:9:"sy_semail";s:13:"admin@163.com";s:10:"sy_websmtp";s:12:"smtp.163.com";s:14:"sy_webpassword";s:8:"afeaewww";s:13:"sy_recordcode";s:8:"15789897";s:14:"sy_defaultlang";i:0;s:12:"sy_spenumber";s:11:"400-123-123";s:11:"sy_qqnumber";s:9:"248754294";s:10:"sy_erweima";s:0:"";}
+?>

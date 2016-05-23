@@ -1,0 +1,12 @@
+[ 2015-11-06T15:13:02+08:00 ] 62.210.88.201 http://51.254.206.142/httptest.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+ERR: 无法加载模块:Httptest
+
+[ 2015-11-06T15:13:14+08:00 ] 62.210.88.201 http://www.google.pl/search?q=wakacje&num=100&start=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+ERR: 无法加载模块:Search
+

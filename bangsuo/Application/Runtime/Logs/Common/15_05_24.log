@@ -1,0 +1,6 @@
+[ 2015-05-24T23:01:39+08:00 ] 199.48.147.141 /pontorez/includes/templates/error.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025270s ]
+ERR: 无法加载模块:Pontorez
+

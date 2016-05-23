@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/register.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/valilogin.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#email").focus();
+	})
+	if (top.location != self.location)top.location=self.location; //防止被框架
+	function fleshVerify(){ 
+		var time = new Date().getTime();
+		$('#verifyImg').attr('src','__APP__/Public/verify/'+time);
+	}
+</script>
+</head>
+<body >
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="register_table">
+      <form action="{$WEBNAME}/login/forgetaction" method="post" name="loginchk" id="loginchk">
+        <div class="register_title">
+          <h1></h1>
+          <div class="title_lefttop"></div>
+          <div class="title_righttop"></div>
+        </div>
+        <div id="content">
+          <div class="login_message" > {$strText} </div>
+        </div>
+        <div class="register_bottom">
+          <div class="bottom_left"></div>
+          <div class="bottom_right"></div>
+        </div>
+      </form>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--center end tags-->
+</div>
+<include file="Public:footer"/>
+</body>
+</html>

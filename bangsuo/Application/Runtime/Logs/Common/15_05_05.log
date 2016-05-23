@@ -1,0 +1,150 @@
+[ 2015-05-05T14:53:00+08:00 ] 127.0.0.1 /Company/uploadfile/image/150504/150504032828152.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+ERR: 无法加载模块:Uploadfile
+
+[ 2015-05-05T19:51:48+08:00 ] 127.0.0.1 /Company/uploadfile/image/150504/150504032828152.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000720s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+ERR: 无法加载模块:Uploadfile
+
+[ 2015-05-05T20:38:13+08:00 ] 127.0.0.1 /Phone/Public/css/admin_css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:13+08:00 ] 127.0.0.1 /Phone/Public/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:13+08:00 ] 127.0.0.1 /Phone/Public/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:13+08:00 ] 127.0.0.1 /Phone/Public/js/manager/manager.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:13+08:00 ] 127.0.0.1 /Phone/Public/mimages/nzcms_ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:14+08:00 ] 127.0.0.1 /Phone/Public/css/admin_css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:14+08:00 ] 127.0.0.1 /Phone/Public/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:38:14+08:00 ] 127.0.0.1 /Phone/Public/js/manager/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:53+08:00 ] 127.0.0.1 /Phone/Public/mimages/nzcms_ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:53+08:00 ] 127.0.0.1 /Phone/Public/mimages/arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:53+08:00 ] 127.0.0.1 /Phone/Public/mimages/menu01.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000333s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001616s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:53+08:00 ] 127.0.0.1 /Phone/Public/mimages/menu02.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:53+08:00 ] 127.0.0.1 /Phone/Public/mimages/nzsoft_14.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007705s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:55+08:00 ] 127.0.0.1 /Phone/Public/mimages/left2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:39:55+08:00 ] 127.0.0.1 /Phone/Public/mimages/left1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:40:12+08:00 ] 127.0.0.1 /Phone/Public/editor/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:40:12+08:00 ] 127.0.0.1 /Phone/Public/editor/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005137s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:40:12+08:00 ] 127.0.0.1 /Phone/Public/editor/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:40:12+08:00 ] 127.0.0.1 /Phone/Public/editor/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:47:03+08:00 ] 127.0.0.1 /Phone/Public/editor/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:47:04+08:00 ] 127.0.0.1 /Phone/Public/editor/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005458s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:47:04+08:00 ] 127.0.0.1 /Phone/Public/editor/kindeditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002398s ]
+ERR: 无法加载模块:Public
+
+[ 2015-05-05T20:47:04+08:00 ] 127.0.0.1 /Phone/Public/editor/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,28 @@
+[ 2016-02-25T05:35:36+08:00 ] 185.35.62.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013084s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015112s ]
+
+[ 2016-02-25T20:54:55+08:00 ] 113.76.90.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005695s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026800s ]
+

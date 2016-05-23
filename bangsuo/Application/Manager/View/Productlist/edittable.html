@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="__ROOT__/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/manager/product.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/kindeditor.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/lang/zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/manager/kindeditor.js"></script>
+</head>
+<body>
+<form name="formadd" method="post" action="__URL__/saveedit" id="formadd">
+  <table width="100%" border="1" align="center" cellpadding="0" cellspacing="1"    class="table_addtable">
+    <tr >
+      <td height="40" colspan="4" align="left"  class="table_top"><a href="__URL__/index">产品列表</a>>>修改产品</td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>产品编号：</strong></td>
+      <td  align="left" ><input name="prod_id" class="inputtext" type="text" id="prod_id" size="30" value="{$Prod.prod_id}" >
+        <span id="prod_idspan" class="inputspan"></span></td>
+      <td width="10%"  align="right" ><strong>产品名称：</strong></td>
+      <td  align="left"  ><input name="prod_name" class="inputtext" type="text" id="prod_name" size="50" value="{$Prod.prod_name}">
+        <span id="prod_namespan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>上传图片：</strong></td>
+      <td  align="left"  colspan="3"><input name="prod_img" class="inputtext" type="text" id="prod_img" size="80" value="{$Prod.img_url}">
+        <input name="button" type="button" class="uploadimg"  attrimage="prod_img" value="上传图片" imgwidth="230"/>
+        <span id="prod_imgspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td   align="right" ><strong>产品大类：</strong></td>
+      <td  align="left" ><Select name="prod_mainid" id="prod_mainid">
+          <option value="0">请选择</option>
+          <volist name="CategoryList" id="Cate">
+            <if condition="$Cate['autoid'] eq $Prod['prod_mainid']">
+              <option value="{$Cate.autoid}" selected>{$Cate.ty_name}</option>
+              <else/>
+              <option value="{$Cate.autoid}">{$Cate.ty_name}</option>
+            </if>
+          </volist>
+        </select>
+        <span id="prod_mainidspan" class="inputspan"></span></td>
+      <td width="10%"  align="right" ><strong>产品细类：</strong></td>
+      <td  align="left" width="40%"><Select name="prod_subid" id="prod_subid">
+          <option value="0">请选择</option>
+        </select>
+        <input type="hidden" id="subvalue" name="subvalue" value="{$Prod.prod_subid}"/>
+        <span id="prod_subidspan" class="inputspan"></span></td>
+    </tr>
+    <tr>
+      <td width="10%"  align="right" ><strong>产品排序：</strong></td>
+      <td  align="left"  width="40%"><input name="prod_sort" class="inputtext" type="text" id="prod_sort" size="5" value="{$Prod.prod_sort}" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+        <span id="prod_subidspan" class="inputspan">网站前台显示从大到小排列</span></td>
+      <td width="10%"  align="right" ><strong>点击数：</strong></td>
+      <td  align="left" ><input name="prod_hits" class="inputtext" type="text" id="prod_hits" size="5" value="{$Prod.prod_hits}" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+        <span id="prod_hitsspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td  align="right"  ><strong>产品关键词：</strong></td>
+      <td  align="left"  colspan="3"><input name="prod_keywords" type="text" id="prod_keywords" class="inputtext" size="80" value="{$Prod.keywords}"/>
+        <span id="prod_keywordsspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>产品简介：</strong></td>
+      <td  align="left" colspan="3"><textarea name="prod_intro" class="textarea" type="text" id="prod_intro" cols="80" rows="3" >{$Prod.intro}</textarea>
+        <span id="prod_introspan" class="inputspan"></span></td>
+    </tr>
+	<tr >
+      <td width="10%"  align="right" ><strong>产品属性：</strong></td>
+      <td  align="left" colspan="3"><textarea name="prod_attr" class="textarea" type="text" id="prod_attr" cols="80" rows="2" >{$Prod.prod_attr}</textarea>
+        <span id="prod_attrspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>详细介绍：</strong></td>
+      <td  align="left" colspan="3"><textarea name="content" id="content" rows="8" cols="60" style="width:98%;margin-top:5px;">{$Prod.content}</textarea>
+        <br>
+        <span id="contentspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>产品状态：</strong></td>
+      <td  align="left" >&nbsp;
+	   <input type="radio" value="2" name="prod_status" {$Prod.prod_status|CheckStr=2}>
+        新品&nbsp;&nbsp;
+        <input type="radio" value="1" name="prod_status" {$Prod.prod_status|CheckStr=1}>
+        热门&nbsp;&nbsp;
+        <input type="radio" value="0" name="prod_status" {$Prod.prod_status|CheckStr=0}>
+        正常<span id="prod_statusspan" class="inputspan"></span></td>
+		<td width="10%"  align="right" ><strong>产品发布：</strong></td>
+	 <td  align="left">
+	 <input type="radio" value="T" name="prod_show" {$Prod.prod_show|CheckStr='T'}>
+        是
+	 <input type="radio" value="N" name="prod_show" {$Prod.prod_show|CheckStr='N'}>
+        否<span id="prod_statusspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td  align="right">&nbsp;</td>
+      <td colspan="3"><input type="hidden" value="{$Prod.autoid}" id="autoid" name="autoid">
+        <input name="Submit3" type="submit" class="button" value=" 提交 " id="addnew" />
+        <input type="button" class="button" value=" 返回 " onClick="window.location.href='__URL__/index'"/></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

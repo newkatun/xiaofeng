@@ -1,0 +1,12 @@
+[ 2015-10-07T23:05:47+08:00 ] 66.185.106.42 /administrator/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+ERR: 无法加载模块:Administrator
+
+[ 2015-10-07T23:05:48+08:00 ] 66.185.106.42 /joomla/administrator/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+ERR: 无法加载模块:Joomla
+

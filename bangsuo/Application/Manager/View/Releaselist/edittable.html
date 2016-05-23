@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="__ROOT__/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/kindeditor.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="__ROOT__/Public/editor/themes/default/default.css" />
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/manager/uploadimg.js"></script>
+</head>
+<body>
+<form name="formadd" method="post" action="__URL__/saveedit" id="formadd">
+  <table width="100%" border="1" align="center" cellpadding="0" cellspacing="1"    class="table_addtable">
+    <tr >
+      <td height="40" colspan="4" align="left"  class="table_top"><a href="__URL__/index">到货宣传广告列表</a>>>修改到货宣传广告</td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>广告名称：</strong></td>
+      <td  align="left" ><input name="rela_name" class="inputtext" type="text" id="rela_name" size="80" value="{$Rela.rela_name}" >
+        <span id="rela_namespan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>广告链接：</strong></td>
+      <td  align="left" ><input name="rela_url" class="inputtext" type="text" id="rela_url" size="80" value="{$Rela.rela_url}" >
+        <span id="rela_urlspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>广告图片：</strong></td>
+      <td  align="left" ><input name="rela_img" class="inputtext" type="text" id="rela_img" size="80" value="{$Rela.rela_img}">
+        <input name="button" type="button" class="uploadimg"  imgwidth="1400" attrimage="rela_img" value="上传图片" />
+        <span id="rela_imgspan" class="inputspan">图片尺寸大小为1400*420像素</span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>广告排序：</strong></td>
+      <td  align="left" ><input name="rela_sort" class="inputtext" type="text" id="rela_sort" size="5" value="{$Rela.rela_sort}" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+        <span id="rela_sortspan" class="inputspan">网站前台显示从大到小排列</span></td>
+    </tr>
+    <tr >
+      <td  align="right"  ><strong>广告关键词：</strong></td>
+      <td  align="left" colspan="3"><input name="rela_keywords" type="text" id="rela_keywords" class="inputtext" size="80" value="{$Rela.rela_keywords}"/>
+        <span id="rela_keywordsspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>广告简介：</strong></td>
+      <td  align="left" colspan="3"><textarea name="rela_intro" class="textarea" type="text" id="rela_intro" cols="80" rows="3" >{$Rela.rela_intro}</textarea>
+        <span id="rela_introspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="10%"  align="right" ><strong>广告状态：</strong></td>
+      <td  align="left" colspan="3"><input type="radio" value="1" name="rela_status" {$Rela.rela_status|CheckStr=1}>
+        立即发布
+        <input type="radio" value="0" name="rela_status" {$Rela.rela_status|CheckStr=0}>
+        进入仓库<span id="rela_statusspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td  align="right"></td>
+      <td colspan="3"><input type="hidden" value="{$Rela.autoid}" id="autoid" name="autoid">
+        <input name="Submit3" type="submit" class="button" value=" 提交 " id="addnew" />
+        <input type="button" class="button" value=" 返回 " onClick="window.location.href='__URL__/index'"/></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

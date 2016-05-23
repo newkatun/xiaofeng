@@ -1,0 +1,409 @@
+[ 2015-10-14T01:30:02+08:00 ] 211.115.107.4 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019123s ]
+
+[ 2015-10-14T10:14:47+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002223s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001482s ]
+
+[ 2015-10-14T10:15:06+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-14T10:16:48+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-10-14T10:19:14+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-10-14T10:24:26+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-10-14T10:51:37+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+
+[ 2015-10-14T10:52:15+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+
+[ 2015-10-14T10:53:27+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-10-14T10:55:55+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-10-14T11:00:35+08:00 ] 125.64.94.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-10-14T12:02:50+08:00 ] 110.87.172.202 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+
+[ 2015-10-14T12:02:56+08:00 ] 110.87.172.202 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-10-14T12:03:06+08:00 ] 110.87.172.202 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0554s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0339s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0419s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0104s ]
+SQL: SELECT `title`,`c_name`,`c_image`,`keywords`,`description` FROM `data_pageview` WHERE ( c_code = 'Index' ) LIMIT 1   [ RunTime:0.0501s ]
+SQL: SHOW COLUMNS FROM `data_release` [ RunTime:0.0623s ]
+SQL: SELECT `rela_name`,`rela_img`,`rela_url` FROM `data_release` WHERE rela_status = 1 ORDER BY  rela_sort desc ,autoid desc LIMIT 0,3   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0306s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` ORDER BY prod_sort desc,autoid desc LIMIT 12   [ RunTime:0.2212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.369241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.369532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053859s ]
+
+[ 2015-10-14T12:03:21+08:00 ] 110.87.172.202 /home/prodshow/index/id/52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0060s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `data_productview` WHERE ( autoid =52 ) LIMIT 1   [ RunTime:0.0293s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` WHERE  (autoid > 52 or autoid < 52) ORDER BY  prod_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2015-10-14T12:03:47+08:00 ] 110.87.172.202 /home/products/index/mid/83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0069s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0121s ]
+SQL: SELECT `autoid`,`ty_name`,`title`,`keywords`,`description` FROM `data_prodtype` WHERE ( autoid = 83 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `data_productview` WHERE (  prod_mainid = 83 ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` WHERE  prod_mainid = 83 ORDER BY  prod_sort desc ,autoid desc  LIMIT 0,12   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2015-10-14T12:03:56+08:00 ] 110.87.172.202 /home/products/index/mid/83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0084s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0092s ]
+SQL: SELECT `autoid`,`ty_name`,`title`,`keywords`,`description` FROM `data_prodtype` WHERE ( autoid = 83 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `data_productview` WHERE (  prod_mainid = 83 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` WHERE  prod_mainid = 83 ORDER BY  prod_sort desc ,autoid desc  LIMIT 0,12   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2015-10-14T12:04:00+08:00 ] 110.87.172.202 /home/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0069s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0006s ]
+SQL: SELECT `title`,`keywords`,`description` FROM `data_pageview` WHERE ( c_code ='Category' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 83 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0006s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 82 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0006s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 81 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0006s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 79 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2015-10-14T12:04:01+08:00 ] 110.87.172.202 /home/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0068s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0006s ]
+SQL: SELECT `title`,`keywords`,`description` FROM `data_pageview` WHERE ( c_code ='Category' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 83 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0007s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 82 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 81 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SELECT `autoid`,`ty_name`,`ty_subid` FROM `data_prodtype` WHERE ty_subid = 79 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2015-10-14T12:04:05+08:00 ] 110.87.172.202 /home/products/index/mid/82
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0076s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0089s ]
+SQL: SELECT `autoid`,`ty_name`,`title`,`keywords`,`description` FROM `data_prodtype` WHERE ( autoid = 82 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `data_productview` WHERE (  prod_mainid = 82 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` WHERE  prod_mainid = 82 ORDER BY  prod_sort desc ,autoid desc  LIMIT 0,12   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2015-10-14T12:04:07+08:00 ] 110.87.172.202 /home/prodshow/index/id/43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0084s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `data_productview` WHERE ( autoid =43 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` WHERE  (autoid > 43 or autoid < 43) ORDER BY  prod_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+

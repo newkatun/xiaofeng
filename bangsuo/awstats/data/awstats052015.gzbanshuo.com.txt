@@ -1,0 +1,469 @@
+AWSTATS DATA FILE 6.8 (build 1.910)
+# If you remove this file, all statistics for date 201505 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1915                
+POS_TIME 2587                
+POS_VISITOR 10367               
+POS_DAY 12543               
+POS_DOMAIN 3222                
+POS_LOGIN 3543                
+POS_ROBOT 3698                
+POS_WORMS 3869                
+POS_EMAILSENDER 4000                
+POS_EMAILRECEIVER 4143                
+POS_SESSION 13047               
+POS_SIDER 13243               
+POS_FILETYPES 4278                
+POS_OS 4458                
+POS_BROWSER 4546                
+POS_SCREENSIZE 4718                
+POS_UNKNOWNREFERER 4792                
+POS_UNKNOWNREFERERBROWSER 5236                
+POS_ORIGIN 5581                
+POS_SEREFERRALS 5718                
+POS_PAGEREFS 5873                
+POS_SEARCHWORDS 6021                
+POS_KEYWORDS 6190                
+POS_MISC 2251                
+POS_ERRORS 6272                
+POS_CLUSTER 3399                
+POS_SIDER_404 6396                
+POS_PLUGIN_geoip_city_maxmind 9753                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150601003830 2 80 9615202683454
+FirstTime 20150506091620
+LastTime 20150530200844
+LastUpdate 20150601065015 2 0 1 0 0
+TotalVisits 74                  
+TotalUnique 56                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 57                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 48 1 1 0
+1 1 1 48 4 4 6962
+2 2 4 106674 7 7 13969
+3 0 0 0 2 2 96
+4 1 1 9941 7 8 13846
+5 1 1 428 2 3 2769
+6 3 16 462595 4 5 7057
+7 0 0 0 3 4 5086
+8 10 10 2760 1 1 2317
+9 16 54 379431 5 6 9595
+10 13 19 187312 5 5 9501
+11 9 9 270 10 10 16253
+12 10 10 426 9 9 14285
+13 10 10 426 7 7 5150
+14 2 2 96 18 18 0
+15 1 1 48 20 20 4687
+16 4 4 572 2 2 42
+17 0 0 0 1 1 2317
+18 5 5 240 2 2 2317
+19 5 5 213 3 3 4686
+20 6 6 288 12 12 14154
+21 51 63 822583 8 41 36295
+22 71 113 1417468 68 71 172840
+23 7 7 1006 9 9 16700
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 9
+cn 192 305 3390717
+us 24 24 1152
+unknown 6 6 288
+ua 2 2 476
+ie 1 1 48
+nl 1 1 48
+se 1 1 48
+gb 1 1 48
+hk 1 1 48
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+no_user_agent 30 1023 20150531234819 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+css 14 122540 0 0
+php 27 519344 0 0
+png 41 216590 0 0
+html 150 129005 0 0
+js 23 970068 0 0
+jpg 35 1247859 0 0
+Unknown 52 187467 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 5
+macosx 38
+winxp 23
+winnt 173
+Unknown 22
+linux 86
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 10
+msie8.0 1
+msie6.0 2
+firefox9.0.1 2
+firefox34.0 1
+msie9.0 3
+mozilla 1
+firefox37.0 149
+Unknown 21
+safari 160
+firefox31.0 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+\ 20150524160948
+Mozilla/5.0_(compatible;_Nmap_Scripting_Engine;_http://nmap.org/book/nse.html) 20150527210913
+HTTP_Request2/0.5.2_(http://pear.php.net/package/http_request2)_PHP/5.2.17 20150511020423
+masscan/1.0_(https://github.com/robertdavidgraham/masscan) 20150527234406
+x00_-gawa.sa.pilipinas.2015 20150516130611
+probethenet.com_scanner 20150520233443
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+\ 20150524160948
+HTTP_Request2/0.5.2_(http://pear.php.net/package/http_request2)_PHP/5.2.17 20150511020423
+masscan/1.0_(https://github.com/robertdavidgraham/masscan) 20150527234406
+x00_-gawa.sa.pilipinas.2015 20150516130611
+probethenet.com_scanner 20150520233443
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 156 156
+From1 0 0
+From2 2 2
+From3 0 0
+From4 71 184
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+2+guys+1+horse 2
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 4
+2 2
+horse 2
+1 2
+guys 2
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+403 5 2485
+400 11 2486
+500 3 4697
+404 202 350233
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 80
+/ 7 -
+/login!init.action 2 -
+/robots.txt 3 -
+/license!getExpireDateOfDays.action 2 -
+/home/prodshow/index/id/uploadfile/smallimg/150505/150505130914496.jpg 4 http://www.gzbanshuo.com/home/prodshow/index/id/51
+/includes/templates/error.tpl 1 -
+/andro/back.css 1 -
+//phpMyAdmin-2/scripts/setup.php 1 -
+/home/prodshow/index/id/uploadfile/smallimg/150505/150505130331347.jpg 4 http://www.gzbanshuo.com/home/prodshow/index/id/51
+//MyAdmin/scripts/setup.php 1 -
+/index.action 2 -
+/Ringing.at.your.dorbell! 2 http://google.com/search
+/CFIDE/administrator/ 2 -
+/home/prodshow/index/id/uploadfile/smallimg/150505/150505130014912.jpg 4 http://www.gzbanshuo.com/home/prodshow/index/id/51
+/uploadfile/smallimg/150416/150416213444124.jpg 7 http://www.gzbanshuo.com/
+/DevInfo.txt 1 -
+/Diagnostics.asp 2 -
+/cgi-bin/rtpd.cgi 1 -
+http://testp5.mielno.lubin.pl/testproxy.php 1 -
+/index!OAIndex.action 2 -
+/pony/includes/templates/error.tpl 1 -
+/home/prodshow/index/id/uploadfile/smallimg/150505/150505124925256.jpg 4 http://www.gzbanshuo.com/home/prodshow/index/id/51
+/rom-0 7 -
+/admin/index.action 2 -
+/Panel/includes/templates/error.tpl 1 -
+/manager/testmyysql.php 1 -
+/moadmin.php 1 -
+/manager/testmysql.php 1 -
+/Phone/uploadfile/smallimg/150505/150505130014912.jpg 1 http://www.gzbanshuo.com/
+/HNAP1/ 1 -
+http://testp4.pospr.waw.pl/testproxy.php 1 -
+/myadmin/scripts/setup.php 2 -
+/admin/index.jsp 2 -
+/home/products/index/mid/uploadfile/smallimg/150505/150505130914496.jpg 1 http://www.gzbanshuo.com/home/products/index/mid/83
+http://testp1.piwo.pila.pl/testproxy.php 1 -
+/phpMyAdmin/scripts/setup.php 1 -
+/phpTest/zologize/axa.php 1 -
+/application/manager/testmysql.php 1 -
+//phpmyadmin/scripts/setup.php 1 -
+/login.action 2 -
+/ponyd/includes/templates/error.tpl 1 -
+/hndUnblock.cgi 2 -
+//PhpMyAdmin/scripts/setup.php 1 -
+/MyAdmin/scripts/setup.php 1 -
+/w19218317418621031041543/style.css 1 -
+/phpmyadmin/scripts/setup.php 2 -
+/console/login/LoginForm.jsp 1 -
+/userInfoAction.action 2 -
+/muieblackcat 4 -
+/user/soapCaller.bs 2 -
+/caca2.txt 1 -
+/theme/failed.png 1 -
+//myadmin/scripts/setup.php 1 -
+/tmUnblock.cgi 2 -
+/userAction_loginUI.action 2 -
+/admin/install!license.action 2 -
+/Phone/uploadfile/smallimg/150505/150505131025426.jpg 1 http://www.gzbanshuo.com/
+/home/prodshow/index/id/uploadfile/smallimg/150505/150505131025426.jpg 4 http://www.gzbanshuo.com/home/prodshow/index/id/51
+/Phone/uploadfile/smallimg/150505/150505130331347.jpg 1 http://www.gzbanshuo.com/
+/siteEnter.action 2 -
+/index!download.action 2 -
+/admin/bootstrap.inc.php 1 -
+/forum/includes/templates/error.tpl 1 -
+/Phone/uploadfile/smallimg/150505/150505124925256.jpg 1 http://www.gzbanshuo.com/
+http://testp2.czar.bielawa.pl/testproxy.php 1 -
+/manager/testysql.php 1 -
+/pma/scripts/setup.php 1 -
+/Phone/uploadfile/smallimg/150505/150505130732543.jpg 1 http://www.gzbanshuo.com/
+/index!WCIndex.action 2 -
+/news.action 2 -
+/Phone/uploadfile/smallimg/150505/150505130914496.jpg 1 http://www.gzbanshuo.com/
+/manager/html 54 -
+/index!execute.action 2 -
+/pontorez/includes/templates/error.tpl 1 -
+/index.php 1 -
+/home/prodshow/index/id/uploadfile/smallimg/150505/150505130732543.jpg 4 http://www.gzbanshuo.com/home/prodshow/index/id/51
+/home/ 3 -
+/unAuthorizedAccess.action 2 -
+/home/category 2 -
+/login.jsp 2 -
+END_SIDER_404
+
+# Plugin key - Pages - Hits - Bandwidth - Last access
+BEGIN_PLUGIN_geoip_city_maxmind 11
+cn_changsha_11 0 199 0 0
+cn_guangzhou_30 0 62 0 0
+unknown 0 43 0 0
+cn_beijing_22 0 11 0 0
+us_kansas%20city_mo 0 10 0 0
+us_westerville_oh 0 5 0 0
+us_wakefield_ma 0 5 0 0
+us_wilmington_de 0 4 0 0
+gb_tring_f8 0 1 0 0
+hk_central%20district_00 0 1 0 0
+ua_zaporozhye_26 0 1 0 0
+END_PLUGIN_geoip_city_maxmind
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 57
+58.20.172.11 135 199 1905543 20150508223042
+113.68.3.57 21 43 473571 20150508105114
+191.179.198.202 5 5 240 20150516130611
+69.47.54.46 5 5 240 20150515122517
+61.240.144.65 3 3 524 20150521143750
+142.54.182.253 3 3 144 20150528005953
+61.240.144.66 3 3 144 20150527234406
+63.141.251.187 2 2 96 20150528114740
+63.141.251.186 2 2 96 20150528061851
+119.147.225.179 2 15 462547 20150508064214
+63.141.251.190 1 1 48 20150528130101
+182.118.53.108 1 1 48 20150524193505
+182.118.54.14 1 1 48 20150520185440
+63.141.234.50 1 1 48 20150519133553
+182.118.53.67 1 1 48 20150512182155
+163.177.69.38 1 3 106626 20150509021802
+113.142.11.149 0 1 15100 
+106.120.160.119 1 1 48 20150508110315
+183.62.115.226 1 1 2453 20150507221014
+182.118.53.21 1 1 48 20150516183154
+142.54.182.251 1 1 48 20150527232456
+52.25.167.184 1 1 48 20150527091621
+182.118.53.78 1 1 48 20150510192725
+113.108.80.160 1 1 428 20150507082503
+58.153.123.74 1 1 48 20150526223353
+188.165.6.238 1 1 48 20150524160948
+14.152.68.50 1 10 312426 20150507220852
+119.147.225.178 1 1 21 20150506134401
+180.153.214.191 1 1 428 20150507082458
+94.102.49.54 1 1 48 20150529203606
+182.118.53.214 1 1 48 20150522195604
+61.49.45.47 1 1 48 20150527210913
+182.118.55.187 1 1 48 20150528200132
+91.217.144.254 1 1 428 20150507163137
+52.24.185.161 1 1 48 20150513095940
+182.118.54.88 1 1 21 20150506193205
+63.141.234.51 1 1 48 20150519105147
+101.226.65.104 1 3 99652 20150507221955
+46.162.115.130 1 1 48 20150515225534
+112.90.78.25 1 1 428 20150507082458
+220.181.132.198 1 1 48 20150508111007
+52.1.74.3 1 1 48 20150509131642
+63.141.251.189 2 2 96 20150528082935
+46.118.16.240 1 1 48 20150509162933
+182.118.53.53 1 1 48 20150514200934
+52.12.10.224 1 1 48 20150511204511
+182.118.55.159 1 1 48 20150508185408
+104.128.144.130 1 1 48 20150520233443
+182.118.53.206 1 1 48 20150530200844
+182.118.60.50 1 1 48 20150526181102
+63.141.251.188 1 1 48 20150528012515
+14.152.68.85 1 1 9941 20150508045502
+95.128.133.37 1 1 48 20150511020423
+61.240.144.67 1 1 48 20150511123053
+182.118.53.83 1 1 48 20150518192711
+106.39.95.194 2 2 96 20150522215645
+142.54.182.252 1 1 48 20150527155909
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 23
+20150506 69 94 656779 6
+20150507 75 124 1547359 12
+20150508 28 65 1079421 8
+20150509 4 6 106770 4
+20150510 1 1 48 1
+20150511 3 3 144 3
+20150512 1 1 48 1
+20150513 1 1 48 1
+20150514 2 2 96 2
+20150515 6 6 288 2
+20150516 7 7 336 3
+20150518 1 1 48 1
+20150519 2 2 96 2
+20150520 2 2 96 2
+20150521 1 1 48 1
+20150522 3 3 144 2
+20150524 3 3 144 3
+20150525 1 1 48 1
+20150526 2 2 96 2
+20150527 8 8 384 8
+20150528 7 7 336 7
+20150529 1 1 48 1
+20150530 1 1 48 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 2
+5mn-15mn 1
+15mn-30mn 2
+30s-2mn 2
+0s-30s 65
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 23
+/ 119 118952 69 66
+/aa.php 22 519247 0 0
+/index.php/Home/Publicuse/verify/ 16 6871 0 0
+/index.php/Manager/Login/loginCheck 15 10400 0 3
+/home/ 15 3182 0 0
+/manager/login 13 31889 4 2
+/index.php/Manager/Login 5 12265 0 0
+/index.php 3 69 0 0
+/home/category 3 8958 0 0
+/home/prodshow/index/id/51 3 33722 1 1
+/home/prodshow/index/id/47 1 11260 0 1
+/home/products/index/mid/81 1 4630 0 0
+/home/prodshow/index/id/52 1 11243 0 0
+/testmysql.php 1 14 0 0
+/home/test 1 3 0 0
+/home/prodshow/index/id/53 1 11253 0 0
+/home/prodshow/index/id/45 1 10256 0 0
+/home/products/index/mid/83 2 6604 0 0
+/Application/Manager/testmysql.php 1 14 0 0
+/home/prodshow/index/id/43 1 8752 0 0
+/home/prodshow/index/id/46 2 20907 0 1
+//Manager/Login/loginCheck 1 934 0 0
+/home/search 1 4391 0 0
+END_SIDER

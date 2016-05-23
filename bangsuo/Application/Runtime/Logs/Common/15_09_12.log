@@ -1,0 +1,24 @@
+[ 2015-09-12T03:07:16+08:00 ] 46.172.71.251 /rom-0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+ERR: 无法加载模块:Rom-0
+
+[ 2015-09-12T10:21:00+08:00 ] 93.174.95.81 /muieblackcat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018221s ]
+ERR: 无法加载模块:Muieblackcat
+
+[ 2015-09-12T10:21:01+08:00 ] 93.174.95.81 //myadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Myadmin
+
+[ 2015-09-12T10:21:01+08:00 ] 93.174.95.81 //MyAdmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:MyAdmin
+

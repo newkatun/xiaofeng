@@ -1,0 +1,26 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/layer.min.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/formaddress.js"></script>
+</head>
+<body>
+<div id="addressnew" >
+  <div class="table_address table_addselect" strAddressId="{$addressId}" straddressdata="{$guestName},{$guestAddress},{$guestCity} ,{$guestCountry},{$guestPhone}" strcountry="{$guestCountry}" strship="{$Shipping}">
+    <ul>
+      <li class="address_text"><span>{$guestName}</span>Recieve</li>
+      <li class="address_text">{$guestAddress}</li>
+      <li class="address_text">{$guestCity} ,{$guestCountry} </li>
+      <li class="address_text">{$guestPhone}</li>
+      <li class="address_text">{$guestPostcode}</li>
+    </ul>
+    <div class="table_selectdiv"></div>
+  </div>
+</div>
+</body>
+</html>

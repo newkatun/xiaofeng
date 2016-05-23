@@ -1,0 +1,18 @@
+<div class="shippingcontent">
+  <ul>
+    <li class="shipmethod_li">
+          <foreach name="PaymentList" Item="pay">
+			<if condition="$i eq 1">
+          <label class="cur" style="background:url({$pay.pay_logo}) 30px center no-repeat;">
+          <input type="radio"  value="{$pay.pay_name}"  desc="{$pay.pay_intro}" datavalue="{$pay.pay_name}" bankid="{$pay.autoid}" id="bank_{$pay.autoid}" name="pay_bank_radio" checked="checked">
+          </label>
+          <else/>
+          <label class="cur" style="background:url({$WEBNAME}{$pay.pay_logo}) 36px center no-repeat;">
+          <input type="radio"  value="{$pay.pay_name}"  desc="{$pay.pay_intro}" datavalue="{$pay.pay_name}" bankid="{$pay.autoid}" id="bank_{$pay.autoid}" name="pay_bank_radio" >
+          </label>
+        </if>
+      </foreach>
+    </li>
+    <li class="confirm_div"><span class="payerror" id="checkpaymentspan"></span> </li>
+  </ul>
+</div>

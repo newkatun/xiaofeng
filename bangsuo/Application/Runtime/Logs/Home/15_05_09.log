@@ -1,0 +1,82 @@
+[ 2015-05-09T06:54:10+08:00 ] 182.118.55.159 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018866s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015557s ]
+
+[ 2015-05-09T06:56:12+08:00 ] 2.228.80.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-05-09T10:29:55+08:00 ] 58.20.172.11 /index.php/Home/Publicuse/verify/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2015-05-09T14:18:18+08:00 ] 163.177.69.38 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012449s ]
+SQL: SHOW COLUMNS FROM `data_pageview` [ RunTime:0.0526s ]
+SQL: SHOW COLUMNS FROM `data_systems` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `data_prodtype` [ RunTime:0.0059s ]
+SQL: SELECT `autoid`,`ty_name` FROM `data_prodtype` WHERE ty_subid = 0 ORDER BY  ty_sort desc ,autoid desc  LIMIT 0,6   [ RunTime:0.0102s ]
+SQL: SELECT `title`,`c_name`,`c_image`,`keywords`,`description` FROM `data_pageview` WHERE ( c_code = 'Index' ) LIMIT 1   [ RunTime:0.0644s ]
+SQL: SHOW COLUMNS FROM `data_release` [ RunTime:0.0086s ]
+SQL: SELECT `rela_name`,`rela_img`,`rela_url` FROM `data_release` WHERE rela_status = 1 ORDER BY  rela_sort desc ,autoid desc LIMIT 0,3   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `data_productview` [ RunTime:0.0231s ]
+SQL: SELECT `autoid`,`prod_name`,`img_url` FROM `data_productview` ORDER BY prod_sort desc,autoid desc LIMIT 12   [ RunTime:0.1434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.901309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.901517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.051113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.096414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.096578s ]
+
+[ 2015-05-09T20:24:27+08:00 ] 61.240.144.65 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.120808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.120993s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.280868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.281135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037660s ]
+

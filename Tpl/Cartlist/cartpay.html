@@ -1,0 +1,63 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta content="{$Page.c_keywords}" name="keywords" />
+<meta content="{$Page.c_description}" name="description" />
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/cartlist.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/carpay.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+	<div class="center">
+        <div class="cartlist_step">
+		<ul>
+		<li class="cart_step1 cart_on1"><span>1</span>View Carts</li>
+		<li class="cart_step2 cart_on2"><span>2</span>Confirm The Order</li>
+		<li class="cart_step3 cart_on2"><span>3</span>Submit The Order</li>
+		<li class="cart_step4 cart_on3"><span>4</span>Reviews Product</li>
+		</ul>
+	</div>
+    <div class="ordercheck_cont">
+      <div class="cart_body">
+        <div class="cartpay">
+		 <form action="{$Payment.pay_weburl}" method="post" name="formsubmit" id="formsubmit">
+			<div class="pageload_text">Processing to  payment page, please wait!</div>
+			<div class="pageload_img"></div>
+			<div class="pageload_text">If the page can not be opened , please click <A href="javascript:volid(0)" onclick="formsubmit()">here</a>!</div>
+			<div class="paycontent">
+			<input type="hidden" name="cmd" value="_cart">
+			<input type="hidden" name="upload" value="1">
+			<input type="hidden" name="business" value="{$Payment.pay_code}">
+			<input type="hidden" name="currency_code" value="USD">
+			<foreach name="OrderProdList" item="Prod" >
+			  <input type="hidden" name="item_name_{$key+1}" value="{$Prod.p_id} {$Prod.p_name}">
+			  <input type="hidden" name="amount_{$key+1}" value="{$Prod.prod_orderprice}">
+			  <input type="hidden" name="quantity_{$key+1}" value="{$Prod.prod_number}">
+			</foreach>   
+			<input type="hidden" name="shipping_1" value="{$Order.order_shipping}">
+			<input type="hidden" name="discount_amount_1" value="0">
+			<input type="hidden" name="notify_url" value="{$WEBNAME}/payback/index/ordernum/{$OrderNum}"/>
+			<input type="hidden" name="return" value="{$WEBNAME}"/>
+			<input type="hidden" name="rm" value="2"/>
+			<input type="hidden" name="cbt" value="Return"/>
+			<input type="hidden" name="cancel_return" value="{$WEBNAME}"/>
+			</div>
+		  </form>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+</body>
+</html>

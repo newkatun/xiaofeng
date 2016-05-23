@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="__ROOT__/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/kindeditor.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="__ROOT__/Public/editor/themes/default/default.css" />
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/uploadimg.js"></script>
+</head>
+<body>
+<form name="formadd" method="post" action="__URL__/saveedit" id="formadd">
+  <table width="100%" border="1" align="center" cellpadding="0" cellspacing="1"    class="table_addtable">
+    <tr >
+      <td height="40" colspan="4" align="left"  class="table_top"><a href="__URL__/index">客户留言列表</a>>>修改客户留言</td>
+    </tr>
+    <tr >
+      <td align="right" width="10%">留言主题:</td>
+      <td>&nbsp;{$Feed.utitle}</td>
+    </tr>
+    <tr >
+      <td align="right">客户名称:</td>
+      <td>&nbsp;{$Feed.uname}</td>
+    </tr>
+    <tr >
+      <td align="right">邮箱地址:</td>
+      <td>&nbsp;{$Feed.uemail}</td>
+    </tr>
+    <tr  onMouseOut="this.bgColor='#FFFFFF';" onMouseOver="this.bgColor='#E4EDF9';">
+      <td align="right">留言内容：</td>
+      <td>&nbsp;{$Feed.ucontent}</td>
+    </tr>
+    <tr  onMouseOut="this.bgColor='#FFFFFF';" onMouseOver="this.bgColor='#E4EDF9';">
+      <td align="right">留言时间：</td>
+      <td>&nbsp;{$Feed.utime}</td>
+    </tr>
+    <tr >
+      <td  align="right">&nbsp;</td>
+      <td colspan="3"><input type="hidden" value="{$Feed.autoid}" id="autoid" name="autoid">
+        <input name="Submit3" type="submit" class="button rb1" value=" 提交 " id="addnew" />
+        <input type="button" class="button rb1" value=" 返回 " onClick="window.location.href='__URL__/index'"/></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

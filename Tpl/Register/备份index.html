@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Register——Drop-ins</title>
+<meta name="Keywords" content="{$PageInformation.keywords}" />
+<meta name="Description" content="{$PageInformation.description}" />
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/register.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.myvalidate.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#email").focus();
+		$("#RegisterBtn").myValidate();
+	})
+	if (top.location != self.location)top.location=self.location; //防止被框架
+	function fleshVerify(){ 
+		var time = new Date().getTime();
+		$('#verifyImg').attr('src','__APP__/Public/verify/'+time);
+	}
+</script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="register_table">
+      <form action="register/registerchk" method="post" name="registerform" id="registerform">
+        <div class="register_title">
+          <h1>SIGN UP </h1>
+          <div class="title_lefttop"></div>
+          <div class="title_righttop"></div>
+        </div>
+        <div id="content">
+          <div class="regBox" id="innerContent">
+            <div class="tBox">
+              <p class="regTitle"></p>
+              <p>
+                <label>Account:</label>
+                <input id="email" name="email" autocomplete="off" type="text" value="Your Email" tagattr="email|unique"  class="fl" maxlength='100'  />
+                <strong>*</strong> <span id="email_desc" class="fl"></span> </p>
+              <p class="extra regRemind"><span id="email_tip"></span><span id="email_error"></span></p>
+              <p>
+                <label>Your Name:</label>
+                <input id="name" name="name" type="text" value=""  tagattr="textcode"/>
+                <strong>*</strong> <span id="name_desc" class="fl"></span> </p>
+              <p class="extra regRemind"><span id="name_tip" ></span><span id="name_error"></span></p>
+              <p>
+                <label>Password：</label>
+                <input id="password" name="password"  type="password"  class="fl" tagattr="textcode"/>
+                <strong>*</strong> <span id="passwordDesc"></span> <span id="password_desc" class="fl"></span> </p>
+              <p class="extra regRemind pswdLevel"><span id="password_tip" ></span><span id="password_error"></span><span class="pswdLevelA" id="pswdLevel" style="display:none"></span></p>
+              <p>
+                <label>Confirm Password：</label>
+                <input id="password2" name="password2" type="password" class="fl" disabled="" tagattr="textcode"/>
+                <strong>*</strong> <span id="password2_desc" class="fl"></span> </p>
+              <p class="extra regRemind"><span id="password2_tip" ></span><span id="password2_error"></span></p>
+              <p class="verCode">
+                <label>Verification Code:</label>
+                <input name="validCode" id="validCode" type="text" class="w50 fl"   style="vertical-align:top;" tagattr="number"/>
+                <img src='__APP__/Publicuse/verify/t/123456'  id="verifyImg"  /><span>Click the picture to refresh the verification code</span> <span id="validCode_desc"  style="display:none" ></span><strong>*</strong></p>
+              <p class="extra regRemind"><span id="validCode_tip" ></span><span id="validCode_error"></span>
+                <input type="hidden" value="" name="volidret" id="volidret"/>
+                <span></span>
+                <input type="hidden" value="" id="volidretCheck"/>
+              </p>
+            </div>
+            <div class="warn agreeBox">
+              <div class="btnBox">
+                <button class="btn" type="button" id="RegisterBtn">Register</button>
+              </div>
+            </div>
+          </div>
+          <div class="regline"></div>
+          <div class="reg_smalldiv">
+            <ul>
+              <li class="reg_smalldiv_title">Aleady registered?</li>
+              <li > </li>
+              <li class="reg_smalldiv_btn"><a href="{$WEBNAME}/login">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="register_bottom">
+          <div class="bottom_left"></div>
+          <div class="bottom_right"></div>
+        </div>
+      </form>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--center end tags-->
+  <!--footer end stags-->
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+</body>
+</html>

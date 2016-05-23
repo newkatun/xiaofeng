@@ -1,0 +1,6 @@
+[ 2015-08-14T16:27:53+08:00 ] 69.64.46.86 /cgi-bin/rtpd.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+ERR: 无法加载模块:Cgi-bin
+

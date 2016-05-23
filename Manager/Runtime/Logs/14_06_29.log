@@ -1,0 +1,948 @@
+[ 2014-06-29T10:26:01+08:00 ] 113.103.39.207 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001131s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [8] Undefined index:  MID /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 84 行.
+NOTIC: [8] Undefined index:  MNAME /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046620s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000503s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002060s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000769s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2014-06-29T10:26:59+08:00 ] 113.103.39.207 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.057296s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.002644s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-06-29 10:26:59',`user_lognum`=216 WHERE ( autoid=1 ) [ RunTime:0.000665s ]
+
+[ 2014-06-29T10:27:00+08:00 ] 113.103.39.207 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027547s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000561s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000459s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002254s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2014-06-29T10:27:00+08:00 ] 113.103.39.207 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001467s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.044788s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.008767s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000646s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001633s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000440s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003615s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2014-06-29T10:27:10+08:00 ] 113.103.39.207 /manager.php/Pagelist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001138s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005827s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001682s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.015841s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044019s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000500s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000430s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002016s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000712s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2014-06-29T10:27:12+08:00 ] 113.103.39.207 /manager.php/Sliderlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001125s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `admin_slides` [ RunTime:0.007450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_slides` LIMIT 1   [ RunTime:0.000675s ]
+SQL: SELECT * FROM `admin_slides` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001542s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063496s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000480s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000305s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002010s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000720s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2014-06-29T10:27:15+08:00 ] 113.103.39.207 /manager.php/newslist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001159s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.031213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.006936s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.013213s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034590s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000458s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000425s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000302s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001981s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2014-06-29T10:27:26+08:00 ] 113.103.39.207 /manager.php/Newslist/addtable
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001692s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.006523s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.001370s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026146s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000493s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002065s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000795s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2014-06-29T10:28:35+08:00 ] 113.103.39.207 /manager.php/newslist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001137s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.009508s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.000477s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000507s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014067s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000498s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000452s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002105s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2014-06-29T10:28:41+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001270s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001623s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006801s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 3 ) LIMIT 1   [ RunTime:0.001594s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.004220s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.001111s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040330s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000473s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000432s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001982s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000747s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2014-06-29T10:33:24+08:00 ] 113.103.39.207 /manager.php/Newslist/saveadd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.010463s ]
+SQL: INSERT INTO `admin_news` (`n_title`,`n_smaimg`,`n_typeid`,`n_type`,`n_hot`,`n_intro`,`n_content`,`n_keywords`,`n_description`) VALUES ('wisdomiot-everychina','/uploadfile/smallimg/140628/140628223001388.jpg',1,'conpany',1,'wisdomiot everychina\r\nWisdomiot Communication Electronics Trade Co., Limited\r\nMail: wisdomiotsales03@gmail.com\r\n      irinaliu217@hotmail.com\r\nWhatsapp:+8618613999840','&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;','wisdomiot  Irina Liu ','') [ RunTime:0.024127s ]
+
+[ 2014-06-29T10:33:24+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001150s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.012632s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001728s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.003673s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024471s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000652s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000608s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002864s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001085s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2014-06-29T10:33:28+08:00 ] 113.103.39.207 /manager.php/Newslist/index/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.064036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001926s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013996s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002073s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000763s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2014-06-29T10:33:32+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001204s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006819s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.001365s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.008163s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014318s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000458s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002030s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2014-06-29T10:34:10+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001796s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002156s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.009410s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628223001388.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina\r\nWisdomiot Communication Electronics Trade Co., Limited\r\nMail: wisdomiotsales03@gmail.com\r\n      irinaliu217@hotmail.com\r\nWhatsapp:+8618613999840',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.001859s ]
+
+[ 2014-06-29T10:34:10+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001128s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.009060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001223s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013571s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000476s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002038s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2014-06-29T10:35:31+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001683s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006605s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 3 ) LIMIT 1   [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.006267s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000624s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022940s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000701s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000604s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002932s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001099s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2014-06-29T10:36:24+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001192s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.009211s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-facebook',`n_smaimg`='/uploadfile/smallimg/140516/140516012757473.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot facebook\r\nWisdomiot Communication Electronics Trade Co., Limited\r\nMail: wisdomiotmanager@gmail.com\r\nWhatsapp:+8613751850732',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;a target=\\&quot;\\\\&amp;quot;_blank\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;http://www.facebook.com/pages/Wisdomiot-Communication-Electronics-Trade-Co-Limited/224335744436640\\\\&amp;quot;\\&quot;&gt;http://www.facebook.com/pages/Wisdomiot-Communication-Electronics-Trade-Co-Limited/224335744436640&lt;/a&gt; \r\n&lt;/p&gt;',`n_keywords`='wisdomiot facebook terry wisdommanager',`n_description`='wisdomiot facebook ' WHERE ( autoid=3 ) [ RunTime:0.001337s ]
+
+[ 2014-06-29T10:36:24+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001699s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.013497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001635s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000935s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017649s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000764s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000655s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000418s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003078s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001175s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2014-06-29T10:39:44+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001131s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001371s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.007002s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.004743s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015128s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001941s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000713s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2014-06-29T10:41:27+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006052s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628223001388.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina\r\n        Wisdomiot Communication Electronics Trade Co., Limited\r\n        Mail: wisdomiotsales03@gmail.com\r\n           &amp;...irinaliu217@hotmail.com\r\nWhatsapp:+8618613999840',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.000857s ]
+
+[ 2014-06-29T10:41:28+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.009946s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001146s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.003335s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014346s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000464s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002019s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2014-06-29T10:41:40+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006712s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.004996s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000919s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018293s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000474s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000421s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000740s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2014-06-29T10:41:53+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.007592s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628223001388.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina\r\n        Wisdomiot Communication Electronics Trade Co., Limited\r\n        Mail: wisdomiotsales03@gmail.com\r\n           &amp;&amp;&amp;irinaliu217@hotmail.com\r\nWhatsapp:+8618613999840',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.001250s ]
+
+[ 2014-06-29T10:41:54+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001227s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.009618s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001532s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.005866s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019979s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000479s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002035s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000738s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2014-06-29T10:42:18+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001926s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002277s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.008199s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.006343s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000959s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017635s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000479s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000430s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001998s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000735s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2014-06-29T10:42:52+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001217s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.007215s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628223001388.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina\r\n        Wisdomiot Communication Electronics Trade Co., Limited\r\n        Mail: wisdomiotsales03@gmail.com\r\n           irinaliu217@hotmail.com\r\nWhatsapp:+8618613999840',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.001076s ]
+
+[ 2014-06-29T10:42:53+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001161s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.015312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.004853s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.003299s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015799s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000497s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000485s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002202s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2014-06-29T10:44:46+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001234s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001559s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006071s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.005783s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014484s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000475s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000478s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002136s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000851s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2014-06-29T10:44:54+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001304s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.008660s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628223001388.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina     \r\nWisdomiot Communication Electronics Trade Co., Limited      \r\nMail: wisdomiotsales03@gmail.com\r\nirinaliu217@hotmail.com \r\nWhatsapp: +8618613999840\r\n\r\n           irinaliu217@hotmail.com\r\nWhatsapp:+8618613999840',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.002155s ]
+
+[ 2014-06-29T10:44:55+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001325s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.015792s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001253s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001542s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015792s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000464s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000443s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002050s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000749s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2014-06-29T10:45:15+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006193s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.008345s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000610s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014416s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000460s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001959s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000741s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2014-06-29T10:47:41+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.008051s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628223001388.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina     \r\nWisdomiot Communication Electronics Trade Co., Limited      \r\nMail: wisdomiotsales03@gmail.com\r\nirinaliu217@hotmail.com \r\nWhatsapp: +8618613999840\r\n',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.002170s ]
+
+[ 2014-06-29T10:47:42+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001882s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.010052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001195s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001348s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014763s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000465s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000447s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002082s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000734s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2014-06-29T10:49:30+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.007075s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.004286s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000748s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014434s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000468s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000423s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001974s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000724s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2014-06-29T10:49:48+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001175s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.005817s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628224940877.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina     \r\nWisdomiot Communication Electronics Trade Co., Limited      \r\nMail: wisdomiotsales03@gmail.com\r\nirinaliu217@hotmail.com \r\nWhatsapp: +8618613999840\r\n',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.001596s ]
+
+[ 2014-06-29T10:49:48+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.010167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001031s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001032s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013509s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000498s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002080s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000755s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2014-06-29T11:08:39+08:00 ] 113.103.39.207 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001168s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018325s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000701s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000644s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000423s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003044s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2014-06-29T11:08:57+08:00 ] 113.103.39.207 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.010083s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.000877s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-06-29 11:08:57',`user_lognum`=217 WHERE ( autoid=1 ) [ RunTime:0.000638s ]
+
+[ 2014-06-29T11:08:57+08:00 ] 113.103.39.207 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001128s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013785s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000499s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000421s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000771s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2014-06-29T11:08:58+08:00 ] 113.103.39.207 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001142s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.007384s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.006030s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013096s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000450s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001979s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2014-06-29T11:09:10+08:00 ] 113.103.39.207 /manager.php/newslist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.010795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.000642s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001682s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017328s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000637s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000594s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000420s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002928s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001109s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2014-06-29T11:09:14+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001121s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.005754s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 25 ) LIMIT 1   [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.004390s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000897s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014752s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000462s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2014-06-29T11:09:27+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001178s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.005874s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-everychina',`n_smaimg`='/uploadfile/smallimg/140628/140628224940877.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot everychina     \r\nWisdomiot Communication Electronics Trade Co., Limited      \r\nMail: wisdomiotsales03@gmail.com\r\n      irinaliu217@hotmail.com \r\nWhatsapp: +8618613999840\r\n',`n_content`='&lt;p&gt;\r\n	Please click the link below:\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	http://gzwisdomiot-accessorios.sell.everychina.com/\r\n&lt;/p&gt;',`n_keywords`='wisdomiot  Irina Liu wisdomsales03',`n_description`='wisdomiot everychina' WHERE ( autoid=25 ) [ RunTime:0.002710s ]
+
+[ 2014-06-29T11:09:27+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001167s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.009306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001134s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001100s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000695s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000663s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000438s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002826s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2014-06-29T11:09:41+08:00 ] 113.103.39.207 /manager.php/Newslist/edittable/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001631s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.005980s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 2 ) LIMIT 1   [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.010149s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.000606s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022531s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000688s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000626s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000418s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002913s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001133s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2014-06-29T11:10:08+08:00 ] 113.103.39.207 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006542s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-twitter',`n_smaimg`='/uploadfile/smallimg/140626/140626031831381.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot twitter \r\nWisdomiot Communication Electronics Trade Co., Limited \r\nMail: wisdomiotsales01@gmail.com \r\nWhatsapp:+8615915700580',`n_content`='&lt;p&gt;\r\n	Please click the link below:&lt;br /&gt;\r\n&lt;a href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;http://rusgeardo.blogspot.hk/2012/09/element_9.html\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;https://twitter.com/wisdomiot&lt;/a&gt; \r\n&lt;/p&gt;',`n_keywords`='wisdomiot-twitter   twitter  wisdomiot',`n_description`='wisdomiot-twitter' WHERE ( autoid=2 ) [ RunTime:0.000908s ]
+
+[ 2014-06-29T11:10:09+08:00 ] 113.103.39.207 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001332s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001598s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.016081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001073s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001130s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022137s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000686s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000650s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000423s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000862s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003028s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001130s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001286s ]
+

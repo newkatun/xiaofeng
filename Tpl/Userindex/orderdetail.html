@@ -1,0 +1,29 @@
+<h4>Order Details</h4>
+<div class="orderlist_view">
+
+
+
+  <hr>
+  <div class="content_orderview cont_ordermessage">
+    <div class="clear margintop"></div>
+    <table cellspacing="1" cellpadding="0" border="0" class="table_orderlist">
+      <tbody>
+        <tr bgcolor="#c0c0c0" class="table_title">
+          <th>Photo</th>
+		  <th>Product Code</th>
+          <th>Product name</th>
+		  
+          <th>Number</th>
+        </tr>
+        <volist name="ProdOrderShow['prodlist']" id="prod">
+          <tr class="Orderr_prod">
+            <td class="Orderr_prod_img"><img width="80" height="50" src="{$prod.p_img}"></td>
+			<td class="Orderr_prod_num"><b>{$prod.p_id}</b></td>
+            <td class="Orderr_prod_name">&nbsp;<a target="_blank" href="{$WEBNAME}/prodview/index/id/{$prod.prod_pid}">{$prod.ty_name} {$prod.p_name}</a>&nbsp;</td>
+            <td class="Orderr_prod_num"><b>{$prod.prod_number}</b></td>
+          </tr>
+        </volist>
+    </table>
+    <div class="clear margintop"></div>
+  </div>
+</div>

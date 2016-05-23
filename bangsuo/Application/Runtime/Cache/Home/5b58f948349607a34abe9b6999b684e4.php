@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>请通过手机访问我们的网站，谢谢！

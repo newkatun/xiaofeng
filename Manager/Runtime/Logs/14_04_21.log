@@ -1,0 +1,637 @@
+[ 2014-04-21T11:02:52+08:00 ] 101.36.65.9 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001885s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002416s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] Undefined index:  MID /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 84 行.
+NOTIC: [8] Undefined index:  MNAME /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055443s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000489s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000524s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000443s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002671s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000970s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2014-04-21T11:03:11+08:00 ] 101.36.65.9 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.038860s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.001705s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-04-21 11:03:11',`user_lognum`=179 WHERE ( autoid=1 ) [ RunTime:0.019759s ]
+
+[ 2014-04-21T11:03:12+08:00 ] 101.36.65.9 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050105s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000509s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002070s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000786s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2014-04-21T11:03:13+08:00 ] 101.36.65.9 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001260s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.043370s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.001623s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069189s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000486s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001080s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2014-04-21T11:05:35+08:00 ] 101.36.65.9 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001097s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.017848s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001472s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002181s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.008208s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.001015s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064471s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000608s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000443s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002161s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000755s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2014-04-21T11:05:37+08:00 ] 101.36.65.9 /manager.php/categorylist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.009051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.000923s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001534s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045120s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000565s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000428s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002309s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000864s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2014-04-21T11:05:52+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001141s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006386s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.000881s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057759s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000565s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000518s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000458s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002949s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000787s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2014-04-21T11:06:04+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001563s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.009273s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='LCD Screen',`ty_imgurl`='/uploadfile/201212/01355475464.jpg',`ty_sort`=19,`ty_intro`='Mobilephone lcd &amp; Tablet PC lcd' WHERE ( autoid=1 ) [ RunTime:0.006897s ]
+
+[ 2014-04-21T11:06:05+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001177s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.004925s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.001884s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001533s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020965s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000795s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000642s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003061s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001027s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2014-04-21T11:06:08+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002038s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006650s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 2 ) LIMIT 1   [ RunTime:0.000822s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001257s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015820s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000478s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002230s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000966s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2014-04-21T11:06:15+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001664s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007307s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='Touch Screen&amp;lens',`ty_imgurl`='/uploadfile/201212/01355728101.JPG',`ty_sort`=18,`ty_intro`='Mobilephone Touch Screen &amp; Tablet PC Touch Screen ' WHERE ( autoid=2 ) [ RunTime:0.001355s ]
+
+[ 2014-04-21T11:06:16+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001525s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.010422s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.000813s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001341s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016327s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000560s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002099s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000705s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2014-04-21T11:06:18+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001262s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.010936s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 3 ) LIMIT 1   [ RunTime:0.000837s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001371s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016709s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000536s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000502s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002339s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000886s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2014-04-21T11:06:22+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001629s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.008117s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='Flex Cable',`ty_imgurl`='/uploadfile/201212/01355728141.JPG',`ty_sort`=17,`ty_intro`='Mobilephone Flex Cable &amp; table pc Flex Cable' WHERE ( autoid=3 ) [ RunTime:0.001813s ]
+
+[ 2014-04-21T11:06:23+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006774s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.000632s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000924s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015740s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000542s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002049s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000699s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2014-04-21T11:06:26+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001508s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007764s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 4 ) LIMIT 1   [ RunTime:0.001153s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001072s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018436s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000492s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000529s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002520s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001101s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2014-04-21T11:06:30+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001205s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005877s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='MobilePhone Housing',`ty_imgurl`='/uploadfile/201212/01355728176.JPG',`ty_sort`=16,`ty_intro`='MobilePhone Housing' WHERE ( autoid=4 ) [ RunTime:0.000810s ]
+
+[ 2014-04-21T11:06:31+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001139s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006595s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.000641s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000942s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013940s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000567s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002094s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000740s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2014-04-21T11:06:33+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/5
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.009391s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 5 ) LIMIT 1   [ RunTime:0.000911s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001376s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016101s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000509s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000561s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000340s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002278s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000752s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2014-04-21T11:06:37+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007651s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='MobilePhone Spare Parts',`ty_imgurl`='/uploadfile/201212/01355728208.JPG',`ty_sort`=15,`ty_intro`='MobilePhone Spare Parts' WHERE ( autoid=5 ) [ RunTime:0.001044s ]
+
+[ 2014-04-21T11:06:38+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001570s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001878s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007346s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.001327s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001631s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018777s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000807s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000617s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000398s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001042s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2014-04-21T11:06:41+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/6
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001497s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006795s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 6 ) LIMIT 1   [ RunTime:0.001053s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001453s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018511s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000494s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000432s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002017s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2014-04-21T11:06:44+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001194s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007228s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='MobilePhone Repair Tools',`ty_imgurl`='/uploadfile/201212/01355728242.JPG',`ty_sort`=14,`ty_intro`='MobilePhone Repair Tools' WHERE ( autoid=6 ) [ RunTime:0.001763s ]
+
+[ 2014-04-21T11:06:45+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001633s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.008782s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.001457s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001218s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017587s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000552s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002072s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000709s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2014-04-21T11:06:53+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/7
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007927s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 7 ) LIMIT 1   [ RunTime:0.001032s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001968s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018452s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000643s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000571s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002669s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2014-04-21T11:06:57+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001708s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.009000s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='Data Cable &amp;  Earphone ',`ty_imgurl`='/uploadfile/201212/01355728273.JPG',`ty_sort`=13,`ty_intro`='Data Cable &amp;  Earphone ' WHERE ( autoid=7 ) [ RunTime:0.000780s ]
+
+[ 2014-04-21T11:06:58+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001229s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007954s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.001316s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001349s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015832s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000561s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000450s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002225s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000767s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2014-04-21T11:07:01+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/8
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001397s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006983s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 8 ) LIMIT 1   [ RunTime:0.001928s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001114s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028901s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000708s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000622s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002925s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001034s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2014-04-21T11:07:04+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001335s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007217s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='MobilePhone Cases',`ty_imgurl`='/uploadfile/201212/01355728310.JPG',`ty_sort`=12,`ty_intro`='MobilePhone Cases' WHERE ( autoid=8 ) [ RunTime:0.001147s ]
+
+[ 2014-04-21T11:07:05+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001206s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001474s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006806s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.000969s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001246s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013791s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000522s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000418s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002372s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001027s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2014-04-21T11:07:07+08:00 ] 101.36.65.9 /manager.php/Categorylist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001110s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006659s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.001240s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid asc   [ RunTime:0.001006s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015492s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000465s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000435s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001994s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2014-04-21T11:07:10+08:00 ] 101.36.65.9 /manager.php/Categorylist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001116s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/CategoryAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.008133s ]
+SQL: UPDATE `admin_prodtype` SET `ty_subid`=0,`ty_name`='Power bank &amp; Battery',`ty_imgurl`='/uploadfile/smallimg/140322/140322013751401.jpg',`ty_sort`=11,`ty_intro`='Power bank &amp; Battery' WHERE ( autoid=9 ) [ RunTime:0.002170s ]
+
+[ 2014-04-21T11:07:11+08:00 ] 101.36.65.9 /manager.php/categorylist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001127s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.001858s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001134s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014271s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000488s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002246s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000798s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000901s ]
+

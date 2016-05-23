@@ -1,0 +1,410 @@
+AWSTATS DATA FILE 6.8 (build 1.910)
+# If you remove this file, all statistics for date 201602 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1915                
+POS_TIME 2576                
+POS_VISITOR 8248                
+POS_DAY 9950                
+POS_DOMAIN 3196                
+POS_LOGIN 3525                
+POS_ROBOT 3680                
+POS_WORMS 3883                
+POS_EMAILSENDER 4014                
+POS_EMAILRECEIVER 4157                
+POS_SESSION 10523               
+POS_SIDER 10704               
+POS_FILETYPES 4292                
+POS_OS 4371                
+POS_BROWSER 4458                
+POS_SCREENSIZE 4659                
+POS_UNKNOWNREFERER 4733                
+POS_UNKNOWNREFERERBROWSER 5201                
+POS_ORIGIN 5446                
+POS_SEREFERRALS 5582                
+POS_PAGEREFS 5740                
+POS_SEARCHWORDS 5888                
+POS_KEYWORDS 6048                
+POS_MISC 2240                
+POS_ERRORS 6115                
+POS_CLUSTER 3381                
+POS_SIDER_404 6225                
+POS_PLUGIN_geoip_city_maxmind 7585                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20160228000850 7 596 0
+FirstTime 20160201000901
+LastTime 20160227170854
+LastUpdate 20160228055453 7 0 3 4 0
+TotalVisits 159                 
+TotalUnique 44                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 44                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 7 7 288 6 6 6919
+1 11 11 528 4 5 7052
+2 6 6 288 11 12 14600
+3 3 3 144 5 5 9286
+4 5 5 240 5 5 5318
+5 6 6 288 3 3 6685
+6 5 5 240 6 7 11684
+7 12 12 576 3 3 2556
+8 8 8 384 5 5 7232
+9 4 4 192 3 3 4688
+10 6 6 288 3 3 4501
+11 1 1 48 3 3 2417
+12 7 7 336 9 9 20866
+13 12 12 576 2 2 2367
+14 10 10 480 6 6 9322
+15 4 4 192 5 5 11590
+16 13 13 624 12 17 28062
+17 7 7 336 9 9 20868
+18 4 4 192 3 3 6817
+19 11 11 528 2 2 4638
+20 11 11 432 3 3 6960
+21 3 3 144 5 5 7051
+22 6 6 288 3 3 2867
+23 7 7 336 1 1 2322
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 10
+cn 128 128 6144
+us 15 15 672
+unknown 9 9 336
+gb 6 6 288
+eu 4 4 192
+mx 2 2 96
+ro 2 2 96
+ru 1 1 48
+pl 1 1 48
+fr 1 1 48
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 2
+no_user_agent 22 1008 20160226095740 0
+googlebot 2 96 20160211114959 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 2
+php 1 48 0 0
+html 168 7920 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 5
+winxp 119
+win2000 2
+winnt 20
+win98 1
+Unknown 27
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 13
+msie6.0 2
+msie8.0 17
+firefox1.0.7 2
+mozilla 1
+netscape5.0 14
+msie7.0 117
+libwww 1
+firefox9.0.1 1
+firefox40 1
+msie9.0 1
+curl 3
+Unknown 8
+firefox36.0 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 10
+\ 20160224070637
+Tcl_http_client_package_1.0 20160211151706
+www.probethenet.com_scanner 20160217140946
+curl/7.43.0 20160227170854
+Mozilla/5.0_zgrab/0.x 20160224163536
+Mozilla/5.0_(compatible;_Nmap_Scripting_Engine;_http://nmap.org/book/nse.html) 20160221003515
+libwww-perl/6.13 20160213205226
+Go-http-client/1.1 20160201141348
+HttpClient 20160211140503
+curl/7.38.0 20160226202921
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+\ 20160224070637
+Go-http-client/1.1 20160201141348
+Tcl_http_client_package_1.0 20160211151706
+HttpClient 20160211140503
+www.probethenet.com_scanner 20160217140946
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 52 52
+From1 0 0
+From2 117 117
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+baidu 117 117
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+www 117
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 1
+www 117
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+403 1 497
+400 8 1808
+404 92 203259
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 47
+/sitemap.xml 8 -
+/robots.txt 10 -
+/server-status 1 -
+/freepbx/admin/CHANGES 6 -
+/login.action 1 -
+/getNews.action 1 -
+/mysql/scripts/setup.php 1 -
+/Main.action 1 -
+/plugins/system/plugin_googlemap3/plugin_googlemap3_proxy.php 1 -
+/hndUnblock.cgi 1 -
+/plugins/content/plugin_googlemap2_proxy.php 1 -
+/jeecms.do 1 -
+/sqlmanager/scripts/setup.php 1 -
+/MyAdmin/scripts/setup.php 1 -
+/redirect.php 1 -
+/phpmyadmin/scripts/setup.php 3 -
+http://47.88.12.7:8080/web/ip 6 -
+/check 1 -
+/muieblackcat 3 -
+http://www.baidu.com/robots.txt 2 -
+/index.action 1 -
+/xmlrpc.php 1 -
+/CFIDE/administrator/ 1 -
+/tmUnblock.cgi 1 -
+/sumthin 1 -
+/plugins/system/plugin_googlemap3_proxy.php 1 -
+/phpmoadmin/moadmin.php 1 -
+http://testp5.mielno.lubin.pl/testproxy.php 4 -
+/admin/bootstrap.inc.php 1 -
+/rom-0 3 -
+/doLogin.do 1 -
+http://testp2.czar.bielawa.pl/testproxy.php 2 -
+/admin 1 -
+/plugins/system/plugin_googlemap2/plugin_googlemap2_proxy.php 1 -
+http://testp4.pospr.waw.pl/testproxy.php 1 -
+/index.login.action 1 -
+/adminManager!login 1 -
+/pma/scripts/setup.php 2 -
+/myadmin/scripts/setup.php 2 -
+/forum.php 1 -
+/loginUI.action 1 -
+/manager/html 6 -
+/login.do 1 -
+/phpMyAdmin/scripts/setup.php 2 -
+/plugins/system/plugin_googlemap2_proxy.php 1 -
+/sysinfo.cgi 1 -
+//pma/scripts/setup.php 1 -
+END_SIDER_404
+
+# Plugin key - Pages - Hits - Bandwidth - Last access
+BEGIN_PLUGIN_geoip_city_maxmind 14
+cn_beijing_22 0 119 0 0
+unknown 0 19 0 0
+us_ann%20arbor_mi 0 6 0 0
+us_wakefield_ma 0 4 0 0
+cn_zhuhai_30 0 4 0 0
+gb_cambridge_c3 0 4 0 0
+cn_tanggu_28 0 4 0 0
+ro_iasi_23 0 2 0 0
+us_woodbridge_nj 0 2 0 0
+us_kansas%20city_mo 0 1 0 0
+us_las%20vegas_nv 0 1 0 0
+cn_hefei_01 0 1 0 0
+us_chicago_il 0 1 0 0
+mx_monterrey_19 0 1 0 0
+END_PLUGIN_geoip_city_maxmind
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 44
+61.135.190.200 38 38 1824 20160221081052
+61.135.190.71 31 31 1488 20160221132524
+61.135.190.197 26 26 1248 20160220065108
+61.135.190.198 22 22 1056 20160221193754
+128.232.110.28 4 4 192 20160223043851
+185.35.62.11 4 4 192 20160224163536
+141.212.122.177 3 3 144 20160213020751
+93.113.125.11 2 2 96 20160224070637
+113.76.90.229 2 2 96 20160216124348
+142.54.160.214 2 2 96 20160208190356
+141.212.122.209 1 1 48 20160223163503
+185.112.102.166 1 1 0 20160226202921
+195.154.194.146 1 1 48 20160212062328
+185.112.102.169 1 1 0 20160226201727
+141.212.122.193 1 1 48 20160216232215
+177.237.2.198 1 1 48 20160208144854
+193.109.69.251 1 1 48 20160205200553
+107.150.60.74 1 1 48 20160216075956
+74.91.28.58 1 1 48 20160206161453
+60.172.229.40 1 1 48 20160211153423
+142.54.160.211 1 1 48 20160203193009
+189.219.89.235 1 1 48 20160210162352
+211.154.163.110 1 1 48 20160227170854
+222.186.34.155 1 1 48 20160211140503
+142.54.160.213 1 1 48 20160211201042
+89.248.171.165 1 1 48 20160213205226
+141.212.122.160 1 1 48 20160219195244
+107.150.33.62 1 1 48 20160224034630
+104.238.223.126 1 1 48 20160201141348
+76.164.202.157 1 1 48 20160210233800
+107.150.60.76 1 1 48 20160222150049
+208.100.26.232 1 1 0 20160221003515
+173.208.206.204 1 1 48 20160215123300
+51.254.126.83 2 2 96 20160203020928
+104.128.144.131 1 1 48 20160217140946
+74.91.28.60 1 1 48 20160209174335
+107.150.33.59 1 1 48 20160222141938
+74.91.28.62 1 1 48 20160210143215
+54.169.201.225 1 1 48 20160216052147
+113.76.90.196 1 1 48 20160225075454
+54.193.83.242 1 1 48 20160206231554
+74.91.28.59 1 1 48 20160202171905
+201.173.153.205 1 1 48 20160211151706
+113.76.90.144 1 1 48 20160202182330
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 27
+20160201 10 10 480 10
+20160202 7 7 336 7
+20160203 9 9 432 8
+20160204 6 6 288 4
+20160205 7 7 336 5
+20160206 6 6 288 6
+20160207 6 6 288 6
+20160208 7 7 336 7
+20160209 5 5 240 5
+20160210 10 10 480 9
+20160211 10 10 480 10
+20160212 7 7 336 7
+20160213 7 7 336 7
+20160214 5 5 240 4
+20160215 9 9 432 9
+20160216 9 9 432 9
+20160217 8 8 384 8
+20160218 9 9 432 9
+20160219 8 8 384 6
+20160220 6 6 288 5
+20160221 6 6 240 6
+20160222 3 3 144 3
+20160223 2 2 96 2
+20160224 3 3 144 3
+20160225 1 1 48 1
+20160226 2 2 0 2
+20160227 1 1 48 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+5mn-15mn 4
+15mn-30mn 3
+0s-30s 149
+30mn-1h 3
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 5
+/ 165 7776 155 155
+https://m.baidu.com/ 1 48 1 1
+http://www.ip138.com/ 1 48 1 1
+/index.php 1 48 1 1
+http://ip.cn/ 1 48 1 1
+END_SIDER

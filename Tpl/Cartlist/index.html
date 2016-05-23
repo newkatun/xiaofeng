@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta content="{$Page.c_keywords}" name="keywords" />
+<meta content="{$Page.c_description}" name="description" />
+<link href="{$WEBROOT}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/cartlist.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cartlist.js" ></script>
+</head>
+<body >
+<include file='Public:header'/>
+<div class="body">
+  <div class="center"> 
+	<div class="cartlist_step">
+		<ul>
+		<li class="cart_step1 cart_on1"><span>1</span>View Carts</li>
+		<li class="cart_step2"><span>2</span>Confirm The Order</li>
+		<li class="cart_step3"><span>3</span>Submit The Order</li>
+		<li class="cart_step4"><span>4</span>Reviews Product</li>
+		</ul>
+	</div>
+    <form action="{$WEBNAME}/cartlist/cartcheck" name="formcart" method="post" id="formcart">
+      <table cellpadding="0" cellspacing="1"  border="0" width="100%" align="center" class="table_cart">
+        <tr class="table_cart_header">
+          <th  width="40"></th>
+          <th width="90">Photo</th>
+          <th>Product name</th>
+          
+          <th width="110">Order number</th>
+          
+          <th width="90">&nbsp;</th>
+        </tr>
+		<if condition="is_array($CartListCookie) eq true">
+          <volist name="CartListCookie" id="cart" empty="$cartempty">
+            <tr dataskuid="{$cart.autoid}" id="cartlist_{$cart.autoid}" class="cartlist_prod">
+              <td height="40" class="aligncenter">
+                <input type="checkbox" checked="checked" name="skuid[]" value="{$cart.autoid}"></td>
+              <td class="aligncenter"><a href="{$WEBNAME}/prodshow/index/id/{$cart.temp_pid}" target="_blank"><img width="80" height="80" src="{$cart.p_img}" class="image"></a></td>
+              <td class="padding"><a href="{$WEBNAME}/prodshow/index/id/{$cart.temp_pid}" target="_blank">{$cart.ty_name} {$cart.p_name}</a></td>
+              
+              <td class="aligncenter"><div class="order_input"><span class="order_reduce" attrid="{$cart.autoid}">-</span>
+                  <input type="text" value="{$cart.temp_qty}" size="4" id="order_num_{$cart.autoid}" class="order_number"  oldnumber="{$cart.temp_qty}" attrid="{$cart.temp_pid}">
+                  <span class="order_increase" attrid="{$cart.autoid}">+</span></div>
+               </td>
+            
+              <td class="aligncenter"><a class="removeone" href="javascript:void(0)" >Remove</a></td>
+            </tr>
+          </volist>
+        <tr class="table_cart_bottom">
+          <td colspan="7">
+		  <div class="cart_message">
+			<div class="cart_toolbar fl"><a href="javascript:void(0)" class="removeall">Remove the selected items </a></div>
+			<div class="cart_ordertext fr"><span id="CartNumber">{$i}</span>Product(s)</div>
+		  </div>
+		  </td>
+        </tr>
+		<tr class="table_cart_nothing hidden">
+          <td colspan="7">
+		  <div class="message" style="text-align:center;">
+                <ul> <li>Your cart is empty,welcome to  <a href="javascript:goToLogin();">login</a> in to add your items!</li>
+                </ul>
+			</div>
+		  </td>
+        </tr>
+		<else/>
+		<tr class="table_cart_nothing">
+          <td colspan="7">
+		  <div class="message" style="text-align:center;">
+                <ul> <li>Your cart is empty,welcome to  <a href="javascript:goToLogin();">login</a> in to add your items!</li>
+                </ul>
+			</div>
+		  </td>
+        </tr>
+		</if>
+      </table>
+    </form>
+    <div class="clear"></div>
+	<if condition="is_array($CartListCookie) eq true">
+    <div class="cart_ordermessage" >
+      <ul>
+        <li class="cart_ordercheck"> &nbsp; </li>
+        <li class="cart_discountcode"> &nbsp;</li>
+        <li class="cart_orderbtn"><a href="javascript:void(0)" id="ordersubmit_btn" class="input_submitorder">Check out</a></li>
+      </ul>
+    </div>
+	</if>
+  </div>	
+</div>
+<!--center end tags-->
+<include file='Public:footer'/>
+<!--footer end stags-->
+</body>
+</html>

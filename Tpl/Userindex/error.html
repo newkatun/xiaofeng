@@ -1,0 +1,40 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/cartlist.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="cartlist_title cartlist_submit"></div>
+    <div class="ordercheck_cont">
+      <div class="cart_body">
+        <ul>
+          <li class="cart_div_title"></li>
+          <li id="cart_div_cont" class="cart_div_cont">
+            <div class="fail">
+			<p>{$FailText}</p>
+			<p>The system is returning to the shopping cart page for you, if long time cannot jump to the page, please click <a href="{$WEBNAME}/userindex">here</a>!</p>
+			<meta http-equiv="refresh" content="3; url={$WEBNAME}/userindex" />
+			</div>
+            <div class="clear"></div>
+          </li>
+          <li class="cart_div_bottom"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+</body>
+</html>

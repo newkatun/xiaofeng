@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+</head>
+<body>
+<include file="Public:header"/>
+<!--head end-->
+<div class="body">
+    <div class="manage_cont"> <include file="userleft"/>
+      <div class="manager_right">
+        <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" >
+          <tbody>
+            <tr>
+              <td>
+			  <div class="title usercenter">You are here : Manager Center > My Orders > Order Details </div>
+			  <div class="manager_righttop">
+                  <ul class="manager_rtop2">
+                    <li class="manager_rtoptile">Hello, <span>{$UserName}</span>&nbsp;&nbsp;<span class="history_login" >The last login time：{$LoginTime}</span> </li>
+                    <li>
+                      <div class="user_infodiv">
+                        <ul><li>Reminding:</li>
+                          <li ><if condition="$UnauditedOrder gt 0"><a href="{$WEBNAME}/userindex/myorder/action/payment">•&nbsp;Waiting for payment orders(<b>{$UnauditedOrder}</b>)</a><else/>•&nbsp;Waiting for payment orders(<b>{$UnauditedOrder}</b>)</if></li>
+						  
+                          <li><if condition="$ReadyOrder gt 0"><a href="{$WEBNAME}/userindex/myorder/action/ready">•&nbsp;Orders to be shipped&nbsp; (<b>{$ReadyOrder}</b>)</a><else/>•&nbsp;Orders to be shipped&nbsp; (<b>{$ReadyOrder}</b>) </if></li>
+						 
+                          <li ><if condition="$AlreadyOrder gt 0"><a href="{$WEBNAME}/userindex/myorder/action/sended">•&nbsp;Shipped orders&nbsp; (<b>{$AlreadyOrder}</b>)</a><else/>•&nbsp;Shipped orders&nbsp; (<b>{$AlreadyOrder}</b>)</if> </li>
+						  
+                          <li ><if condition="$CancelOrder gt 0"><a href="{$WEBNAME}/userindex/myorder/action/canceled">•&nbsp;Canceled orders ( <b>{$CancelOrder}</b>)</a><else/>•&nbsp;Canceled orders&nbsp; (<b>{$CancelOrder}</b>)</if></li>
+						  
+						  
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                    </li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="clear margintop"></div>
+                  <div class="manager_orderlist">
+                  <table width="100%" cellspacing="1" cellpadding="0" border="0" class="table_orderlist">
+                    <thead>
+                      <tr class="border_right">
+                        <th colspan="2" WIDTH="350">Product name</th>
+                        <th WIDTH="60">Number </th>
+                        <th WIDTH="90">Order Status</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="product_divcontent">
+                    <if condition="empty($OrderAllList) eq false">
+                      <volist name="OrderAllList" id="Order" empty="$OrderEmpty">
+                        <table width="100%" cellspacing="1" cellpadding="0" border="0" class="table_orderlist table_orderprod">
+                          <tbody>
+                            <tr class="Orderr_Code">
+                              <td colspan="6"><span class="Orderr_Code_span1"><b>Order Number:</b><a class="aBlu" href="{$WEBNAME}/userindex/ordershow/oid/{$Order.order_id}"><b>{$Order.order_id}</b></a></span><span class="Orderr_Code_span2">Order Time:{$Order.order_datetime}</span></td>
+                            </tr>
+                            <volist name="Order['ProdList']" id="Prod">
+                              <tr class="Orderr_prod">
+                                <td align="center" class="Orderr_prod_img"><a href='{$WEBNAME}/prodshow/index/id/{$Prod.prod_pid}' target="_blank"><img width="80" height="80" src="{$Prod.p_img}"></a></td>
+                                <td class="Orderr_prod_name"><a href='{$WEBNAME}/prodshow/index/id/{$Prod.prod_pid}' target="_blank">{$Prod.ty_name} {$Prod.p_name}</a></td>
+           
+                                <td class="Orderr_prod_num"><b>{$Prod.prod_number}</b></td>
+                                <if condition="$i eq 1">
+ 
+                                  <td class="Orderr_prod_row" rowspan="{$Order['ProdList']|count}">
+									<div class="Orderr_prod_row_div">
+                                      <ul>
+                       
+                                        <if condition="$Order['order_payment'] eq 'Non-payment' && $Order['order_status'] neq 'GuestCancel'"> 
+                                        <li> <a href="{$WEBNAME}/userindex/cancelOrder/oid/{$Order.order_id}">Cancel</a> </li>
+										 <elseif condition="$Order['order_status'] eq 'GuestCancel' "/>
+                                           <li><a href="{$WEBNAME}/userindex/reback/oid/{$Order.order_id}">Re-buy</a></li>
+										</if>
+										<li> <a href="{$WEBNAME}/userindex/ordershow/oid/{$Order.order_id}">Details</a></li>
+                                      </ul>
+                                    </div>
+								  </td>
+                                </if>
+                              </tr>
+                            </volist>
+                          </tbody>
+                        </table>
+                      </volist>
+                      <div class="page">{$PageContent}</div>
+                      <else/>
+                      <div class="empty">{$OrderEmpty}</div>
+                    </if>
+                  </div>
+                </div>
+               
+                <div class="clear margintop"></div>
+                <div class="manager_divcontent">
+                  <ul>
+                    <li class="manager_divcontent_title">{$ShowTitle}</li>
+                    <li class="user_history_content">
+                      <div class="clear"></div>
+                      <volist name="CookieProd" id="History">
+                        <div class="history_list">
+                          <ul>
+                            <li class="product_img"><a href="{$WEBNAME}/prodshow/index/id/{$History.autoid}" target="_blank"><img width="160" height="160" src="{$History.p_img}"></a></li>
+                            <li class="product_name"> <a href="{$WEBNAME}/prodshow/index/id/{$History.autoid}" target="_blank">{$History.p_name}</a></li>
+                            <li class="product_code"> <a href="{$WEBNAME}/prodshow/index/id/{$History.autoid}" target="_blank">Code: {$History.p_id}</a></li>
+                          </ul>
+                        </div>
+                      </volist>
+                      <div class="clear"></div>
+                    </li>
+                  </ul>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <div class="clear margintop"></div>
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+<!--body end-->
+</body>
+</html>

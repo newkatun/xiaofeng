@@ -1,0 +1,1126 @@
+[ 2014-05-17T11:17:56+08:00 ] 113.96.16.201 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+NOTIC: [8] Undefined index:  MID /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 84 行.
+NOTIC: [8] Undefined index:  MNAME /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047278s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000709s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000513s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002459s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000789s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2014-05-17T11:18:07+08:00 ] 113.96.16.201 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.169318s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.056311s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-05-17 11:18:07',`user_lognum`=208 WHERE ( autoid=1 ) [ RunTime:0.000761s ]
+
+[ 2014-05-17T11:18:08+08:00 ] 113.96.16.201 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001113s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034619s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000498s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000421s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002046s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2014-05-17T11:18:08+08:00 ] 113.96.16.201 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.036395s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.007415s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029221s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000472s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000465s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002037s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000788s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2014-05-17T11:18:11+08:00 ] 113.96.16.201 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001120s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.012368s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001463s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.006900s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.001466s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.089620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089794s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000657s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000452s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002286s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000824s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2014-05-17T11:18:17+08:00 ] 113.96.16.201 /manager.php/pagelist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001115s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005594s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000752s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.026938s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046194s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000563s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000442s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002274s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001087s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2014-05-17T11:18:17+08:00 ] 113.96.16.201 /manager.php/Pagelist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005934s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001050s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.000588s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027841s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000532s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000445s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002124s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2014-05-17T11:18:27+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006214s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 10 ) LIMIT 1   [ RunTime:0.022020s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.058281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000736s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000442s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002287s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000773s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2014-05-17T11:18:50+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001734s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.010800s ]
+SQL: UPDATE `admin_config` SET `c_name`='About',`c_title`='Wisdomiot-About',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p class=\\&quot;MsoNormal\\&quot;&gt;\r\n	Wisdomiot&amp;nbsp;Communication Electronics Trade.,Limited&lt;span&gt; ,founded in the year of 2009. Development and management of the\r\ncompany after two years of study to becomea lead and professional supplier /\r\nexporter who is specialized in technical design, research, manufacture and\r\nmarketing of Phone accessories include mobile phone case ,mobile phone housing\r\n,mobile phone USB datacables, mobile phone handfree ,mobile phone antenna ,\r\nmobile phone keypad ,mobile phone LCD and etc.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;MsoNormal\\&quot;&gt;\r\n	&lt;span&gt;wisdomiot has always been devoting itself\r\nto the principle of \\&quot;Quality First\\&quot;, and over the last 5 years we\r\nhave constantly sought to develop new products. Our complete production lines\r\nmake things easy for our clients. From preparing artworks, molding, mass\r\nproduction, to packaging, every procedure is done in under the supervision on\r\nexperienced workers in our own factories .&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;MsoNormal\\&quot;&gt;\r\n	&lt;span&gt;Customer\\&quot;s satisfaction is our primary\r\ngoal. We continuously developed our customer service staff to satisfy our\r\nclient\\&quot;s demand. They are extremely knowledgeable and experienced in\r\nmanufacturing pins and other accessories. Delivery time will always be matched.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;MsoNormal\\&quot;&gt;\r\n	We have 3 cooperative factories&lt;span&gt;the\r\nopportunity to move products from design to manufacturing and then to a\r\nfinished product, thus bringing products to market in the shortest time\r\npossible at the best price.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;MsoNormal\\&quot;&gt;\r\n	&lt;span&gt;We are looking forward to cooperating with\r\nyou in the near future. Contact us now!&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=10 ) [ RunTime:0.020938s ]
+
+[ 2014-05-17T11:18:51+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001187s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006686s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001317s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001699s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014682s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000705s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000577s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002813s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000990s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2014-05-17T11:19:18+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001304s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006981s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 10 ) LIMIT 1   [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017570s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000544s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000528s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002901s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000966s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2014-05-17T11:22:33+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001126s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005814s ]
+SQL: UPDATE `admin_config` SET `c_name`='About',`c_title`='Wisdomiot-About',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot;&gt;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n		Wisdomiot&amp;nbsp;Communication Electronics Trade.,Limited\r\n,founded in the year of 2009. Development and management of the company after\r\ntwo years of study to become a lead and professional supplier / exporter who is\r\nspecialized in technical design, research, manufacture and marketing of Phone\r\naccessories include mobile phone case ,mobile phone housing ,mobile phone USB\r\ndata cables, mobile phone handfree ,mobile phone antenna , mobile phone keypad\r\n,mobile phone LCD and etc.\r\n	&lt;/p&gt;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n		Wisdomiot has always been devoting itself to the\r\nprinciple of \\&quot;Quality First\\&quot;, and over the last 5 years we have\r\nconstantly sought to develop new products. Our complete production lines make\r\nthings easy for our clients. From preparing artworks, molding, mass production,\r\nto packaging, every procedure is done in under the supervision on experienced\r\nworkers in our own factories .\r\n	&lt;/p&gt;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n		Customer’s satisfaction is our primary goal. We\r\ncontinuously developed our customer service staff to satisfy our client’s\r\ndemand. They are extremely knowledgeable and experienced in manufacturing pins\r\nand other accessories. Delivery time will always be matched.\r\n	&lt;/p&gt;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n		We have 3 cooperative factories the opportunity\r\nto move products from design to manufacturing and then to a finished product,\r\nthus bringing products to market in the shortest time possible at the best\r\nprice.\r\n	&lt;/p&gt;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n		We are looking forward to cooperating with you in the\r\nnear future. Contact us now!\r\n	&lt;/p&gt;\r\n&lt;/p&gt;' WHERE ( autoid=10 ) [ RunTime:0.001899s ]
+
+[ 2014-05-17T11:22:34+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001114s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005483s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000587s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001351s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013719s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000499s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000419s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000288s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002011s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2014-05-17T11:24:19+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001216s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006892s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 10 ) LIMIT 1   [ RunTime:0.000740s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011081s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000480s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000432s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000885s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2014-05-17T11:25:13+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006080s ]
+SQL: UPDATE `admin_config` SET `c_name`='About',`c_title`='Wisdomiot-About',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics Trade.,Limited\r\n,founded in the year of 2009. Development and management of the company after\r\ntwo years of study to become a lead and professional supplier / exporter who is\r\nspecialized in technical design, research, manufacture and marketing of Phone\r\naccessories include mobile phone case ,mobile phone housing ,mobile phone USB\r\ndata cables, mobile phone handfree ,mobile phone antenna , mobile phone keypad\r\n,mobile phone LCD and etc.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot has always been devoting itself to the\r\nprinciple of \\\\\\&quot;Quality First\\\\\\&quot;, and over the last 5 years we have\r\nconstantly sought to develop new products. Our complete production lines make\r\nthings easy for our clients. From preparing artworks, molding, mass production,\r\nto packaging, every procedure is done in under the supervision on experienced\r\nworkers in our own factories .\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Customer’s satisfaction is our primary goal. We\r\ncontinuously developed our customer service staff to satisfy our client’s\r\ndemand. They are extremely knowledgeable and experienced in manufacturing pins\r\nand other accessories. Delivery time will always be matched.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories the opportunity\r\nto move products from design to manufacturing and then to a finished product,\r\nthus bringing products to market in the shortest time possible at the best\r\nprice.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We are looking forward to cooperating with you in the\r\nnear future. Contact us now!\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=10 ) [ RunTime:0.007105s ]
+
+[ 2014-05-17T11:25:14+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001106s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007511s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001222s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.003515s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012592s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000476s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000393s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000272s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000675s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2014-05-17T11:25:49+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005915s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.001139s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011281s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000465s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000428s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000756s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2014-05-17T11:26:26+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001118s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001365s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007682s ]
+SQL: UPDATE `admin_config` SET `c_name`='Contact',`c_title`='Wisdomiot -Contact',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics \r\nTrade.,Limited&lt;/span&gt;&amp;nbsp; is a company that sales mobile phone accessories for 5 years .&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories. all products manager by Rohs .also we have a dedicated service team. products have 6 monthes guarantee .&amp;nbsp;&lt;/span&gt;\r\n&lt;/p&gt;' WHERE ( autoid=9 ) [ RunTime:0.001432s ]
+
+[ 2014-05-17T11:26:26+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001127s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.008698s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.003201s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001399s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021428s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000760s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000615s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000419s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000738s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2014-05-17T11:27:22+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001184s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005727s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.001192s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011042s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000484s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000458s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002081s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000770s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2014-05-17T11:27:49+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006570s ]
+SQL: UPDATE `admin_config` SET `c_name`='Contact',`c_title`='Wisdomiot -Contact',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics \r\nTrade.,Limited&lt;/span&gt;&amp;nbsp; is a company that sales mobile phone accessories for 5 years .&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories. all products manager by Rohs .also we have a dedicated service team. products have 6 monthes guarantee .&amp;nbsp;&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; align=\\&quot;center\\&quot; style=\\&quot;text-align:center;\\&quot;&gt;\r\n		Mail: &lt;a href=\\&quot;mailto:wisdomiotmanager@gmail.com\\&quot;&gt;wisdomiotmanager@gmail.com&lt;/a&gt;\r\n	&lt;/p&gt;\r\n	&lt;p class=\\&quot;MsoNormal\\&quot; align=\\&quot;center\\&quot; style=\\&quot;text-align:center;\\&quot;&gt;\r\n		Whatsapp:+8613751850732&lt;br /&gt;\r\nSkype:a7872816\r\n	&lt;/p&gt;\r\n&lt;/span&gt;\r\n&lt;/p&gt;' WHERE ( autoid=9 ) [ RunTime:0.001305s ]
+
+[ 2014-05-17T11:27:49+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001153s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000590s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001237s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013430s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000514s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000440s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002368s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2014-05-17T11:28:26+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001116s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006034s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.001137s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011079s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000481s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000418s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000305s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000764s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2014-05-17T11:28:42+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001140s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006767s ]
+SQL: UPDATE `admin_config` SET `c_name`='Contact',`c_title`='Wisdomiot -Contact',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics \r\nTrade.,Limited&lt;/span&gt;&amp;nbsp; is a company that sales mobile phone accessories for 5 years .&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories. all products manager by Rohs .also we have a dedicated service team. products have 6 monthes guarantee .&amp;nbsp;&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;Mail: &lt;a href=\\&quot;\\\\&amp;quot;mailto:wisdomiotmanager@gmail.com\\\\&amp;quot;\\&quot;&gt;wisdomiotmanager@gmail.com&lt;/a&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; align=\\&quot;\\\\&amp;quot;center\\\\&amp;quot;\\&quot; style=\\&quot;text-align:center;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Whatsapp:+8613751850732&lt;br /&gt;\r\n&amp;nbsp; &amp;nbsp; &amp;nbsp;Skype:a7872816\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=9 ) [ RunTime:0.001453s ]
+
+[ 2014-05-17T11:28:43+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001277s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006999s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001892s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.002132s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015619s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000527s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002138s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000852s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2014-05-17T11:29:19+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001157s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.008316s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.001300s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013622s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000497s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000442s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002216s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2014-05-17T11:29:40+08:00 ] 113.96.16.201 /manager.php/Pagelist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005577s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000477s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001236s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000567s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002109s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000769s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2014-05-17T11:29:44+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001691s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006288s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.000618s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011185s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000521s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000425s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000302s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002069s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000799s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2014-05-17T11:30:02+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001992s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007699s ]
+SQL: UPDATE `admin_config` SET `c_name`='Contact',`c_title`='Wisdomiot -Contact',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics \r\nTrade.,Limited&lt;/span&gt;&amp;nbsp; is a company that sales mobile phone accessories for 5 years .&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories. all products manager by Rohs .also we have a dedicated service team. products have 6 monthes guarantee .&amp;nbsp;&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;Mail:&lt;span id=\\&quot;__kindeditor_bookmark_start_2__\\&quot;&gt;&lt;/span&gt; wisdomiotmanager@gmail.com\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; align=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;center\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-align:center;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Whatsapp:+8613751850732&lt;br /&gt;\r\n&amp;nbsp; &amp;nbsp; &amp;nbsp;Skype:a7872816\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=9 ) [ RunTime:0.001675s ]
+
+[ 2014-05-17T11:30:02+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000847s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001408s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020245s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000753s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000646s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003053s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001120s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2014-05-17T11:30:20+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001126s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.062657s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016550s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000700s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000411s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002900s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001543s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2014-05-17T11:30:40+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001877s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007543s ]
+SQL: UPDATE `admin_config` SET `c_name`='Contact',`c_title`='Wisdomiot -Contact',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics \r\nTrade.,Limited&lt;/span&gt;&amp;nbsp; is a company that sales mobile phone accessories for 5 years .&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories. all products manager by Rohs .also we have a dedicated service team. products have 6 monthes guarantee .&amp;nbsp;&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;Mail:&lt;span id=\\&quot;\\\\&amp;quot;__kindeditor_bookmark_start_2__\\\\&amp;quot;\\&quot;&gt;&lt;/span&gt; &lt;u&gt;wisdomiotmanager@gmail.com&lt;/u&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; align=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;center\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-align:center;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Whatsapp:+8613751850732&lt;br /&gt;\r\n&amp;nbsp; &amp;nbsp; &amp;nbsp;Skype:a7872816\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=9 ) [ RunTime:0.001760s ]
+
+[ 2014-05-17T11:30:41+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001250s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001575s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007529s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001535s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013876s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000532s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002140s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000796s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2014-05-17T11:30:58+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/9
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005990s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 9 ) LIMIT 1   [ RunTime:0.000894s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012075s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000486s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000425s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002107s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2014-05-17T11:31:09+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001117s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007360s ]
+SQL: UPDATE `admin_config` SET `c_name`='Contact',`c_title`='Wisdomiot -Contact',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics \r\nTrade.,Limited&lt;/span&gt;&amp;nbsp; is a company that sales mobile phone accessories for 5 years .&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories. all products manager by Rohs .also we have a dedicated service team. products have 6 monthes guarantee .&amp;nbsp;&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;Mail:&lt;span id=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;__kindeditor_bookmark_start_2__\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/span&gt; &lt;u&gt;wisdomiotmanager@gmail.com&lt;/u&gt; \r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; align=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;center\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-align:center;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Whatsapp:&lt;u&gt;+8613751850732&lt;/u&gt;&lt;br /&gt;\r\n&amp;nbsp; &amp;nbsp; &amp;nbsp;Skype:&lt;u&gt;a7872816&lt;/u&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=9 ) [ RunTime:0.001745s ]
+
+[ 2014-05-17T11:31:10+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000907s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001749s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017581s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002075s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2014-05-17T11:35:21+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001009s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.008310s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 10 ) LIMIT 1   [ RunTime:0.001714s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011117s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000390s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001951s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001049s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2014-05-17T11:35:36+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002172s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006753s ]
+SQL: UPDATE `admin_config` SET `c_name`='About',`c_title`='Wisdomiot-About',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics Trade.,Limited\r\n,founded in the year of 2009. Development and management of the company after\r\ntwo years of study to become a lead and professional supplier / exporter who is\r\nspecialized in technical design, research, manufacture and marketing of Phone\r\naccessories include mobile phone case ,mobile phone housing ,mobile phone USB\r\ndata cables, mobile phone handfree ,mobile phone antenna , mobile phone keypad\r\n,mobile phone LCD and etc.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot has always been devoting itself to the\r\nprinciple of \\&quot;Quality First\\&quot;, and over the last 5 years we have\r\nconstantly sought to develop new products. Our complete production lines make\r\nthings easy for our clients. From preparing artworks, molding, mass production,\r\nto packaging, every procedure is done in under the supervision on experienced\r\nworkers in our own factories .\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Customer’s satisfaction is our primary goal. We\r\ncontinuously developed our customer service staff to satisfy our client’s\r\ndemand. They are extremely knowledgeable and experienced in manufacturing pins\r\nand other accessories. Delivery time will always be matched.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories the opportunity\r\nto move products from design to manufacturing and then to a finished product,\r\nthus bringing products to market in the shortest time possible at the best\r\nprice.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;MsoNormal\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We are looking forward to cooperating with you in the\r\nnear future. Contact us now!\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=10 ) [ RunTime:0.001300s ]
+
+[ 2014-05-17T11:35:37+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001140s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.008025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001347s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001448s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014744s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000590s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000453s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002351s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2014-05-17T11:35:49+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.009408s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 10 ) LIMIT 1   [ RunTime:0.001437s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012164s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000475s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000419s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002025s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000821s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2014-05-17T11:36:06+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001138s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007274s ]
+SQL: UPDATE `admin_config` SET `c_name`='About',`c_title`='Wisdomiot-About',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics Trade.,Limited\r\n,founded in the year of 2009. Development and management of the company after\r\ntwo years of study to become a lead and professional supplier / exporter who is\r\nspecialized in technical design, research, manufacture and marketing of Phone\r\naccessories include mobile phone case ,mobile phone housing ,mobile phone USB\r\ndata cables, mobile phone handfree ,mobile phone antenna , mobile phone keypad\r\n,mobile phone LCD and etc.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot has always been devoting itself to the\r\nprinciple of \\&quot;Quality First\\&quot;, and over the last 5 years we have\r\nconstantly sought to develop new products. Our complete production lines make\r\nthings easy for our clients. From preparing artworks, molding, mass production,\r\nto packaging, every procedure is done in under the supervision on experienced\r\nworkers in our own factories .\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Customer’s satisfaction is our primary goal. We\r\ncontinuously developed our customer service staff to satisfy our client’s\r\ndemand. They are extremely knowledgeable and experienced in manufacturing pins\r\nand other accessories. Delivery time will always be matched.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories the opportunity\r\nto move products from design to manufacturing and then to a finished product,\r\nthus bringing products to market in the shortest time possible at the best\r\nprice.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We are looking forward to cooperating with you in the\r\nnear future. Contact us now!\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=10 ) [ RunTime:0.001456s ]
+
+[ 2014-05-17T11:36:07+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001296s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.005635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000980s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.001615s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015638s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000515s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000421s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002036s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000738s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2014-05-17T11:36:23+08:00 ] 113.96.16.201 /manager.php/Pagelist/edittable/id/10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001145s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.007752s ]
+SQL: SELECT * FROM `admin_config` WHERE ( `autoid` = 10 ) LIMIT 1   [ RunTime:0.003624s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011295s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000481s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002010s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000771s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2014-05-17T11:36:50+08:00 ] 113.96.16.201 /manager.php/Pagelist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001156s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/PageAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006282s ]
+SQL: UPDATE `admin_config` SET `c_name`='About',`c_title`='Wisdomiot-About',`c_keywords`='Wisdomiot',`c_description`='Wisdomiot',`c_introduction`='&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot&amp;nbsp;Communication Electronics Trade.,Limited\r\n,founded in the year of 2009. Development and management of the company after\r\ntwo years of study to become a lead and professional supplier / exporter who is\r\nspecialized in technical design, research, manufacture and marketing of Phone\r\naccessories include mobile phone case ,mobile phone housing ,mobile phone USB\r\ndata cables, mobile phone handfree ,mobile phone antenna , mobile phone keypad\r\n,mobile phone LCD and etc.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Wisdomiot has always been devoting itself to the\r\nprinciple of \\&quot;Quality First\\&quot;, and over the last 5 years we have\r\nconstantly sought to develop new products. Our complete production lines make\r\nthings easy for our clients. From preparing artworks, molding, mass production,\r\nto packaging, every procedure is done in under the supervision on experienced\r\nworkers in our own factories .\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;Customer’s satisfaction is our primary goal. We\r\ncontinuously developed our customer service staff to satisfy our client’s\r\ndemand. They are extremely knowledgeable and experienced in manufacturing pins\r\nand other accessories. Delivery time will always be matched.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We have 3 cooperative factories the opportunity\r\nto move products from design to manufacturing and then to a finished product,\r\nthus bringing products to market in the shortest time possible at the best\r\nprice.\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;MsoNormal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; style=\\&quot;text-indent:21.0pt;\\&quot;&gt;\r\n	&amp;nbsp; &amp;nbsp; &amp;nbsp;We are looking forward to cooperating with you in the\r\nnear future. Contact us now!\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( autoid=10 ) [ RunTime:0.001565s ]
+
+[ 2014-05-17T11:36:55+08:00 ] 113.96.16.201 /manager.php/pagelist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001145s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.020995s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.001391s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.003556s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014023s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000517s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000418s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002041s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000788s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2014-05-17T11:40:13+08:00 ] 113.96.16.201 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001184s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.011429s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001311s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005550s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022697s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000872s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000454s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002560s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000801s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2014-05-17T11:40:14+08:00 ] 113.96.16.201 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001329s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001577s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.011841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.000750s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005642s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017599s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000701s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000610s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000347s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002687s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000940s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2014-05-17T11:40:23+08:00 ] 113.96.16.201 /manager.php/productlist/index/keyword/G-
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.010942s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` WHERE (  p_id like '%G-%' or p_name like '%G-%' ) LIMIT 1   [ RunTime:0.001426s ]
+SQL: SELECT * FROM `admin_productnewview` WHERE  p_id like '%G-%' or p_name like '%G-%' ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002249s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005053s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017526s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000609s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000449s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002520s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001049s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2014-05-17T11:40:56+08:00 ] 113.96.16.201 /manager.php/Productlist/edittable/id/646
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006159s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 646 ) LIMIT 1   [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.008457s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.004669s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 8 ORDER BY  autoid asc   [ RunTime:0.000995s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073967s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000521s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002087s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000701s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2014-05-17T11:41:02+08:00 ] 113.96.16.201 /manager.php/Productlist/edittable/id/645
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001143s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007734s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 645 ) LIMIT 1   [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.004795s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000576s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 8 ORDER BY  autoid asc   [ RunTime:0.001484s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000488s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002058s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000720s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2014-05-17T11:41:07+08:00 ] 113.96.16.201 /manager.php/Productlist/edittable/id/641
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001451s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001734s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006116s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 641 ) LIMIT 1   [ RunTime:0.001564s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005275s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000674s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 8 ORDER BY  autoid asc   [ RunTime:0.000560s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019528s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000511s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000420s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000321s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002039s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000710s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2014-05-17T11:41:24+08:00 ] 113.96.16.201 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001944s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.010690s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='G-043',`p_name`='MobilePhone Leather Case',`p_img`='/uploadfile/smallimg/140430/140430010344123.jpg',`p_typeid`=8,`p_ttypeid`=89,`p_intro`='MobilePhone Leather Case',`p_content`='&lt;p style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	MobilePhone Leather Case:\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;1. Nice appearance.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;2. High quality and competitive price.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;3. Many new designs and color are available.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;4. Durable and dust resistant.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;5. Convenient use ,can cover over your mobile phones easily without any tool.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;6. Used for protecting you mobile phone and keeping good looking and new for a long time .&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;7. Logo and brand name can be printed .&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;8. Cases for any mobile models are available.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;9. Any color is available.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;10. Protect your phone from all side.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;11. Various of veins are available on the case ,attractive and skidproof.&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;12. Special edge design ,and special workmanship&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;&amp;nbsp;&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p class=\\&quot;\\\\&amp;quot;MsoNormal\\\\&amp;quot;\\&quot; style=\\&quot;color:#555555;font-family:tahoma;background-color:#FFFFFF;\\&quot;&gt;\r\n	&lt;span&gt;Please choose the color,models,and contact us&lt;/span&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='MobilePhone Leather Case',`p_description`='MobilePhone Leather Case',`p_new`=0 WHERE ( autoid=641 ) [ RunTime:0.014008s ]
+
+[ 2014-05-17T11:41:25+08:00 ] 113.96.16.201 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.009458s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001514s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005236s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000825s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018542s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000678s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000582s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000308s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002496s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000854s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2014-05-17T23:58:40+08:00 ] 23.239.109.45 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001665s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001993s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+NOTIC: [8] Undefined index:  MID /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 84 行.
+NOTIC: [8] Undefined index:  MNAME /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.066132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066361s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000712s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000538s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002709s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000872s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2014-05-17T23:58:58+08:00 ] 23.239.109.45 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001114s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.057620s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.002265s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-05-17 23:58:58',`user_lognum`=209 WHERE ( autoid=1 ) [ RunTime:0.000664s ]
+
+[ 2014-05-17T23:58:58+08:00 ] 23.239.109.45 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001385s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056737s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000704s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000544s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002609s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001027s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2014-05-17T23:59:04+08:00 ] 23.239.109.45 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.048098s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.002652s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039265s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000837s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000745s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000415s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001063s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001207s ]
+

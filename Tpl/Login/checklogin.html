@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/register.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/valilogin.js"></script>
+<script type="text/javascript">
+	if (top.location != self.location)top.location=self.location; //防止被框架
+</script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="register_table">
+      <div class="login_error">{$LoginErrorText}</div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--center end tags-->
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+<!--footer end stags-->
+</body>
+</html>

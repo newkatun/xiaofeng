@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta name="Keywords" content="{$Page.keywords}" />
+<meta name="Description" content="{$Page.description}" />
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/register.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/json.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/valilogin.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#email").focus();
+	})
+	if (top.location != self.location)top.location=self.location; //防止被框架
+	function fleshVerify(){ 
+		var time = new Date().getTime();
+		$('#verifyImg').attr('src','__APP__/Publicuse/verify/'+time);
+	}
+</script>
+</head>
+<body >
+<include file="Public:header"/>
+<div class="body">
+  <div class="center">
+    <div class="register_table">
+      <form action="" method="post" name="loginchk" id="loginchk" onsubmit="return false;">
+        <div class="register_title">
+          <h1>Member Login</h1>
+          <div class="title_lefttop"></div>
+          <div class="title_righttop"></div>
+        </div>
+        <div id="content">
+          <div class="regBox" id="innerContent">
+            <p class="regTitle"></p>
+            <p>
+              <label> Account Name:</label>
+              <input id="email" name="email" autocomplete="off" type="text" value=""   class="normal" maxlength='100'  onclick="showTipMsg()"/>
+              <strong>*</strong> <span id="email_desc" class="fl"></span> </p>
+            <p class="extra regRemind"><span id="email_tip"></span><span id="email_error"></span></p>
+            <p>
+              <label>Password:</label>
+              <input id="password" name="password"  type="password"  oncopy="return false;" oncut="return false;" onpaste="return false;"  class="normal"/>
+              <strong>*</strong> <span id="passwordDesc"></span> <span id="password_desc" class="fl"></span> </p>
+            <p class="extra regRemind pswdLevel"><span id="password_tip" ></span><span id="password_error"></span><span class="pswdLevelA" id="pswdLevel" style="display:none"></span></p>
+            <p class="verCode">
+              <label>Verification Code:</label>
+              <input name="validCode" id="validCode" type="text" class="normal" style="vertical-align:top;" />
+              <strong>*</strong><img src='__APP__/Publicuse/verify/'  id="verifyImg" onclick="fleshVerify()" /><span class="yacode_sapan">Click the picture to refresh the verification code</span> <span id="validCode_desc"  style="display:none" ></span>
+              <input type="hidden"  name="volidret" id="volidret"/>
+            </p>
+            <p class="extra regRemind"><span id="validCode_tip" ></span><span id="validCode_error"></span></p>
+            <div class="warn agreeBox">
+              <div class="btnBox">
+                <button class="btn" type="submit" >Sign In</button>
+                <span class="extra_forget"><a href="{$WEBNAME}/Login/forgetpwd">Forget Password？</a></span> </div>
+            </div>
+          </div>
+          <div class="reg_smalldiv">
+            <ul>
+              <li class="reg_smalldiv_title">Not yet registered with Drop-ins ?</li>
+              <li >Simply click below to creat your  Drop-ins account to enjoy more dsicounts & benefits from us.</li>
+              <li class="reg_smalldiv_btn"><a href="register">Register</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="register_bottom">
+          <div class="bottom_left"></div>
+          <div class="bottom_right"></div>
+        </div>
+      </form>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--center end tags-->
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

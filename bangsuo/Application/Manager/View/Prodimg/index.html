@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="__ROOT__/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="__ROOT__/Public/editor/themes/default/default.css" />
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/manager/product.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/kindeditor.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/lang/zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/manager/uploadimg.js"></script>
+</head>
+<body>
+<table width="100%" border="1" cellpadding="0" cellspacing="1"  >
+  <tr>
+    <td    class="table_top" >产品图片<span class="table_spanadd"><a  href="javascript:void(0)" id="addMoreImg">批量增加图片</a></span></td>
+  </tr>
+  <tr >
+    <td ><table width="100%" border="1" cellpadding="0" cellspacing="1" class="table_image">
+        <tr>
+          <td ><div  class="imgtable">
+              <volist name="ImageList" id="Img">
+                <ul id="imgUL_{$Img.autoid}">
+                  <li><img src="{$Img.img_url}" width="160" height="160" id="img_{$Img.autoid}"/>
+                    <div class="imgRemove" attrid="{$Img.autoid}"></div>
+					<if condition="$Img['img_index'] eq 1">
+                    <div class="imgDefault" attrid="{$Img.autoid}"></div>
+					</if>
+                    <div class="imgsetDefault" attrid="{$Img.autoid}" prodId="{$Img.img_id}"></div>
+                  </li>
+				  <li class="li_input">优先级：<span class="btn_reduce" attrid="{$Img.autoid}"></span> <span class="btn_increase" attrid="{$Img.autoid}"></span><span id="respan"></span></li>
+                </ul>
+              </volist>
+            </div></td>
+        </tr>
+          </form>
+        
+      </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"  class="table_imgcont"><form action="__URL__/saveadd" method="post" name="formlist" id="formlist">
+        <table width="100%" border="1" cellpadding="0" cellspacing="1" class="table_image">
+          <tr>
+            <td  class="table_top">保存批量插入图片</td>
+          </tr>
+          <tr >
+            <Td><input type="hidden" value="{$ProdID}" name="prodid"/>
+              <div id="imgContainer" class="imgtable"></div></td>
+          </tr>
+          <tr>
+            <td  align="right"><input type="submit" value="提交上传图片"/>
+              &nbsp;</td>
+          </tr>
+        </table>
+      </form></td>
+  </tr>
+</table>
+</body>
+</html>

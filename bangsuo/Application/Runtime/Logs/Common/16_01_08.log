@@ -1,0 +1,18 @@
+[ 2016-01-08T12:09:42+08:00 ] 180.97.106.161 http://www.baidu.com/robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Robots
+
+[ 2016-01-08T12:49:59+08:00 ] 23.94.153.178 /muieblackcat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+ERR: 无法加载模块:Muieblackcat
+
+[ 2016-01-08T12:49:59+08:00 ] 23.94.153.178 //phpmyadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+ERR: 无法加载模块:Phpmyadmin
+

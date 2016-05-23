@@ -1,0 +1,59 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta content="{$Page.c_keywords}" name="keywords" />
+<meta content="{$Page.c_description}" name="description" />
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/cartlist.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="cartlist_step">
+		<ul>
+		<li class="cart_step1 cart_on1"><span>1</span>View Carts</li>
+		<li class="cart_step2 cart_on2"><span>2</span>Confirm The Order</li>
+		<li class="cart_step3 cart_on2"><span>3</span>Submit The Order</li>
+		<li class="cart_step4 cart_on3"><span>4</span>Reviews Product</li>
+		</ul>
+	</div>
+    <div class="ordercheck_cont">
+      <div class="cart_body">
+        <ul>
+          <li class="cart_div_title"></li>
+          <li id="cart_div_cont" class="cart_div_cont">
+            <div class="pay_textorder">
+              <ul>
+                <li>Dear <span style="color:#000;">{$GuestName} </span>,</li>
+                <li> Thank you for shopping with us! You have successfully submitted your orders (order number :<span>{$Order.OrderCode}</span>). To review your orders,you can find it in the menu of <a href="{$WEBNAME}/userindex">My order</a>.</li>
+                <li> To ensure a possible shortest time for us to lay on your hand your orders ,please pay before your orders' timeout.</li>
+				<li> To finish your orders ,just one click away! Simply click the 'Pay Now' below!</li>
+                
+              </ul>
+            </div>
+            <div class="pay_content">
+              <ul>
+                <li class="pay_content_btn">
+                   <A href="{$WEBNAME}/{$FilePath}" class="input_submitorder">Download</a></li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="cart_div_bottom"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+</body>
+</html>

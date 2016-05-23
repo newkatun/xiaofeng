@@ -1,0 +1,6 @@
+[ 2015-07-04T10:33:42+08:00 ] 222.186.21.70 http://1111.ip138.com/ic.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+ERR: 无法加载模块:Ic
+

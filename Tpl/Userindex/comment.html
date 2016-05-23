@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <div class="manage_cont"> <include file="Public:userleft"/>
+    <div class="manager_right">
+      <div class="manager_rightcenter">
+        <ul>
+          <li class="manager_rtitle">
+            <div class="title"> Evaluation purchase goods</div>
+          </li>
+          <li class="manager_rline"></li>
+          <li class="manager_rtable">
+            <table width="100%" height="100%" cellspacing="1" cellpadding="0" border="0" class="manager_address_table" style="margin-top:0px;">
+              <tbody>
+                <tr>
+                  <td><div class="manager_address">
+                      <ul class="manager_address_list">
+                        <li class="user_tablelist">
+                          <form name="userform" method="post" action="{$WEBNAME}/userindex/addcomment" id="userform">
+                            <table width="98%" align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#ececec" class="manager_address_table">
+                              <tbody>
+                                <volist name="ProdList" id="prod">
+                                  <tr class="table_tr">
+                                    <td><table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" class="prod_listtable">
+                                        <tr bgcolor="#ffffff" class="order_conttr">
+                                          <td><div class="product_limit">
+                                              <ul>
+                                                <li class="product_img"><a href="{$WEBNAME}/prodshow/id/{$prod.go_prodid}"><img width="120" height="120" src="{$prod.go_imageurl}"></a></li>
+                                                <li class="product_name"> <a href="/zheli/prodshow.php?id=27">{$prod.go_prodname}</a></li>
+                                                <li class="product_price"> <span class="prod_newprice">${$prod.go_price}</span> </li>
+                                              </ul>
+                                            </div></td>
+                                          <td><table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" >
+                                              <tr>
+                                                <td class="table_addressleft">Goods stars:</td>
+                                                <td class="table_addressright"><select name="cm_star[]" id="cm_star">
+                                                    <option value="5">★★★★★</option>
+                                                    <option value="4">★★★★</option>
+                                                    <option value="3">★★★</option>
+                                                    <option value="2">★★</option>
+                                                    <option value="1">★</option>
+                                                  </select>
+                                                  <input type="hidden" value="{$prod.autoid}" name="orderproid[]"/>
+                                                </td>
+                                              </tr>
+                                              <tr bgcolor="#ffffff" class="order_conttr">
+                                                <td class="table_addressleft">Evaluation contents:</td>
+                                                <td class="table_addressright"><textarea name="cm_content[]" id="cm_content" cols="50" rows="5"></textarea>
+                                                  <input type="hidden" name="prodid[]" value="{$prod.go_prodid}"/>
+                                                </td>
+                                              </tr>
+                                            </table></td>
+                                        </tr>
+                                      </table></td>
+                                  </tr>
+                                </volist>
+                                <tr bgcolor="#ffffff" class="order_conttr">
+                                  <td align="center" colspan="2"><input type="hidden" value="{$OrderNumber}" name="ordernum"/>
+                                    <input type="submit" class="input_confbtn" id="addcomment" value="Submit Rating" ></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </form>
+                        </li>
+                      </ul>
+                    </div></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<include file="Public:footer"/>
+</body>
+</html>

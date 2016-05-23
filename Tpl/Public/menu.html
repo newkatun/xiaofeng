@@ -1,0 +1,26 @@
+<div class="left">
+  <div class="left_menu">
+    <ul>
+      <li class="leftcontent">
+        <div class="menulist" id="menuid">
+          <ul>
+            <foreach name="CatalogList" item="Menu">
+              <li class="bigmenu"><b>•</b><a href="{$WEBROOT}/productlist/index/mid/{$Menu.autoid}" title="{$Menu.ty_name}">{$Menu.ty_name}</a></li>
+			  <if condition="is_array($Menu['subCatalog']) eq true">
+              <li class="sublist">
+                <div class="subdiv">
+                  <ul>
+                    <foreach name="Menu['subCatalog']" item="Submenu">
+                      <li class="submenu"><b>-</b><a href="{$WEBROOT}/productlist/index/mid/{$Submenu.ty_subid}/sid/{$Submenu.autoid}" title="{$Submenu.ty_name}">{$Submenu.ty_name}</a></li>
+                    </foreach>
+                  </ul>
+                </div>
+              </li>
+			  </if>
+            </foreach>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

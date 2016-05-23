@@ -1,0 +1,12 @@
+[ 2016-01-20T08:28:32+08:00 ] 94.185.83.100 http://testp2.czar.bielawa.pl/testproxy.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载模块:Testproxy
+
+[ 2016-01-20T15:29:35+08:00 ] 208.52.161.99 /phpmyadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Phpmyadmin
+

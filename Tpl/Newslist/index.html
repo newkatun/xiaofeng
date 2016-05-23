@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta name="Keywords" content="{$Page.keywords}" />
+<meta name="Description" content="{$Page.description}" />
+<link href="{$WEBROOT}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/prodshow.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+</head>
+<body >
+<include file='Public:header'/>
+<div class="body">
+  <div class="center"> 
+  	<include file="Public:menu"/>
+    <div class="block marginleft">
+      <div class="title page_toptitle">
+        <ul>
+          <li class="prod_mian_type"><a href="{$WEBROOT}">Home</a>&gt;&gt;News </li>
+        </ul>
+      </div>
+      <div class="tablelist">
+	  <if condition="is_array($NewsList) eq true"> 
+		<volist name="NewsList" id="News">
+		<div class="box">
+			<div class="newsimg"><a href="{$WEBNAME}/newsview/index/id/{$News.autoid}"><img src="{$News.n_smaimg}" width="180" height="180"></a></div>
+			<div class="newstext">
+				<ul>
+					<li class="newstitle"><a href="{$WEBNAME}/newsview/index/id/{$News.autoid}">{$News.n_title}</a></li>
+					<li><span>Intro:</span><pre>{$News.n_intro}</pre></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		</volist>
+		
+		<div class="page">{$PageContent}</div>
+		<else/>
+		<div class="empty">{$EmptyText}</div>
+		</if>
+      </div>
+      <div class="blankmargin"></div>
+    </div>
+    <div class="blank"></div>
+  </div>
+</div>
+<!--center end tags-->
+<include file='Public:footer'/>
+<!--footer end stags-->
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

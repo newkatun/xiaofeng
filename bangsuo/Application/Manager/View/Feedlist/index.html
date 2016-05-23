@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="__ROOT__/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+</head>
+<body>
+<table width="100%" border="1" cellpadding="0" cellspacing="1"  >
+  <tr>
+    <td    class="table_top" >网站留言列表</td>
+  </tr>
+  <tr valign="top">
+    <td  ><table width="100%" border="1" cellpadding="0" cellspacing="1" class="table_search" align="center">
+        <tr class="search">
+          <td  ></td>
+          <form action="__URL__" name="formsearch" method="get">
+            <td align="right">输入关键词：
+              <input name="keyword" type="text" id="keyword" value="" class="inputtext" size="36"  />
+              &nbsp;
+              <input  type="submit" id="search" value="搜索" class="rb1"  /></td>
+          </form>
+        </tr>
+      </table></td>
+  </tr>
+  <tr >
+    <td ><table width="100%" border="1" cellpadding="0" cellspacing="1" >
+        <tr align="center" bgcolor="#00739e">
+          <td width="5%" >选择</td>
+          <td width="20%" >留言标题</td>
+          <td width="20%" >客户名称</td>
+          <td width="20%" >电子邮箱</td>
+          <td width="15%" >留言时间</td>
+          <td width="10%" >查看</td>
+        </tr>
+        <if condition="isset($FeedList) eq true && empty($FeedList) eq false" >
+          <form action="__URL__/dellist" method="post" name="formlist" id="formlist">
+            <foreach name="FeedList" item="Feed">
+              <tr >
+                <td height='30' align='center'><input name='id[]' type='checkbox' id='id' value='{$Feed.autoid}' onClick='javascript:changecolor(this.name);'  /></td>
+                <td >&nbsp;{$Feed.utitle}</td>
+                <td>&nbsp;{$Feed.uname}</td>
+                <td>&nbsp;{$Feed.uemail}</td>
+                <td align='center'>{$Feed.utime}</td>
+                <td align='center'><a href="__URL__/edittable/id/{$Feed.autoid}">查看</a></td>
+              </tr>
+            </foreach>
+			<if condition="empty($PageContent) eq false">
+            <tr >
+              <td height="30" colspan="4">&nbsp;&nbsp;
+                <input name="button" type="button" class="button" onClick="selectAll(document.formlist)" value="全选本页数据" />
+                <input name="button" type="button" class="button" onClick="selectOther(document.formlist)" value="反选" />
+                <input name="reset" type="reset" class="button" value="全部取消" /></td>
+              <td width="10%" align="center">&nbsp;</td>
+              <td width="10%" align="center"><input name="Submit3" type="submit" class="button" value="删除选中内容" onClick="return confirm('您确定要删除吗？删除后将无法恢复，请谨慎操作！');" /></td>
+            </tr>
+		     </if>
+          </form>
+          <if condition="empty($PageContent) eq false">
+            <tr >
+              <td height="30" colspan="6" class="table_top"><table border="0" align="center" width="100%" class="pagetable" >
+                  <form action="" method="get" name="form">
+                    <TR>
+                      <TD align="center"><div class="page">{$PageContent}</div></TD>
+                    </TR>
+                  </form>
+                </table></td>
+            </tr>
+          </if>
+          <else/>
+          <tr >
+            <td height="30" colspan="6" align="center"> 没有找到相关内容！ </td>
+          </tr>
+        </if>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

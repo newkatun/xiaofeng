@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<!--head end-->
+<div class="body">
+  <div class="content">
+    <div class="clear"></div>
+    <div class="manage_cont"> <include file="userleft"/>
+      <div class="manager_right">
+        <div class="clear"></div>
+        <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top:0px;">
+          <tbody>
+            <tr>
+              <td><div class="manager_righttop">
+                  <ul class="manager_rtop2">
+                    <li class="manager_rtoptile">Hello, <span>{$UserName}</span>&nbsp;&nbsp;(&nbsp;<a href="{$WEBNAME}/userindex/editinfo">Edit</a>&nbsp;) <span class="history_login" >The last login time：{$LOGINTIME}</span> </li>
+                    <li>
+                      <div class="user_infodiv">
+                        <ul><li class="user_infoli">便利提醒:</li>
+                          <li ><a href="{$WEBNAME}/userindex/myorder/action/payment">•&nbsp;Waiting for payment orders(<b>{$UnauditedOrder}</b>)</a></li>
+                          <li><a href="{$WEBNAME}/userindex/myorder/action/ready">•&nbsp;Orders to be shipped&nbsp; (<b>{$ReadyOrder}</b>)</a> </li>
+                          <li ><a href="{$WEBNAME}/userindex/myorder/action/sended">•&nbsp;Shipped orders&nbsp; (<b>{$AlreadyOrder}</b>)</a> </li>
+                          <li ><a href="{$WEBNAME}/userindex/myorder/action/canceled">•&nbsp;Canceled orders ( <b>{$CancelOrder}</b>)</a></li>
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                    </li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="clear margintop"></div>
+                <div id="orderList" class="manager_divcontent">
+                  <ul>
+                    <li class="manager_divcontent_title"><a onclick="addTrackPositionToCookie('2','O_M_RECENTORDER')" href="{$WEBNAME}/userindex/myorder" class="aBlu">More &gt;&gt;</a>Last month's order status</li>
+                    <li class="user_recent_order">
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tb">
+                        <tbody>
+                          <tr>
+                            <th>Order Number</th>
+                            <th>Consignee</th>
+                            <th>Payment Methods</th>
+                            <th>Order Amount</th>
+                            <th>Order Time</th>
+                            <th>Order Status</th>
+                          </tr>
+						  <if condition="is_array($OrderAllList) eq true">
+                          <volist name="OrderAllList" id="order">
+                            <tr>
+                              <td class="aligncenter"><a  href="{$WEBNAME}/userindex/ordershow/oid/{$order.order_id}" class="aBlu" target="_blank">{$order.order_id}</a></td>
+                              <td class="aligncenter"></td>
+                              <td class="aligncenter">{$order.order_paytype}</td>
+                              <td class="aligncenter">${$order['order_price']+$order['order_shipping']}</td>
+                              <td class="aligncenter">{$order.order_datetime}</td>
+                              <td class="aligncenter">{$order.order_staus}</td>
+                            </tr>
+                          </volist>
+							<tr><td colspan='6'>{$PageContent}</td></tr>
+							<else/>
+							<tr><td colspan='6'>没有找到您的订单</td></tr>
+						  </if>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clear margintop"></div>
+                <div class="manager_divcontent">
+                  <ul>
+                    <li class="manager_divcontent_title">{$ShowTitle}</li>
+                    <li class="user_history_content">
+                      <div class="clear"></div>
+                      <volist name="CookieProd" id="History">
+                        <div class="history_list">
+                          <ul>
+                            <li class="product_img"><a href="{$WEBNAME}/prodview/index/id/{$History.autoid}"><img width="160" height="160" src="{$History.p_img}"></a></li>
+                            <li class="product_name"> <a href="{$WEBNAME}/prodview/index/id/{$History.autoid}">{$History.p_name}</a></li>
+                            <li class="product_price"> <span class="prod_newprice">${$History.p_price}</span> <del class="prod_oldprice">$ {$History.p_oldprice}</del> </li>
+                          </ul>
+                        </div>
+                      </volist>
+                      <div class="clear"></div>
+                    </li>
+                  </ul>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear margintop"></div>
+</div>
+<include file="Public:footer"/>
+<!--body end-->
+</body>
+</html>

@@ -1,0 +1,6 @@
+[ 2015-09-29T18:43:58+08:00 ] 66.71.247.94 /dbadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+ERR: 无法加载模块:Dbadmin
+

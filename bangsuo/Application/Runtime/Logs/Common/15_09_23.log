@@ -1,0 +1,6 @@
+[ 2015-09-23T08:40:13+08:00 ] 66.71.247.94 /pma/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+ERR: 无法加载模块:Pma
+

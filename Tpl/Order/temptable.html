@@ -1,0 +1,33 @@
+<div class="pay_comments">
+  <table width="100%" cellspacing="1" cellpadding="0" border="0" bgcolor="#cccccc" class="table_cart">
+    <tbody>
+      <tr  class="table_title">
+        <td width="100" align="center">Photo</td>
+        <td height="30" align="center" >Name</td>
+        <td width="100" align="center">Number</td>
+      </tr>
+      <volist name="CartProdList" id="Cart">
+        <tr dataskuid="{$Cart.autoid}" id="cartlist_{$Cart.autoid}" class="cartlist_prod" >
+          <td align="center"><input type="hidden" value="{$Cart.autoid}" name="cartId[]">
+            <img width="80" src="{$Cart.p_img}" height="80"></td>
+          <td height="100" class="table_td_name" style="padding-left:6px;">{$Cart.ty_name} {$Cart.p_name}</td>
+          <td align="center"><div class="order_input"><span attrid="{$Cart.autoid}" class="order_reduce">&nbsp;</span>
+              <input attrid="{$Cart.temp_pid}" type="text" value="{$Cart.temp_qty}" size="4" id="order_num_{$Cart.autoid}" class="order_number"  oldnumber="{$Cart.temp_qty}">
+              <span attrid="{$Cart.autoid}" class="order_increase">&nbsp;</span></div></td>
+        </tr>
+      </volist>
+
+    </tbody>
+  </table>
+  <ul>
+    <li>The supplement to fill your orders: <br>
+      <textarea style="width:500px; " name="pay_ordertext" cols="80" rows="3"></textarea>
+    </li>
+    <li> </li>
+    <li class="confirm_div"><span class="comerror" id="checkcomspan"></span>
+      
+      <input type="hidden" name="cartdiscount" value="0" id="cartdiscount">
+      <input type="submit" class="input_submitorder" id="checkcomment" value="Submit Order" name="checkcomment">
+    </li>
+  </ul>
+</div>

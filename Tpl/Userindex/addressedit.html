@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/checkaddress.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+   <div class="manage_cont"> <include file="userleft"/>
+    <div class="manager_right">
+      <div class="manager_rightcenter">
+        <ul>
+          <li class="manager_rtitle">
+			<div class="title usercenter">You are here : Manager Center &gt; Address Manager &gt; Update Address  </div>
+          </li>
+          <li class="manager_rtable">
+            <form name="userform" method="post" action="{$WEBNAME}/userindex/addresseditok" id="userform">
+              <table width="100%"  cellspacing="0" cellpadding="0" border="0" align="center" class="manager_address_table" style="margin-top:0px;">
+                <tbody>
+                  <tr>
+                    <td><div class="manager_address">
+                        <ul>
+                          <li class="user_left">First Name:</li>
+                          <li class="user_right">
+                            <input type="text" id="guestaccptname" name="guestaccptname" value="{$Add.add_firstname}" class="normal">
+                            <span id="guestaccptnameinfo" class="normal">Please input your first name!</span></li>
+						  <li class="user_left">Last Name:</li>
+                          <li class="user_right">
+                            <input type="text" id="guestlastname" name="guestlastname" value="{$Add.add_lastname}" class="normal">
+                            <span id="guestlastnameinfo" class="normal">Please input your last name!</span></li>
+						  <li class="user_left">State & City:</li>
+                          <li class="user_right">
+                            <input type="text" id="guestcity" name="guestcity" value="{$Add.add_cityname}" class="normal">
+                            <span id="guestcityinfo" class="normal">Please input your state and city!</span></li>
+                          <li class="user_left">Your Country:</li>
+                          <li class="user_right">
+                            <select name="guestcountry" style="WIDTH: 245px;vertical-align: middle;" id="">
+							<volist name="CountryList" id="country">
+								<if condition="$Add['add_country'] eq $country['country_name']">
+								<option value="{$country.country_name}" selected>{$country.country_name}</option>
+								<else/>
+								<option value="{$country.country_name}">{$country.country_name}</option>
+								</if>
+							</volist>
+                            </select>&nbsp; 
+                            <span id="guestcountryinfo" class="normal">Select your country!</span></li>
+                          <li class="user_left">Mobile/Telphone:</li>
+                          <li class="user_right">
+                            <input type="text" id="guestphone" name="guestphone" value="{$Add.add_telephone}" class="normal">
+                            <span id="guestphoneinfo" class="normal">One of you must input it!</span></li>
+						   <li class="user_left">ZIP Code:</li>
+                          <li class="user_right">
+                            <input type="text" id="guestpostcode" name="guestpostcode" value="{$Add.add_zipcode}" class="normal">
+                            <span id="guestpostcodeinfo" class="normal">Please input your ZIP code!</span></li>
+							
+                          <li class="user_left">Your Address:</li>
+                          <li class="user_right">
+                            <input type="text" class="input_long normal" id="guestaddress" name="guestaddress" value="{$Add.add_address}">
+                            <span id="guestaddressinfo" class="normal">Please input your address!</span> </li>
+                          <li class="user_title"><input type="hidden" name="addessid" value="{$Add.autoid}"/>
+                            <input type="submit" class="input_btn" value="Submit and Save" id="input_btn">
+                          </li>
+                        </ul>
+                      </div>
+					  </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+	<div class="clear"></div>
+  </div>
+</div>
+<div class="clear"></div>
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

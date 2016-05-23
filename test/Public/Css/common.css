@@ -1,0 +1,61 @@
+body{margin: 0;padding:0;font-family: tahoma;background-color:#670051;}
+input{ outline: none;}
+div{margin: 0 auto;padding: 0}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p,span{border: none;margin: 0;padding: 0, -webkit-text-size-adjust:none;}
+a{text-decoration: none; outline:none;}
+input{  outline:none;}
+ul,li{list-style-type: none;padding: 0;}
+img{vertical-align:middle;}
+.clear{clear: both;height: 0;width: 100%}
+.margintop{margin-top:10px;}
+.marginleft{margin-left:10px;}
+.marginright{margin-right:10px;}
+.clearheight{clear: both;height: 0;width: 100%;height:15px;}
+a{ outline:none; font-size:12px;}
+
+.body{height: auto;width:100%; height: auto;margin: 0 atuo; color:#FFF;}
+.header{ height:auto; width:100%; background-color:#8e1c75;}
+.banner{ width:100%; padding:6px;}
+.logo{ height:52px; background:url(../Images/logo.png) no-repeat 10px  6px; padding:6px 0;}
+.nav{ height:33px; width:100%; background:url(../Images/nav_bg.png) repeat-x 0 0; line-height:33px; font-size:14px; font-weight:bold;}
+.nav ul li{float:left;width:20%;text-align:center;}
+.nav ul li a{color:#FFF; font-size:14px; font-weight:bold;}
+
+.title{ height:28px; line-height:28px; background:url(../Images/title_bg.png) no-repeat 0 0; margin-top:10px;  font-size:12px; text-indent:20px; font-weight:bold;}
+.content{width:98%;line-height:24px; font-size:12px; }
+
+.footer{width:100%; background-color:#8e1c75; margin-top:8px; padding:10px 0;}
+.footer ul li{  line-height:20px; font-size:12px; text-indent:20px;}
+.footer ul li.textpadding{ padding-left:58px; }
+/*==ABOUT PAGE==*/
+.border{ margin-top:10px; width:100%; height:auto; clear:both;}
+.photo{float:left;}
+.photo img{border:1px solid #CCC; padding:2px;}
+.subject .photo{width:156px; height:100px; }
+.subject .text{ height:100px; overflow:hidden; line-height:20px; margin-left:8px;}
+.subject .text li.text_title{ height:24px; line-height:24px; background:url(../Images/text_title.png) no-repeat 0 0; text-indent:8px;}
+
+.team .photo{width:136px; height:168px; }
+.team .text{ height:168px; overflow:hidden; line-height:24px; margin-left:8px;}
+.team .text li.text_title{ height:24px; line-height:24px;  text-indent:8px;}
+
+.news{ margin-top:8px; width:100%; height:auto;}
+.news ul li{ height:30px; line-height:30px; color:#FFF; border-bottom:1px dashed #AAA;font-size:12px; overflow:hidden; text-indent:4px;}
+.news ul li a{ color:#FFF;font-size:12px;}
+.news ul li b{padding-right:4px;}
+
+.slider{width:100%;overflow:hidden; position:relative;margin-top:10px; }
+.slider .hd{ height:23px; overflow:hidden; position:absolute; right:10px; bottom:10px; z-index:1; } 
+.slider .hd ul{ overflow:hidden; zoom:1; float:left; color:#666; } 
+.slider .hd ul li{ float:left; margin-right:5px;  width:16px; height:16px; line-height:14px; text-align:center; background:#e8e8e8; cursor:pointer;padding:2px; border-radius:5px; font-size:12px; font-weight:bold; border:1px solid  #CCC;} 
+.slider .hd ul li.on{ background:#800; color:#fff;border:1px solid  #E00; } 
+.slider .bd{ position:relative; height:100%; z-index:0;   } 
+.slider .bd img{ width:100%;  } 
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta content="{$Page.c_keywords}" name="keywords" />
+<meta content="{$Page.c_description}" name="description" />
+<link type="text/css" rel="stylesheet" href="{$WEBROOT}/Public/css/common.css">
+<link type="text/css" rel="stylesheet" href="{$WEBROOT}/Public/css/prodshow.css">
+<link type="text/css" rel="stylesheet" href="{$WEBROOT}/Public/css/style.css">
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/vali_contact.js" ></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="center">
+		<include file="Public:menu"/>	
+		<div class="block marginleft">
+      <div class="title page_toptitle"><a href="{$WEBROOT}">Home</a> &gt;&gt; <a href="{$WEBROOT}/{$Page.c_name}">{$Page.c_title}</a></div>
+			<div class="rightcontent">
+				<div class="about">
+					{$Page.c_introduction|htmlspecialchars_decode}
+				</div>
+				<div class="margintop"></div>
+				<div class="title redstyle">Feedback</div>
+				<div class="feedtable">
+					<form action="{$WEBROOT}/contact/feedback" name="feedtable" method="post" id="feedtable">
+					<dl>
+						<dt class="fl feed_dt">Your Name ：</dt><dd class="fl feed_dd"><input type="text" class="inputuser" id="guestname" name="guestname"><span id="guestnamespan"></span></dd>
+						<dt class="fl feed_dt">Your E-Mail ：</dt><dd class="fl feed_dd"><input type="text" class="inputuser" id="guestmail" name="guestmail"><span id="guestmailspan"></span></dd>
+						<dt class="fl feed_dt">Subject ：</dt><dd class="fl feed_dd"><input type="text" class="inputuser" id="title" name="title"><span id="titlespan"></span></dd>
+						<dt class="fl feed_dt ">Message：</dt><dd class="fl feed_dd feed_textarea"><textarea id="content" style="font-size:12px" rows="8" cols="45" name="content"></textarea><span id="contentspan"></span></dd>
+					</dl>
+					<div class="feedbtn"><input type="submit" value="Submit Form" class="submitbtn"/></div>
+					</form>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear margintop"></div>
+	</div>
+ 
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

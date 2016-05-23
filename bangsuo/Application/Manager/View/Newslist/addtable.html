@@ -1,0 +1,92 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="__ROOT__/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/kindeditor.js"></script>
+<script charset="utf-8" src="__ROOT__/Public/editor/lang/zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="__ROOT__/Public/js/manager/kindeditor.js"></script>
+</head>
+<body>
+<form name="formadd" method="post" action="__URL__/saveadd" id="formadd">
+  <table width="100%" border="1" align="center" cellpadding="0" cellspacing="1"    class="table_addtable">
+    <tr >
+      <td height="40" colspan="4" align="left"  class="table_top"><a href="__URL__/index">新闻列表</a>>>添加新闻</td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章名称：</strong></td>
+      <td  align="left" ><input name="news_name" class="inputtext" type="text" ID="news_name" size="50" value="">
+        <span id="news_namespan" class="inputspan"></span></td>
+      <td   align="right" ><strong>文章大类：</strong></td>
+      <td  align="left"><Select name="news_type" id="news_type">
+          <option value="0">Please Select</option>
+          <foreach name="CategoryList" item="Type">
+            <option value="{$Type.autoid}">{$Type.type_name}</option>
+          </foreach>
+        </select>
+        <span id="news_typespan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>上传图片：</strong></td>
+      <td  align="left" colspan="3"><input name="news_image" class="inputtext" type="text" id="news_image" size="80" value="">
+        &nbsp;&nbsp;&nbsp;
+        <input name="button" type="button" class="uploadimg"  attrimage="news_image" value="上传图片" />
+        <span id="news_imagespan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章作者：</strong></td>
+      <td  align="left"><input name="news_author" class="inputtext" type="text" ID="news_author" size="30" value="" >
+        <font color="red"><span id="news_authorspan" class="inputspan"></span></font></td>
+      <td width="12%"  align="right" ><strong>文章来源：</strong></td>
+      <td  align="left" ><input name="news_source" class="inputtext" type="text" ID="news_source" size="30" value="" >
+        <span id="news_authorspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章排序：</strong></td>
+      <td  align="left" ><input name="news_sort" class="inputtext" type="text" ID="news_sort" size="5" value="0" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+        <span id="news_sortspan" class="inputspan">网站前台显示从大到小排列</span></td>
+      <td width="12%"  align="right" ><strong>文章点击：</strong></td>
+      <td  align="left" ><input name="news_hits" class="inputtext" type="text" ID="news_hits" size="5" value="0" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+        <span id="news_hitsspan" class="inputspan">网站前台显示从大到小排列</span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章标题：</strong></td>
+      <td  align="left" colspan="3"><input name="news_title" class="inputtext" type="text" ID="news_title" size="80" value="" >
+        <font color="red"><span id="news_titlespan" class="inputspan"></span></font></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章关键词：</strong></td>
+      <td  align="left" colspan="3"><input name="news_keyword" class="inputtext" type="text" ID="news_keyword" size="80">
+        <span id="news_keywordspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章描述：</strong></td>
+      <td  align="left" colspan="3"><textarea name="news_description" class="inputtext" type="text" ID="news_description" cols="90" rows="3" ></textarea>
+        <span id="news_descriptionspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>详细介绍：</strong></td>
+      <td  align="left" colspan="3"><textarea name="content" rows="8" cols="60" style="width:98%;margin-top:5px;"></textarea>
+        <br>
+        <span id="contentspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+      <td width="12%"  align="right" ><strong>文章状态：</strong></td>
+      <td  align="left" colspan="3"><input type="radio" value="0" name="news_status" checked="checked">
+        隐藏
+        <input type="radio" value="1" name="news_status" >
+        显示 <span id="news_statusspan" class="inputspan"></span></td>
+    </tr>
+    <tr >
+    <tr >
+      <td  align="right"></td>
+      <td colspan="3"><input type="hidden" value="" id="autoid" name="autoid">
+        <input name="Submit3" type="submit" class="button" value=" 提交 " id="addnew" />
+        <input type="button" class="button" value=" 返回 " onClick="window.location.href='__URL__/index'"/></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

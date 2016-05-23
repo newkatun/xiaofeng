@@ -1,0 +1,61 @@
+<?php if (!defined('THINK_PATH')) exit();?><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link  href="<?php echo ($WEBNAME); ?>/Public/css/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo ($WEBNAME); ?>/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo ($WEBROOT); ?>/Public/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="<?php echo ($WEBNAME); ?>/Public/js/common.js"></script>
+<script charset="utf-8" src="<?php echo ($WEBNAME); ?>/Public/editor/kindeditor.js"></script>
+<script charset="utf-8" src="<?php echo ($WEBNAME); ?>/Public/editor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="<?php echo ($WEBNAME); ?>/Public/editor/themes/default/default.css" />
+<script  type="text/javascript" src="<?php echo ($WEBNAME); ?>/Public/js/uploadimg.js"></script>
+ </head>
+ <body>
+<form name="formadd" method="post" action="__APP__/Paymentlist/saveadd" id="formadd">
+<table width="100%" border="1" align="center" cellpadding="5" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#C4D8ED"   class="table_addtable">
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td height="40" colspan="4" align="left" background="images/nzcms_top01.gif" bgcolor="#C9DEFA" class="nzcms_table_top"><a href="__APP__/Paymentlist/index">支付方式列表</a>>>增加支付方式</td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center" width="10%">支付方式：</td>
+<td>&nbsp;<input type="text" size="60" name="pay_name" id="pay_name" class="inputtext" value="" /></td>   
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center">支付网关：</td>
+<td >&nbsp;<input type="text" name="pay_weburl" id="pay_weburl" size="60" value="">&nbsp;</td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center">支付帐号：</td>
+<td >&nbsp;<input type="text" name="pay_code" id="pay_code" size="60" value="">&nbsp;</td>
+</tr>
+
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center">支付方式状态：</td>
+<td >&nbsp;<input type="radio" name="pay_status" id="pay_status" value="1" >开启&nbsp;<input type="radio" name="pay_status" id="pay_status" value="0" >关闭</td>
+</tr>
+
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center">支付方式LOGO：</td>
+<td >&nbsp;<input type="text" name="pay_logo" id="pay_logo" size="60" value="">&nbsp;<input type="button" class="uploadimg" value="上传图片" attrname="pay_logo"></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center">提示信息：</td>
+<td>&nbsp;<Textarea rows="3" cols="80" name="pay_message" id="pay_message"></textarea></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td align="center">支付方式说明：</td>
+<td>&nbsp;<Textarea rows="3" cols="80" name="pay_intro" id="pay_intro"></textarea></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td  align="right">&nbsp;</td>
+<td colspan="3"><input type="hidden" value="" id="autoid" name="autoid">
+<input type="submit" class="button rb1" value=" 提交 " id="addnew" />
+<input type="button" class="button rb1" value=" 返回 " onclick="window.location.href='__APP__/Paymentlist/index'"/></td>
+</tr>
+</table>
+</form>
+
+
+</body>
+</html>

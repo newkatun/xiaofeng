@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/register.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/validate_func.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/forgetpwd.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#email").focus();
+	})
+	if (top.location != self.location)top.location=self.location; //防止被框架
+	function fleshVerify(){ 
+		var time = new Date().getTime();
+		$('#verifyImg').attr('src','__APP__/Publicuse/verify/'+time);
+	}
+</script>
+</head>
+<body >
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="register_table">
+      <form action="#" method="post" name="loginchk" id="loginchk" onsubmit="return false;">
+        <div class="register_title">
+          <h1>Forget Password</h1>
+          <div class="title_lefttop"></div>
+          <div class="title_righttop"></div>
+        </div>
+        <div id="content">
+          <div class="regBox" id="innerContent">
+            <p class="regTitle"></p>
+            <p>
+              <label> E-mail Account:</label>
+              <input id="email" name="email" autocomplete="off" type="text" value=""   class="fl" maxlength='100'  />
+              <strong>*</strong> <span id="email_desc" class="fl"></span> </p>
+            <p class="extra regRemind"><span id="email_tip">Please enter the email account used at login !</span><span id="email_error"></span></p>
+            <p class="verCode">
+              <label>Verification Code:</label>
+              <input name="validCode" id="validCode" type="text" class="w50 fl" style="vertical-align:top;" />
+              <strong>*</strong><img src='__APP__/Publicuse/verify/'  id="verifyImg" onclick="fleshVerify()" /><span class="yacode_sapan">Click the picture to refresh the verification code</span> <span id="validCode_desc"  style="display:none" ></span>
+              <input type="hidden"  name="volidret" id="volidret"/>
+            </p>
+            <p class="extra regRemind"><span id="validCode_tip" >Please fill out the characters in the picture !</span><span id="validCode_error"></span></p>
+            <div class="warn agreeBox">
+			
+              <div class="btnBox">
+                <button class="btn" type="submit" >Determined</button>
+                </span> </div>
+				
+            </div>
+			<div class="tipmessage"></div>
+          </div>
+          <div class="reg_smalldiv">
+           
+          </div>
+        </div>
+        <div class="register_bottom">
+          <div class="bottom_left"></div>
+          <div class="bottom_right"></div>
+        </div>
+      </form>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--center end tags-->
+</div>
+<include file="Public:footer"/>
+</body>
+</html>

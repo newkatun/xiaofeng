@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link type="text/css" rel="stylesheet" href="{$WEBNAME}/Public/css/common.css" />
+<link type="text/css" rel="stylesheet" href="{$WEBNAME}/Public/css/cartlist.css" />
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/getajaxtable.js"></script>
+
+</head>
+<body>
+<div class="ordercheck_address">
+  <form action="{$WEBNAME}/addresslist/formaddress" name="formpost" method="post">
+    <table width="98%" align="center" cellspacing="1" cellpadding="0" border="0"  class="carttable  carttable_bot">
+      <tbody>
+        <tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">First Name:</td>
+          <td class="table_addressright"><input type="text" id="guestaccptname" size="50" value="" name="guestaccptname" class="inputtext">
+            &nbsp;<span id="guestaccptnamespan" class="message_form"></span> </td>
+        </tr>
+        <tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">Last Name:</td>
+          <td class="table_addressright"><input type="text" id="guestlastname" size="50" value="" name="guestlastname" class="inputtext">
+            &nbsp;<span id="guestlastnamespan" class="message_form"></span> </td>
+        </tr>
+        <tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">Country:</td>
+          <td class="table_addressright"><select name="guestcountry" id="guestcountry">
+              <option value="0">Please select your country</option>
+              <foreach name="CountryList" item="country">
+                <option value="{$country.country_name}">{$country.country_name}</option>
+              </foreach>
+            </select>
+            &nbsp;<span id="guestcountryspan" class="message_form"></span>
+            </select>
+          </td>
+        </tr>
+        <tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">City/State:</td>
+          <td class="table_addressright"><input type="text" id="guestcity" size="50" value="" name="guestcity" class="inputtext">
+            &nbsp;<span id="guestcityspan" class="message_form"></span>
+            </select>
+          </td>
+        </tr>
+        <tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">Address:</td>
+          <td class="table_addressright"><input type="text" id="guestaddress" size="50" value="" name="guestaddress" class="inputtext">
+            &nbsp;<span id="guestaddressspan" class="message_form"></span>
+            <input type="hidden" id="addessid" name="addessid" value="0">
+            <input type="hidden" id="countryname" name="countryname" value=""></td>
+        </tr>
+		<tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">Mobile/Telphone:</td>
+          <td class="table_addressright"><input type="text" id="guestphone" size="50" value="" name="guestphone" class="inputtext">
+            &nbsp;<span id="guestphonespan" class="message_form"></span> </td>
+        </tr>
+        <tr bgcolor="#ffffff" class="order_conttr">
+          <td class="table_addressleft">ZIP Code:</td>
+          <td class="table_addressright"><input type="text" id="guestpostcode" size="50" value="" name="guestpostcode" class="inputtext">
+            &nbsp;<span id="guestpostcodespan" class="message_form"></span>
+            </select>
+          </td>
+        </tr>
+        <tr bgcolor="#ffffff" class="order_conttr order_btn">
+          <td align="center" colspan="2" ><input type="submit" class="input_confbtn" id="addnewaddreess" value=" " name="addnewaddreess"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+</body>
+</html>

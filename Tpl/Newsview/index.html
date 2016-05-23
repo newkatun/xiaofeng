@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$News.n_title}</title>
+<meta name="keywords" content="{$News.n_keywords}" />
+<meta name="description" content="{$News.n_description}" />
+<link href="{$WEBROOT}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/prodshow.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+</head>
+<body >
+<include file='Public:header'/>
+<div class="body">
+  <div class="center"> 
+  	<include file="Public:menu"/>
+    <div class="block marginleft">
+      <div class="title page_toptitle">
+        <ul>
+          <li class="prod_mian_type"><a href="{$WEBROOT}">Home</a>&gt;&gt;<a href="{$WEBNAME}/newslist">News </a> &gt;&gt;  {$News.n_title}	 
+		 
+		  </li>
+        </ul>
+      </div>
+      <div class="product_showcontent">
+        <div class="clear"></div>
+        <h4>{$News.n_title}	 </h4>
+		<div class="news_author">Author:{$News.n_type} Date:{$News.n_datetime} </div>
+		<div class="newscontent">
+			{$News.n_content|htmlspecialchars_decode}	 
+		</div>
+         <div class="clear"></div>
+      </div>
+      <div class="clearmargin"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--center end tags-->
+<include file='Public:footer'/>
+<!--footer end stags-->
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

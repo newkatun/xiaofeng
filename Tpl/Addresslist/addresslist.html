@@ -1,0 +1,38 @@
+
+<div class="shippingaddress">
+  <ul>
+    <li class="selectli">
+      <div class="clear div_insertafter"></div>
+	  <if condition="is_array($AddressList)">
+      <volist name="AddressList" id="Add">
+      <if condition="$key eq 0">
+      <div  class="table_address table_addselect" strAddressId="{$Add.autoid}" strAddressData="{$Add.add_firstname}{$Add.add_lastname},{$Add.add_address},{$Add.add_cityname},{$Add.add_country},{$Add.add_telephone}" strcountry="{$Add.add_country}" strship="{$Add.country_shipping}">
+      <div class="table_selectdiv" ></div>
+      <else/>
+      <div  class="table_address" strAddressId="{$Add.autoid}" strAddressData="{$Add.add_firstname}{$Add.add_lastname},{$Add.add_address},{$Add.add_cityname},{$Add.add_country},{$Add.add_telephone}" strcountry="{$Add.add_country}" strship="{$Add.country_shipping}">
+        </if>
+        <ul>
+          <li class="address_text"><span>{$Add.add_lastname} {$Add.add_firstname}</span>Recieve</li>
+          <li class="address_text">{$Add.add_address}</li>
+          <li class="address_text">{$Add.add_cityname},{$Add.add_country}</li>
+          <li class="address_text">{$Add.add_telephone}</li>
+          <li class="address_text">{$Add.add_zipcode}</li>
+        </ul>
+      </div>
+      </volist>
+	  </if>
+      <div class="clear"></div>
+    </li>
+    <li id="shipping_tableadd">
+      <div class="address_btndiv">
+        <dl>
+          <dt>&nbsp;<span id="checkaddreessspan"></span> </dt>
+          <dd>
+            <input type="hidden" name="guestaddressId" datavalue="" value="" id="guestaddressId"/>
+            <input type="button" value="Add new address" class="addnewaddress" id="addnewaddress">
+          </dd>
+        </dl>
+        <div class="clear"></div>
+      </div>
+  </ul>
+</div>

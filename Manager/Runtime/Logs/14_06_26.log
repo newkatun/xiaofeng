@@ -1,0 +1,1535 @@
+[ 2014-06-26T14:33:33+08:00 ] 192.184.36.74 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001967s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+NOTIC: [8] Undefined index:  MID /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 84 行.
+NOTIC: [8] Undefined index:  MNAME /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/CommonAction.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049145s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000910s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000647s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003309s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001148s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2014-06-26T14:33:57+08:00 ] 192.184.36.74 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001188s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.115762s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.049994s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-06-26 14:33:57',`user_lognum`=214 WHERE ( autoid=1 ) [ RunTime:0.000934s ]
+
+[ 2014-06-26T14:33:57+08:00 ] 192.184.36.74 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001124s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.104276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104514s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000727s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000487s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002798s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000927s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2014-06-26T14:33:59+08:00 ] 192.184.36.74 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001124s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001365s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.111579s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.013234s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.060895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061040s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000493s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000449s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002075s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000826s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2014-06-26T14:34:03+08:00 ] 192.184.36.74 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001914s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002288s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.013770s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.003369s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.203624s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.010029s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000613s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.253810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.254022s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000672s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000501s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002346s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2014-06-26T14:34:04+08:00 ] 192.184.36.74 /manager.php/categorylist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.006108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_prodtype` WHERE ( ty_subid=0 ) LIMIT 1   [ RunTime:0.000818s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE ty_subid=0 ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001583s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.175416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000563s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000443s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002129s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2014-06-26T14:34:07+08:00 ] 192.184.36.74 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001151s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.014811s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.000997s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002104s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.007008s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017457s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000627s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000443s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002153s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2014-06-26T14:34:26+08:00 ] 192.184.36.74 /manager.php/productlist/index/keyword/A-
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001362s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001633s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.025859s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` WHERE (  p_id like '%A-%' or p_name like '%A-%' ) LIMIT 1   [ RunTime:0.003234s ]
+SQL: SELECT * FROM `admin_productnewview` WHERE  p_id like '%A-%' or p_name like '%A-%' ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.003986s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.010799s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025163s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000697s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000577s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002659s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000763s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2014-06-26T14:34:33+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/687
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001299s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007758s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 687 ) LIMIT 1   [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.053407s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.001645s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.001060s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000560s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000565s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002283s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000875s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2014-06-26T14:34:59+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007324s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-011',`p_name`='Note 3 lcd complete',`p_img`='/uploadfile/smallimg/140501/140501002440767.jpg',`p_typeid`=1,`p_ttypeid`=54,`p_intro`='Note 3 lcd complete',`p_content`='&lt;p&gt;\r\n	Note 3 lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='Note 3 lcd complete',`p_description`='Note 3 lcd complete',`p_new`=0 WHERE ( autoid=687 ) [ RunTime:0.031630s ]
+
+[ 2014-06-26T14:35:00+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001146s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.013397s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001716s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002157s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.009224s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000479s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016247s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000598s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002103s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2014-06-26T14:35:27+08:00 ] 192.184.36.74 /manager.php/productlist/index/keyword/A-
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001125s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.013674s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` WHERE (  p_id like '%A-%' or p_name like '%A-%' ) LIMIT 1   [ RunTime:0.001996s ]
+SQL: SELECT * FROM `admin_productnewview` WHERE  p_id like '%A-%' or p_name like '%A-%' ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.009264s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.001376s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019990s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000870s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000793s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000446s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002981s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000749s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2014-06-26T14:35:35+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/686
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001227s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006579s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 686 ) LIMIT 1   [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005560s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000980s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.001782s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020085s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000550s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002067s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2014-06-26T14:35:43+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001253s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.008331s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-010',`p_name`='Note 2 lcd complete',`p_img`='/uploadfile/smallimg/140501/140501002347375.jpg',`p_typeid`=1,`p_ttypeid`=0,`p_intro`='Note 2 lcd complete',`p_content`='&lt;p&gt;\r\n	Note 2 lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='Note 2 lcd complete',`p_description`='Note 2 lcd complete',`p_new`=0 WHERE ( autoid=686 ) [ RunTime:0.001605s ]
+
+[ 2014-06-26T14:35:43+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002083s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.014223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002160s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.007940s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000586s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022530s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000901s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000616s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000339s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002754s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000770s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2014-06-26T14:35:52+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/685
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001678s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006533s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 685 ) LIMIT 1   [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005091s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.001582s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.001392s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019286s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000504s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002025s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000710s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2014-06-26T14:36:08+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.008473s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-009',`p_name`='S4 mini lcd complete',`p_img`='/uploadfile/smallimg/140501/140501002200421.jpg',`p_typeid`=1,`p_ttypeid`=54,`p_intro`='S4 mini lcd complete',`p_content`='&lt;p&gt;\r\n	S4 mini lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='S4 mini lcd complete',`p_description`='S4 mini lcd complete',`p_new`=0 WHERE ( autoid=685 ) [ RunTime:0.001401s ]
+
+[ 2014-06-26T14:36:08+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001664s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001984s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.016436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002100s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.007936s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000722s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025373s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001074s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000602s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003421s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001108s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2014-06-26T14:36:18+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/684
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001179s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006334s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 684 ) LIMIT 1   [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005381s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000916s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022983s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000514s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000452s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002121s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000710s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2014-06-26T14:36:30+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006546s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-008',`p_name`='S4 lcd complete',`p_img`='/uploadfile/smallimg/140501/140501002006238.jpg',`p_typeid`=1,`p_ttypeid`=54,`p_intro`='S4 lcd complete',`p_content`='&lt;p&gt;\r\n	S4 lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='S4 lcd complete',`p_description`='S4 lcd complete',`p_new`=0 WHERE ( autoid=684 ) [ RunTime:0.001220s ]
+
+[ 2014-06-26T14:36:30+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001149s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.010685s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002086s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002341s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005893s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022397s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000864s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000644s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003141s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001128s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2014-06-26T14:36:41+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/683
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001717s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006726s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 683 ) LIMIT 1   [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.004036s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000681s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018771s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000539s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000438s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002143s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000768s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2014-06-26T14:36:51+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001203s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.009116s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-007',`p_name`='S3 mini lcd complete',`p_img`='/uploadfile/smallimg/140501/140501001852911.jpg',`p_typeid`=1,`p_ttypeid`=54,`p_intro`='S3 mini lcd complete',`p_content`='&lt;p&gt;\r\n	S3 mini lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='S3 mini lcd complete',`p_description`='S3 mini lcd complete',`p_new`=0 WHERE ( autoid=683 ) [ RunTime:0.001777s ]
+
+[ 2014-06-26T14:36:52+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001519s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.017967s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.007594s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002680s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.008208s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019384s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000800s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000516s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002839s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2014-06-26T14:37:04+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/682
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.014379s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 682 ) LIMIT 1   [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005496s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000799s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000536s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018027s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000521s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000470s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009544s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003984s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004097s ]
+
+[ 2014-06-26T14:37:11+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001127s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007238s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-006',`p_name`='S3 lcd complete',`p_img`='/uploadfile/smallimg/140501/140501001713306.jpg',`p_typeid`=1,`p_ttypeid`=54,`p_intro`='s3 lcd complete',`p_content`='&lt;p&gt;\r\n	s3 lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='s3 lcd complete',`p_description`='s3 lcd complete',`p_new`=0 WHERE ( autoid=682 ) [ RunTime:0.001216s ]
+
+[ 2014-06-26T14:37:12+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.009993s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001863s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001544s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.004912s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000569s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016509s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000592s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000546s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000288s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002216s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000803s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2014-06-26T14:37:18+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/681
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007419s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 681 ) LIMIT 1   [ RunTime:0.001657s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.008750s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.001390s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017592s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000505s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000420s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001976s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2014-06-26T14:37:24+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007015s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-005',`p_name`='iPhone 5S lcd complete',`p_img`='/uploadfile/smallimg/140501/140501000556595.jpg',`p_typeid`=1,`p_ttypeid`=53,`p_intro`='iPhone 5S lcd complete',`p_content`='&lt;p&gt;\r\n	iPhone 5S lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='iPhone 5S lcd complete',`p_description`='iPhone 5S lcd complete',`p_new`=0 WHERE ( autoid=681 ) [ RunTime:0.022687s ]
+
+[ 2014-06-26T14:37:24+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001236s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.009574s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002364s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005037s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000642s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022118s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000907s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000604s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003033s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001042s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2014-06-26T14:37:31+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/680
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001186s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006676s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 680 ) LIMIT 1   [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005297s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000686s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020115s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000602s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000530s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000769s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2014-06-26T14:37:39+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001276s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006317s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-004',`p_name`='iPhone 5C lcd complete',`p_img`='/uploadfile/smallimg/140501/140501000444764.jpg',`p_typeid`=1,`p_ttypeid`=53,`p_intro`='iPhone 5C lcd complete',`p_content`='&lt;p&gt;\r\n	iPhone 5C lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='iPhone 5C lcd complete',`p_description`='iPhone 5C lcd complete',`p_new`=0 WHERE ( autoid=680 ) [ RunTime:0.001291s ]
+
+[ 2014-06-26T14:37:39+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001801s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002205s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.025986s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002375s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001916s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.009623s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021324s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000726s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000406s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002489s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000933s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2014-06-26T14:37:50+08:00 ] 192.184.36.74 /manager.php/productlist/index/keyword/A-/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001250s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.016530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` WHERE (  p_id like '%A-%' or p_name like '%A-%' ) LIMIT 1   [ RunTime:0.002052s ]
+SQL: SELECT * FROM `admin_productnewview` WHERE  p_id like '%A-%' or p_name like '%A-%' ORDER BY  autoid desc  LIMIT 12,12   [ RunTime:0.004470s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.006742s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018194s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000585s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002234s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000750s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2014-06-26T14:37:54+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/679
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.008913s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 679 ) LIMIT 1   [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.012461s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.001292s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020432s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000513s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002260s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000857s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2014-06-26T14:38:00+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001197s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.008566s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-003',`p_name`='iPhone 5 lcd complete',`p_img`='/uploadfile/smallimg/140501/140501000341911.jpg',`p_typeid`=1,`p_ttypeid`=0,`p_intro`='iPhone 5 lcd complete',`p_content`='&lt;p&gt;\r\n	iPhone 5 lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='iPhone 5 lcd complete',`p_description`='iPhone 5 lcd complete',`p_new`=0 WHERE ( autoid=679 ) [ RunTime:0.001328s ]
+
+[ 2014-06-26T14:38:00+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001413s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.012600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001795s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 12,12   [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.006043s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.005105s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021322s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000798s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000580s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002649s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2014-06-26T14:38:05+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001101s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.009751s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 678 ) LIMIT 1   [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.008444s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000843s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000697s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016912s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000488s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000419s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000703s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2014-06-26T14:38:10+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001168s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007514s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-002',`p_name`='iPhone 4S lcd complete',`p_img`='/uploadfile/smallimg/140501/140501000253589.jpg',`p_typeid`=1,`p_ttypeid`=53,`p_intro`='iPhone 4S lcd complete',`p_content`='&lt;p&gt;\r\n	iPhone 4S lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='iPhone 4S lcd complete',`p_description`='iPhone 4S lcd complete',`p_new`=0 WHERE ( autoid=678 ) [ RunTime:0.001345s ]
+
+[ 2014-06-26T14:38:11+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001856s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.010085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002028s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 12,12   [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.006470s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000778s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017184s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000598s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000646s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002356s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000893s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2014-06-26T14:38:17+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/677
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001409s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.009906s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 677 ) LIMIT 1   [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005854s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000680s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019405s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000494s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002031s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2014-06-26T14:38:26+08:00 ] 192.184.36.74 /manager.php/Productlist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001194s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/ProductnewAction.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.008038s ]
+SQL: UPDATE `admin_productnew` SET `p_id`='A-001',`p_name`='iPhone 4 lcd complete',`p_img`='/uploadfile/smallimg/140501/140501000119953.jpg',`p_typeid`=1,`p_ttypeid`=53,`p_intro`='iPhone 4 lcd complete',`p_content`='&lt;p&gt;\r\n	iPhone 4 lcd complete\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	Features:&lt;br /&gt;\r\n1. High quality screen for your cell phone&lt;br /&gt;\r\n2. Each screen is tested before shipping&lt;br /&gt;\r\n3. It is used to repair faulty screen, this will also cure: display problems, dead pixels, cracked screens, wrong color issues&lt;br /&gt;\r\n4. Reasonable price and great after sales service&lt;br /&gt;\r\n5. If there is any questions, please feel free to contact our service department. Our pleasure to serve you.&lt;br /&gt;\r\n&lt;/p&gt;',`p_status`=0,`p_oldprice`=0,`p_price`=0,`p_keywords`='iPhone 4 lcd complete',`p_description`='iPhone 4 lcd complete',`p_new`=0 WHERE ( autoid=677 ) [ RunTime:0.001274s ]
+
+[ 2014-06-26T14:38:26+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.011491s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001741s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 12,12   [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.004907s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016375s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000612s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002266s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000943s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2014-06-26T14:38:34+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007711s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 678 ) LIMIT 1   [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007273s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.002180s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.001449s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024174s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000508s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002085s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000669s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2014-06-26T14:38:58+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/679
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001343s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006966s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 679 ) LIMIT 1   [ RunTime:0.003728s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.007819s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000731s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000634s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000529s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000445s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003279s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001168s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2014-06-26T14:39:02+08:00 ] 192.184.36.74 /manager.php/Productlist/edittable/id/677
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001095s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007523s ]
+SQL: SELECT * FROM `admin_productnew` WHERE ( `autoid` = 677 ) LIMIT 1   [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `admin_prodtype` [ RunTime:0.005524s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 0 ORDER BY  autoid asc   [ RunTime:0.000554s ]
+SQL: SELECT * FROM `admin_prodtype` WHERE  	ty_subid = 1 ORDER BY  autoid asc   [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016928s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000420s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001997s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000712s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2014-06-26T14:46:46+08:00 ] 192.184.36.74 /manager.php/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016379s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000727s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000621s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000438s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003064s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001111s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2014-06-26T14:46:57+08:00 ] 192.184.36.74 /manager.php/login/loginCheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001276s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001523s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `admin_manager` [ RunTime:0.006611s ]
+SQL: SELECT * FROM `admin_manager` WHERE   user_name = 'guest'  LIMIT 1   [ RunTime:0.000932s ]
+SQL: UPDATE `admin_manager` SET `user_datetime`='2014-06-26 14:46:57',`user_lognum`=215 WHERE ( autoid=1 ) [ RunTime:0.000975s ]
+
+[ 2014-06-26T14:46:57+08:00 ] 192.184.36.74 /manager.php/manager
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001297s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015361s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000748s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000453s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000302s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002469s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2014-06-26T14:46:58+08:00 ] 192.184.36.74 /manager.php/manager/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001571s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_systems` [ RunTime:0.006676s ]
+SQL: SELECT * FROM `admin_systems` WHERE ( `autoid` = 1 ) LIMIT 1   [ RunTime:0.010837s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: LanguageList /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Runtime/Cache/407bf0bd30684a86c1a8696531944bfb.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014531s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000636s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000606s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002749s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001120s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2014-06-26T14:47:00+08:00 ] 192.184.36.74 /manager.php/pagelist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001516s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `admin_config` [ RunTime:0.006125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_config` LIMIT 1   [ RunTime:0.000885s ]
+SQL: SELECT * FROM `admin_config` LIMIT 0,12   [ RunTime:0.002241s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.053885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054108s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001149s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002773s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000728s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2014-06-26T14:47:01+08:00 ] 192.184.36.74 /manager.php/newslist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001159s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.013724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001258s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001491s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082110s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000678s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000584s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000409s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002830s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001033s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2014-06-26T14:47:04+08:00 ] 192.184.36.74 /manager.php/Newslist/edittable/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001150s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006428s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 2 ) LIMIT 1   [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.007893s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.001157s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.082468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082676s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000628s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000570s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000385s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002668s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001094s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2014-06-26T15:15:59+08:00 ] 192.184.36.74 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001587s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001903s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.007186s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-twitter',`n_smaimg`='/uploadfile/smallimg/140626/140626031553404.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='Please click the link below:\r\nhttps://twitter.com/wisdomiot\r\n',`n_content`='&lt;p&gt;\r\n	Please click the link below:&lt;br /&gt;\r\n&lt;a href=\\&quot;http://rusgeardo.blogspot.hk/2012/09/element_9.html\\&quot;&gt;https://twitter.com/wisdomiot&lt;/a&gt;&lt;br /&gt;\r\n&lt;/p&gt;',`n_keywords`='wisdomiot-twitter   twitter  wisdomiot',`n_description`='wisdomiot-twitter' WHERE ( autoid=2 ) [ RunTime:0.120490s ]
+
+[ 2014-06-26T15:15:59+08:00 ] 192.184.36.74 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001189s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.009598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001138s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001016s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013786s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000457s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000438s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002376s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000854s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2014-06-26T15:16:31+08:00 ] 192.184.36.74 /manager.php/Newslist/edittable/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001416s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006771s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 2 ) LIMIT 1   [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.006213s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.001094s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021067s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000473s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000738s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2014-06-26T15:18:33+08:00 ] 192.184.36.74 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.006055s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-twitter',`n_smaimg`='/uploadfile/smallimg/140626/140626031831381.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='Please click the link below:\r\nhttps://twitter.com/wisdomiot\r\n',`n_content`='&lt;p&gt;\r\n	Please click the link below:&lt;br /&gt;\r\n&lt;a href=\\&quot;\\\\&amp;quot;http://rusgeardo.blogspot.hk/2012/09/element_9.html\\\\&amp;quot;\\&quot;&gt;https://twitter.com/wisdomiot&lt;/a&gt;\r\n&lt;/p&gt;',`n_keywords`='wisdomiot-twitter   twitter  wisdomiot',`n_description`='wisdomiot-twitter' WHERE ( autoid=2 ) [ RunTime:0.001175s ]
+
+[ 2014-06-26T15:18:34+08:00 ] 192.184.36.74 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.013273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001088s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013509s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002025s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000732s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2014-06-26T15:19:33+08:00 ] 192.184.36.74 /manager.php/Newslist/edittable/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.016664s ]
+SQL: SELECT * FROM `admin_news` WHERE ( `autoid` = 2 ) LIMIT 1   [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `admin_newstype` [ RunTime:0.021437s ]
+SQL: SELECT * FROM `admin_newstype` ORDER BY  autoid asc   [ RunTime:0.027328s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019126s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000533s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000489s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002429s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001150s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2014-06-26T15:21:19+08:00 ] 192.184.36.74 /manager.php/Newslist/saveedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001240s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] Undefined variable: flag /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/Table/NewsAction.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.007980s ]
+SQL: UPDATE `admin_news` SET `n_title`='wisdomiot-twitter',`n_smaimg`='/uploadfile/smallimg/140626/140626031831381.jpg',`n_typeid`=1,`n_type`='conpany',`n_hot`=1,`n_intro`='wisdomiot twitter Wisdomiot Communication Electronics Trade Co., Limited Mail: wisdomiotsales01@gmail.com Whatsapp:+8615915700580',`n_content`='&lt;p&gt;\r\n	Please click the link below:&lt;br /&gt;\r\n&lt;a href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;http://rusgeardo.blogspot.hk/2012/09/element_9.html\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;https://twitter.com/wisdomiot&lt;/a&gt; \r\n&lt;/p&gt;',`n_keywords`='wisdomiot-twitter   twitter  wisdomiot',`n_description`='wisdomiot-twitter' WHERE ( autoid=2 ) [ RunTime:0.000890s ]
+
+[ 2014-06-26T15:21:20+08:00 ] 192.184.36.74 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.015149s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001214s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001146s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015784s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000636s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000633s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002688s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2014-06-26T15:21:52+08:00 ] 192.184.36.74 /manager.php/Newslist/dellist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001218s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `admin_news` [ RunTime:0.009290s ]
+SQL: DELETE FROM `admin_news` WHERE (  autoid in (1) ) [ RunTime:0.001343s ]
+
+[ 2014-06-26T15:21:52+08:00 ] 192.184.36.74 /manager.php/newslist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `admin_newsview` [ RunTime:0.015245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_newsview` LIMIT 1   [ RunTime:0.001556s ]
+SQL: SELECT * FROM `admin_newsview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001644s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013869s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000456s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002126s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000744s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2014-06-26T15:22:15+08:00 ] 192.184.36.74 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001308s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.017063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001777s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.007955s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020919s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000846s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000697s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000409s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003133s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001172s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2014-06-26T15:22:16+08:00 ] 192.184.36.74 /manager.php/productlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001436s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.013712s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001068s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.008525s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000531s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023028s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000736s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000459s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002716s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2014-06-26T15:22:50+08:00 ] 192.184.36.74 /manager.php/Productlist/downline
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001166s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined index:  id /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/ProductlistAction.class.php 第 127 行.
+
+[ 2014-06-26T15:22:51+08:00 ] 192.184.36.74 /manager.php/productlist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001179s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.011618s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.005641s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000890s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019086s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000605s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002155s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000768s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2014-06-26T15:22:56+08:00 ] 192.184.36.74 /manager.php/Productlist/downline
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001245s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] Undefined index:  id /hsphere/local/home/a941323/gzwisdomiot.com/Manager/Lib/Action/ProductlistAction.class.php 第 127 行.
+
+[ 2014-06-26T15:22:59+08:00 ] 192.184.36.74 /manager.php/productlist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001681s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002173s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.093644s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.001263s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.022143s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.001357s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019023s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000902s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000675s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000428s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003228s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001120s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2014-06-26T15:23:05+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001132s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.015845s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.000709s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 36,12   [ RunTime:0.002440s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.008830s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000957s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021172s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000802s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000495s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001567s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003846s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2014-06-26T15:23:14+08:00 ] 192.184.36.74 /manager.php/Productlist/soletype
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001671s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.006325s ]
+SQL: UPDATE `admin_productnew` SET `p_soletype`=1 WHERE (  autoid in (669,668,667,666,665,664,663,662,661,660,659,658) ) [ RunTime:0.008578s ]
+
+[ 2014-06-26T15:23:15+08:00 ] 192.184.36.74 /manager.php/productlist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001220s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.023219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002154s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.002405s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.009787s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.001227s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017095s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000589s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000600s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002444s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000880s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2014-06-26T15:23:43+08:00 ] 192.184.36.74 /manager.php/productlist/index/p/5.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001474s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.021676s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 48,12   [ RunTime:0.003496s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.007971s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.001036s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019738s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000631s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002131s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000775s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2014-06-26T15:24:00+08:00 ] 192.184.36.74 /manager.php/Productlist/soletype
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001536s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `admin_productnew` [ RunTime:0.007023s ]
+SQL: UPDATE `admin_productnew` SET `p_soletype`=1 WHERE (  autoid in (657,656,655,654,653,652,651,650,649,648,647,646) ) [ RunTime:0.001885s ]
+
+[ 2014-06-26T15:24:01+08:00 ] 192.184.36.74 /manager.php/productlist/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001179s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `admin_productnewview` [ RunTime:0.010273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_productnewview` LIMIT 1   [ RunTime:0.002478s ]
+SQL: SELECT * FROM `admin_productnewview` ORDER BY  autoid desc  LIMIT 0,12   [ RunTime:0.001580s ]
+SQL: SHOW COLUMNS FROM `admin_soletype` [ RunTime:0.006742s ]
+SQL: SELECT * FROM `admin_soletype` ORDER BY  autoid asc   [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023780s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000851s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000598s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000387s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002946s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001009s ]
+

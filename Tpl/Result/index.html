@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>productlist</title>
+<link href="{$WEBROOT}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/prodshow.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+</head>
+<body >
+<include file='Public:header'/>
+<div class="body">
+  <div class="center"> 
+  	<include file="Public:menu"/>
+    <div class="block marginleft">
+      <div class="title page_toptitle">
+        <ul>
+          <li class="prod_mian_type">Your Position:<a href="{$WEBROOT}">Home</a>&gt;&gt;Result</li>
+		  
+        </ul>
+      </div>
+      <div class="tablelist">
+		<if condition="$TableList eq true && is_array($MenuProduct)">
+		<volist name="MenuProduct" id="Prod" >
+		<div class="product ">
+			<ul>
+				<li class="product_img"><a title="{$Prod.p_name}" target="_blank" href="{$WEBROOT}/prodshow/index/id/{$Prod.autoid}"><img src="{$Prod.p_img}" width="180" height="180"></a></li>
+				<li class="product_name"><a title="{$Prod.p_name}" target="_blank" href="{$WEBROOT}/prodshow/index/id/{$Prod.autoid}">{$Prod.p_id} {$Prod.p_name}</a></li>
+				<li class="product_code"><a title="{$Prod.p_name}" target="_blank" href="{$WEBROOT}/prodshow/index/id/{$Prod.autoid}">Code: {$Prod.p_id} </a></li>
+			</ul>
+		</div>
+		</volist>
+		<div class="clear"></div>
+		<div class="page">{$PageContent}</div>
+		<else/>
+		<div class="empty">Temporarily not find your interested product, please view our recommended items!</div>
+		<foreach name="MenuProduct" item="TProd">
+		<div class="product">
+			<ul>
+				<li class="product_img"><a title="{$TProd.p_name}" target="_blank" href="{$WEBROOT}/prodshow/index/id/{$TProd.autoid}"><img src="{$TProd.p_img}" width="180" height="180"></a></li>
+				<li class="product_name"><a title="{$TProd.p_name}" target="_blank" href="{$WEBROOT}/prodshow/index/id/{$TProd.autoid}">{$TProd.p_id} {$TProd.p_name}</a></li>
+				<li class="product_code"><a title="{$TProd.p_name}" target="_blank" href="{$WEBROOT}/prodshow/index/id/{$TProd.autoid}">Code: {$TProd.p_id} </a></li>
+			</ul>
+		</div>
+		</foreach>
+		<div class="clear"></div>
+		</if>
+		
+      </div>
+      <div class="blankmargin"></div>
+    </div>
+    <div class="blank"></div>
+  </div>
+</div>
+<!--center end tags-->
+<include file='Public:footer'/>
+<!--footer end stags-->
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

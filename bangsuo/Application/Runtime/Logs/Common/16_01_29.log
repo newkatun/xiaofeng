@@ -1,0 +1,42 @@
+[ 2016-01-29T00:17:09+08:00 ] 173.199.171.248 /server-status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+ERR: 无法加载模块:Server-status
+
+[ 2016-01-29T06:07:04+08:00 ] 208.52.154.243 /mysql/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+ERR: 无法加载模块:Mysql
+
+[ 2016-01-29T16:05:12+08:00 ] 124.114.175.8 /IPMIdevicedesc.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+ERR: 无法加载模块:IPMIdevicedesc
+
+[ 2016-01-29T16:05:12+08:00 ] 113.132.177.130 /status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+ERR: 无法加载模块:Status
+
+[ 2016-01-29T16:05:12+08:00 ] 124.114.175.8 /stats
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+ERR: 无法加载模块:Stats
+
+[ 2016-01-29T16:05:12+08:00 ] 125.76.161.5 /PSBlock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+ERR: 无法加载模块:PSBlock
+
+[ 2016-01-29T16:05:12+08:00 ] 222.91.78.63 /stauts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+ERR: 无法加载模块:Stauts
+

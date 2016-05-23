@@ -1,0 +1,12 @@
+[ 2015-06-07T05:44:03+08:00 ] 94.102.53.195 /images/theme/failed.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-07T23:16:55+08:00 ] 89.248.171.167 /admin/bootstrap.inc.php?mgp=danc3Uf@t&c=whoami
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Admin
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Prod.p_id} {$Prod.p_name}</title>
+<meta name="keywords" content="{$Prod.p_keywords}" />
+<meta name="description" content="{$Prod.p_description}" />
+<link href="{$WEBROOT}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/prodshow.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.md5.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/CartBuy.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="{$WEBROOT}/Public/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+<body >
+<include file='Public:header'/>
+<div class="body">
+  <div class="center"> 
+  	<include file="Public:menu"/>
+    <div class="block marginleft">
+      <div class="title page_toptitle">
+        <ul>
+          <li class="prod_mian_type">Your Position:<a href="{$WEBROOT}">Home</a>&gt;&gt; <a href="{$WEBNAME}/productlist/index/mid/{$MainName.autoid}">{$MainName.ty_name}</a>
+		  <if condition="is_array($SubName) eq true">
+		  &gt;&gt;<a href="{$WEBNAME}/productlist/index/mid/{$SubName.ty_subid}/sid/{$SubName.autoid}">{$SubName.ty_name}</a>
+		  </if>
+		  &gt;&gt;{$Prod.p_name}
+		  </li>
+        </ul>
+      </div>
+      <div class="product_showcontent">
+        <div class="clear"></div>
+        <div class="prodinfo" >
+          <div class="imgInfo">
+            <div class="bigimage">
+			<a class="fancybox" href="{$Prod.p_img|ChangeImgShow}"  title="{$Prod.p_name}"><img src="{$Prod.p_img|ChangeImgShow}" width="320" height="320" class="prodbigImage"/></a>
+			</div>
+            <div class="smallimage">
+              <ul>
+                <li><a class="fancybox" data-fancybox-group="gallery" href="{$Prod.p_img||ChangeImgShow}" title="{$Prod.p_name}"><img  alt="{$Prod.p_name}" src="{$Prod.p_img}" ></a></li>
+                <foreach name="ImageList" item="Img">
+                <li><a class="fancybox" data-fancybox-group="gallery" href="{$Img.pi_smaimg|ChangeImgShow}" title="{$Prod.p_name}"><img alt="{$Prod.p_name}"   src="{$Img.pi_smaimg}"></a></li>
+                </foreach>
+              </ul>
+			   <div class="clear"></div>
+            </div>
+          </div>
+          <div class="textInfo">
+            <div class="textprodname"> {$Prod.p_name}</div>
+			<div class="text_attr">
+				<ul>
+				<li class="text_attr_l">Code:</li><li class="text_attr_r">{$Prod.p_id}</li>
+				
+				<li class="text_attr_l">Qty:</li><li class="text_attr_r"><span attrid="{$Prod.autoid}" class="order_reduce">-</span> <input type="text" name="number" value="1" size="4" class="bnumber order_number" id="order_num_{$Prod.autoid}" oldnumber="1"/> <span class="order_increase" attrid="{$Prod.autoid}" >+</span></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="buy_btn"><a href="javascript:void(0)" title="{$Prod.p_name}" class="buybutton" attrid="{$Prod.autoid}"><b>Add To Cart</b></a></div>
+          </div>
+		  <div class="clear"></div>
+        </div>
+		<div class="clear"></div>
+		<div class="title redstyle">Details</div>
+		<div class="prod_description">{$Prod.p_content|htmlspecialchars_decode}</div>
+        <div class="clear margintop"></div>
+        <div class="product_linkprod">
+          <div class="title redstyle">Product may be interested in</div>
+          <div class="product_linklist">
+            <foreach name="RelationList" item="Relation">
+             	<div class="releated_prod">
+                <ul>
+                  <li class="releated_prod_img"><a href="{$WEBNAME}/prodshow/index/id/{$Relation.autoid}"><img width="112" src="{$Relation.p_img}" height="112"></a></li>
+                  <li class="releated_prod_name"><a href="{$WEBNAME}/prodshow/index/id/{$Relation.autoid}">{$Relation.p_name}</a></li>
+				 
+                </ul>
+              </div>
+              </foreach>
+              <div class="clear"></div>
+            </div>
+        </div>
+         <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clearmargin"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--center end tags-->
+<include file='Public:footer'/>
+<div id="buystatus" >
+	<div class="buystatus_info"></div>
+	<div class="buystatus_text">
+		<ul class="buystatus_true" >
+		<li>Log in to admin area</li>
+		<li>Products：<span class="cart_basket">0</span></li>
+		</ul>
+		<ul class="buystatus_false" style="display:none;"><li>Add failure!</li></ul>
+	</div>
+	<div class="closediv"></div>
+</div>
+<!--footer end stags-->
+
+
+</body>
+</html>

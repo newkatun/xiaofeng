@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta content="{$Page.c_keywords}" name="keywords" />
+<meta content="{$Page.c_description}" name="description" />
+<link href="{$WEBROOT}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/index.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBROOT}/Public/css/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jcarousellite.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/jquery.SuperSlide.js" ></script>
+
+</head>
+<body >
+<include file='Public:header'/>
+<div class="body">
+  <div class="center">
+    <div class="left">
+      <div class="left_menu">
+        <ul>
+          <li class="leftcontent">
+            <div class="leftimg" id="menuid">
+              <ul>
+                <foreach name="CatalogList" item="Menu">
+                  <li><b>•</b><a href="{$WEBROOT}/productlist/index/mid/{$Menu.autoid}" title="{$Menu.ty_name}">{$Menu.ty_name}</a></li>
+                </foreach>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="block marginleft">
+      <div class="div_silde" id="div_silde">
+		
+		<div class="bd">
+			<ul>
+			<foreach name="SliderList" item='Slider'> 
+				<li><a href="{$Slider.sl_linkurl}" target="_blank" alt="{$Slider.sl_title}"><img src="{$Slider.sl_bigimg}" width="780" height="232" alt="{$Slider.sl_title}" test="{$key}"/></a> </li>
+			</foreach>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul>
+			<for start="0" end="$key" comparison="elt">
+			<li>{$i+1}</li>
+			</for>
+			</ul>
+		</div>
+      </div>
+      <div class="div_recommend">
+        <div class="div_recommend_left" id="direct_left"></div>
+        <div class="div_recommend_prod" id="recommend">
+          <ul>
+            <foreach name="ProductNew" item='New'>
+              <li class="div_recommend_prodview"><a href='{$WEBROOT}/prodshow/index/id/{$New.autoid}' title='{$New.p_name}'><img src="{$New.p_img}" width="180" height="150" alt='{$New.p_name}'></a>
+				<div class="recomment_prodbg"></div>
+				<div class="recomment_prodname"><a href='{$WEBROOT}/prodshow/index/id/{$New.autoid}' title='{$New.p_name}'>{$New.p_name}</a></div>
+			  </li>
+            </foreach>
+          </ul>
+        </div>
+        <div class="div_recommend_right" id="direct_right"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear margintop"></div>
+  <div class="prodtype marginright">
+    <foreach name="CateProduct" item="Cate">
+      <div class="div_cont">
+        <div class="title redstyle">
+          <ul>
+            <li class="brand_title_on">{$Cate.ty_name} </li>
+          </ul>
+        </div>
+        <div class="product_list">
+          <foreach name="Cate['ProductList']" item="Prod">
+			<if condition="$key eq 0">
+            <div class="product_listview first">
+			<else/>
+			<div class="product_listview ">
+			</if>
+              <ul>
+                <li class="prod_viewimg"><a href='{$WEBROOT}/prodshow/index/id/{$Prod.autoid}' title='{$Prod.p_name}'><img src="{$Prod.p_img}" width="140" height="140" alt='{$Prod.p_name}'/></a></li>
+                <li class="prod_viewname"><a href='{$WEBROOT}/prodshow/index/id/{$Prod.autoid}' title='{$Prod.p_name}'>{$Prod.p_name}</a></li>
+                <li class="prod_viewprice"><a href='{$WEBROOT}/prodshow/index/id/{$Prod.autoid}' title='{$Prod.p_name}'>Code: {$Prod.p_id}</a></li>
+              </ul>
+            </div>
+          </foreach>
+        </div >
+      </div >
+      <div class="clear margintop"></div>
+    </foreach>
+  </div>
+
+  <div class="clear"></div>
+  <div class="clear margintop"></div>
+</div>
+<!--center end tags-->
+<include file='Public:footer'/>
+<!--footer end stags-->
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js"></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Marqueeview.js"></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/index_use.js"></script>
+
+
+
+</body>
+</html>

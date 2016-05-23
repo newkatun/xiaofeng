@@ -1,0 +1,44 @@
+/*==catalog page==*/
+.box{  height:180px; border:1px solid #efefef;padding:5px;margin-top:10px; border-radius:5px;box-shadow: 0 2px 5px #EFEFEF;}
+.poster{width:480px; height:180px; float:left;}
+.textinfo{margin-left:10px; height:180px; float:left; width:278px;overflow:hidden;}
+.textinfo ul li{font-size:12px; color:#6b6b6b; line-height:18px;}
+.textinfo ul li.catename{background:url(../images/small_ico.png) no-repeat 0 8px; color:#800; font-size:12px; font-weight:bold; height:26px; line-height:26px; border-bottom:1px solid #EFEFEF;text-indent:15px;}
+.textinfo ul li span{padding-right:8px; color:#333;font-weight:bold;  }
+.textinfo ul li  a{color:#800;}
+.textinfo ul li  a:hover{text-decoration:underline;}
+/*==newslist page==*/
+.newsimg{width:180px; height:180px; float:left;}
+.newstext{margin-left:10px; height:180px; float:left; width:578px; overflow:hidden;}
+.newstext ul li{font-size:12px; color:#6b6b6b; line-height:18px;}
+.newstext ul li.newstitle{background:url(../images/small_ico.png) no-repeat 0 8px; color:#800; font-size:12px; font-weight:bold; height:26px; line-height:26px; border-bottom:1px solid #EFEFEF;text-indent:15px;}
+.newstext ul li span{padding-right:8px; color:#333;font-weight:bold;  }
+.newstext ul li  a{color:#800;}
+.newstext ul li  a:hover{text-decoration:underline;}
+h4{text-align:center;height:40px; line-height:40px;}
+/*==newsview page==*/
+.news_author{text-align:center; font-size:12px; color:#666; height:20px; margin:6px 0;}
+.newscontent{font-size:13px; color:#333; line-height:20px; padding:10px;border:1px solid #EFEFEF; }
+.newscontent a{color:#800;}
+.newscontent a:hover{text-decoration:underline}
+/*==about page==*/
+.about{border:1px solid #efefef;padding:5px;margin-top:10px; line-height:30px; color:#333; font-size:13px;box-shadow: 0 2px 5px #EFEFEF;border-radius:5px; font-family: tahoma;}
+.about a{color:#800;}
+.about a:hover{text-decoration:underline}
+/*===contact page=*/
+.feedtable{ height:auto; border:1px solid #efefef;box-shadow: 0 2px 5px #EFEFEF;border-radius:5px; font-family: tahoma;}
+.feedtable dl  dt,.feedtable dl  dd{line-height:36px; height:36px;font-size:12px; color:#333; }
+.feedtable dl  dd.feed_textarea{ height:120px;}
+.feedtable dl dt.feed_dt{width:150px;text-align:right;}
+.feedtable dl dd.feed_dd{width:628px;text-indent:6px;}
+.feedtable dl  dd span{padding:0 8px;margin-left:8px; color:#CCC;}
+.feedtable dl dd input{ border:1px solid #CCC; height:24px; line-height:24px; color:#333; width:300px;}
+.feedtable dl dd textarea{ border:1px solid #CCC; height:100px; line-height:20px; color:#333; width:500px; font-size:12px; }
+.feedbtn{height:40px; line-height:40px;text-align:center;clear:both;}
+input.submitbtn{ height:32px;line-height:32px; font-weight:bold; border:1px solid #CCC; cursor:pointer; background:url(../images/submit_btn.png) repeat-x 0 -1px; border-radius:5px; color:#666;}
+.feedtable dl dd input.normal,.feedtable dl dd textarea.normal{border:1px solid #CCC; }
+.feedtable dl dd input.error,.feedtable dl dd textarea.error{border:1px solid #800; }
+.feedtable dl  dd span.normal{ background:url(../images/done_square.png) no-repeat 0 0;}
+.feedtable dl  dd span.error{ background:url(../images/close_square.png) no-repeat 0 0;}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/update_pwd.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <div class="manage_cont"> <include file="userleft"/>
+    <div class="manager_right">
+      <div class="manager_rightcenter">
+        <ul>
+          <li class="manager_rtitle">
+			<div class="title usercenter">You are here : Manager Center &gt; Password to modify </div>
+          </li>
+
+          <li class="manager_rtable">
+            <table width="100%" height="100%" cellspacing="1" cellpadding="0" border="0" class="manager_address_table" >
+              <tbody>
+                <tr>
+                  <td><div class="manager_address">
+                      <form name="userform" method="post" action="{$WEBNAME}/userindex/pwdeditok" id="userform">
+                        <ul>
+                          <li class="user_left">Your Email：</li>
+                          <li class="user_right">
+                            <input type="text" readonly="" id="guest_email" name="guest_email" value="{$GuestEmail}" readonly="" style="background-color:#f0f0f0;" disabled="disabled">
+                          </li>
+                          <li class="user_left">Your Name：</li>
+                          <li class="user_right">
+                            <input type="text" readonly="" id="guest_name" name="guest_name" value="{$GuestName}" readonly="" style="background-color:#f0f0f0; " disabled="disabled">
+                          </li>
+                          <li class="user_left">Old Password：</li>
+                          <li class="user_right">
+                            <input type="password" id="guest_oldpwd" name="guest_oldpwd" value="" onblur="checkNewPwd('guest_oldpwd')" class="guest_oldpwdinfo">
+                            <span class="normal" id="guest_oldpwdinfo">Please input your old password!</span> </li>
+                          <li class="user_left">New Password：</li>
+                          <li class="user_right">
+                            <input type="password" id="guest_newpwd" name="guest_newpwd" value="" class="guest_newpwdinfo" onblur="checkNewPwd('guest_newpwd')">
+                            <span class="normal" id="guest_newpwdinfo">Please input your new password!</span> </li>
+                          <li class="user_left">Confirm Password：</li>
+                          <li class="user_right">
+                            <input type="password" id="guest_chkpwd" name="guest_chkpwd" value="" class="guest_chkpwdinfo" onblur="checkNewPwd('guest_chkpwd')">
+                            <span class="normal" id="guest_chkpwdinfo">Please input your password again!</span> </li>
+                          <li class="user_title">
+                            <input type="submit" value="Submit and Save" class="input_btn">
+                          </li>
+                        </ul>
+                      </form>
+                    </div></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

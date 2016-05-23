@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" type="text/css" rel="stylesheet" >
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/countryaddress.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <div class="manage_cont"> <include file="userleft"/>
+    <div class="manager_right">
+      <div class="manager_rightcenter">
+        <ul>
+          <li class="manager_rtitle">
+            <div class="title">Edit profile</div>
+          </li>
+          <li class="manager_rline"></li>
+          <li class="manager_rtable">
+            <table width="100%"  cellspacing="0" cellpadding="0" border="0" align="center" class="manager_address_table" style="margin-top:0px;">
+              <tbody>
+                <tr>
+                  <td><div class="manager_address">
+                      <form name="userform" method="post" action="{$WEBNAME}/userindex/infoadd" id="userform">
+                        <ul>
+                          <li class="user_left">Your Email:</li>
+                          <li class="user_right">
+                            <input type="text" style="background-color:#f0f0f0;" readonly="" id="guest_email" name="guest_email" value="{$GuestEmail}" disabled="disabled">
+                          </li>
+                          <li class="user_left">Your Name:</li>
+                          <li class="user_right">
+                            <input type="text" style="background-color:#f0f0f0;" readonly="" id="guest_name" name="guest_name" value="{$GuestName}" disabled="disabled">
+                          </li>
+                          <li class="user_left">First Name:</li>
+                          <li class="user_right">
+                            <input type="text" id="guest_fname" name="guest_fname" value="{$Guest.guest_fname}" class="error">
+                            <span id="guest_fnameinfo" class="error">Please input your first name!</span></li>
+						  <li class="user_left">Last Name:</li>
+                          <li class="user_right">
+                            <input type="text" id="guest_lname" name="guest_lname" value="{$Guest.guest_lname}" class="error">
+                            <span id="guest_fnameinfo" class="error">Please input your last name!</span></li>
+						  <li class="user_left">State & City:</li>
+                          <li class="user_right">
+                            <input type="text" id="guest_city" name="guest_city" value="{$Guest.guest_city}" class="error">
+                            <span id="guest_fnameinfo" class="error">Please input your state and city!</span></li>
+                          <li class="user_left">Your Country:</li>
+                          <li class="user_right">
+                            <select name="guest_country" style="WIDTH: 245px;vertical-align: middle;" id="">
+							<volist name="CountryList" id="country">
+								<if condition="$Guest['guest_province'] eq $country['country_name']">
+								<option value="{$country.country_name}" selected>{$country.country_name}</option>
+								<else/>
+								<option value="{$country.country_name}">{$country.country_name}</option>
+								</if>
+							</volist>
+                            </select>&nbsp; 
+                            <span id="guest_countryinfo" class="error">Select your country!</span></li>
+                          <li class="user_left">Mobile/Telphone:</li>
+                          <li class="user_right">
+                            <input type="text" id="guest_telephone" name="guest_telephone" value="{$Guest.guest_telephone}" class="error">
+                            <span id="guest_phonenuminfo" class="error">One of you must input it!</span></li>
+						   <li class="user_left">ZIP Code:</li>
+                          <li class="user_right">
+                            <input type="text" id="guest_postcode" name="guest_postcode" value="{$Guest.guest_zcode}" class="error">
+                            <span id="guest_postcodeinfo" class="error">Please input your ZIP code!</span></li>
+							
+                          <li class="user_left">Your Address:</li>
+                          <li class="user_right">
+                            <input type="text" class="input_long error" id="guest_address" name="guest_address" value="{$Guest.guest_address}">
+                            <span id="guest_addressinfo" class="error">Please input your address!</span> </li>
+                          <li class="user_title">
+                            <input type="submit" class="input_btn" value="Submit and Save">
+                          </li>
+                        </ul>
+                      </form>
+                    </div></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear margintop"></div>
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/> {$ProvinceText}
+</body>
+</html>

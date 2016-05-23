@@ -1,0 +1,42 @@
+[ 2015-07-29T14:22:48+08:00 ] 172.82.149.234 /phpmyadmin2/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+ERR: 无法加载模块:Phpmyadmin2
+
+[ 2015-07-29T14:50:16+08:00 ] 172.82.149.130 /mysqladmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+ERR: 无法加载模块:Mysqladmin
+
+[ 2015-07-29T20:02:43+08:00 ] 162.246.61.20 /cgi-bin/php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+ERR: 无法加载模块:Cgi-bin
+
+[ 2015-07-29T20:02:43+08:00 ] 162.246.61.20 /cgi-bin/php5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+ERR: 无法加载模块:Cgi-bin
+
+[ 2015-07-29T20:02:43+08:00 ] 162.246.61.20 /cgi-bin/php-cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:Cgi-bin
+
+[ 2015-07-29T20:02:44+08:00 ] 162.246.61.20 /cgi-bin/php.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+ERR: 无法加载模块:Cgi-bin
+
+[ 2015-07-29T20:02:44+08:00 ] 162.246.61.20 /cgi-bin/php4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+ERR: 无法加载模块:Cgi-bin
+

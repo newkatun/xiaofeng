@@ -1,0 +1,18 @@
+[ 2016-02-24T07:46:09+08:00 ] 107.150.60.77 /forum.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+ERR: 无法加载模块:Forum
+
+[ 2016-02-24T17:55:12+08:00 ] 89.163.251.200 /phpmoadmin/moadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载模块:Phpmoadmin
+
+[ 2016-02-24T22:46:14+08:00 ] 104.255.65.207 /admin/bootstrap.inc.php?mgp=danc3Uf@t&c=whoami
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:Admin
+

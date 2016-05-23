@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$Page.c_title}</title>
+<meta content="{$Page.c_keywords}" name="keywords" />
+<meta content="{$Page.c_description}" name="description" />
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/cartlist.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Common.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Cart.js"></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/Cartcheck.js"></script>
+
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <!--header end tags-->
+  <div class="center">
+    <div class="cartlist_step">
+		<ul>
+		<li class="cart_step1 cart_on1"><span>1</span>View Carts</li>
+		<li class="cart_step2 cart_on2"><span>2</span>Confirm The Order</li>
+		<li class="cart_step3"><span>3</span>Submit The Order</li>
+		<li class="cart_step4"><span>4</span>Reviews Product</li>
+		</ul>
+	</div>
+    <div class="ordercheck_cont">
+      <form method="post" id="userpayform" name="formpost" action="{$WEBNAME}/cartlist/cartsubmit">
+
+        <div class="ordercheck_comments">
+          <ul>
+            <li class="title">Product List </li>
+            <li> <include file="Order:temptable"/> </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--center end tags-->
+  <!--footer end stags-->
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+
+
+</body>
+</html>

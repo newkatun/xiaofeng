@@ -1,0 +1,24 @@
+[ 2016-02-17T11:36:19+08:00 ] 89.163.251.200 /phpmyadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2016-02-17T19:06:13+08:00 ] 71.6.167.142 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+ERR: 无法加载模块:Robots
+
+[ 2016-02-17T19:06:13+08:00 ] 71.6.167.142 /sitemap.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+ERR: 无法加载模块:Sitemap
+
+[ 2016-02-17T23:03:29+08:00 ] 213.202.212.166 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024507s ]
+ERR: 无法加载模块:Robots
+

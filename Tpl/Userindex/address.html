@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<include file="Public:message"/>
+<link rel="Shortcut Icon" href="favicon.ico">
+<link href="{$WEBNAME}/Public/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="{$WEBNAME}/Public/css/user.css" type="text/css" rel="stylesheet" >
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery-1.9.0.min.js" ></script>
+<script type="text/javascript" src="{$WEBNAME}/Public/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Common.js" ></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="body">
+  <div class="manage_cont"> <include file="userleft"/>
+    <div class="manager_right">
+      <div class="manager_rightcenter">
+        <ul>
+          <li class="manager_rtitle">
+			<div class="title usercenter">You are here : Manager Center &gt; Address Manager </div>
+          </li>
+          <li class="manager_rtable">
+            <div class="manager_address">
+              <ul class="manager_address_list">
+                <li class="user_tablelist">
+                  <table width="100%" cellspacing="1" cellpadding="0" border="0" class="manager_address_table">
+                    <tbody>
+                      <tr class="manager_add_title">
+                        <td height="30" align="center">Consignee Name</td>
+                        <td align="center">Address</td>
+                        <td align="center" width="80">Mobile/Telphone</td>
+                        <td align="center" width="80">Zip Code</td>
+                        <td align="center" width="70">Edit</td>
+                      </tr>
+                      <volist name="GuestAddress" id="Add">
+                        <tr>
+                          <td>{$Add.add_lastname} {$Add.add_firstname}</td>
+                          <td>{$Add.add_address} , {$Add.add_cityname} , {$Add.add_country}</td>
+                          <td align="center">{$Add.add_telephone}</td>
+                          <td align="center">{$Add.add_zipcode}</td>
+                          <td align="center"><a href="{$WEBNAME}/userindex/addressedit/id/{$Add.autoid}">Edit</a></td>
+                        </tr>
+                      </volist>
+                    </tbody>
+                  </table>
+                </li>
+				<li class="user_addbtn"><input type="button" value="Add  delivery address" onclick='javascript:window.location.href="{$WEBNAME}/userindex/addressadd"'/></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="clear margintop"></div>
+<include file="Public:footer"/>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/Cart.js" ></script>
+<script type="text/javascript" src="{$WEBROOT}/Public/js/publicuse.js" ></script>
+</body>
+</html>

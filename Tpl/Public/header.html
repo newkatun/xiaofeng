@@ -1,0 +1,55 @@
+<div class="header">
+  <div class="header_top">
+	<div class="header_cont">
+	<ul class="fr">
+			<if condition="empty($GuestName) eq true">
+			<li id="loginbar" class="fore1">Welcome to myweb<span><a href="{$WEBNAME}/login">[User Login]</a> <a class="link-regist" href="{$WEBNAME}/register">[Free Registration]</a></span></li>
+			<else/>
+			<li id="loginbar" class="fore1">Hello，{$GuestName}！<span><a href="{$WEBNAME}/login/out">[Out]</a></span></li>
+			</if>
+			<li class="fore2 ld">
+				<span class="outline">|</span>
+				<a rel="nofollow" href="{$WEBNAME}/userindex">My Order</a>
+			</li>
+			<li  id="biz-service" class="fore4 ld menu">
+				<span class="outline">|</span>
+				<span class="blank"></span>
+				Customer Service
+			</li>
+		</ul>
+	</div>
+  </div>
+  <div class="banner">
+    <div class="logo"></div>
+    <div class="banner_center">
+      <div class="search">
+        <form action="{$WEBNAME}/result" method="get" name="formsearch">
+          <input type="text" name="keyword" id="keyword"  class="search_key"/><input type="submit"   value="search" class="search_btn"/>
+          
+        </form>
+      </div>
+    </div>
+    <div class="userview">
+	<div class="cartnum"><span id="cart_basket" class="cart_basket">0</span></div>
+      <div class="base_cart">
+        <ul>
+          <li ><a href="{$WEBNAME}/cartlist">View Cart</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner_menu">
+      <div class="nav_center">
+        <ul>
+          <li><a href="{$WEBNAME}" class="moveon">Home</a></li>
+          <li><a href="{$WEBNAME}/Productcenter">Product-center</a></li>
+		  <foreach name="NavList" item="Nav">
+          <li><a href="{$WEBNAME}/prodsell/index/type/{$Nav.sole_name|strtolower}">{$Nav.sole_name}</a></li>
+		  </foreach>
+          <li><a href="{$WEBNAME}/newslist">Infomation</a><div class="hotnav"></div></li>
+		  <li><a href="{$WEBNAME}/about">About Us</a></li>
+		  <li><a href="{$WEBNAME}/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

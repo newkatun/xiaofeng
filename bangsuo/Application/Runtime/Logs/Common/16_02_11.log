@@ -1,0 +1,12 @@
+[ 2016-02-11T03:04:25+08:00 ] 185.25.151.159 http://testp5.mielno.lubin.pl/testproxy.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+ERR: 无法加载模块:Testproxy
+
+[ 2016-02-11T16:38:28+08:00 ] 155.94.254.143 /server-status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+ERR: 无法加载模块:Server-status
+

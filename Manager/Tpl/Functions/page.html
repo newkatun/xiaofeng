@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站后台管理</title>
+<link href="{$WEBNAME}/Public/css/admin_css.css" rel="stylesheet" type="text/css">
+<link href="{$WEBNAME}/Public/css/uploadify.css" type="text/css" rel="stylesheet"/>
+<script language="javascript" type="text/javascript" src="{$WEBROOT}/Public/js/jquery-1.9.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="{$WEBNAME}/Public/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{$WEBNAME}/Public/js/functions.js"></script>
+</head>
+<body>
+<form name="formadd" method="post" action="admin_webpage.php?action=saveadd" id="formadd">
+<table width="100%" border="1" align="center" cellpadding="5" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#C4D8ED"  >
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td height="40" colspan="2" class="nzcms_table_top">网站参数设置</td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td width="12%" align="right">网站名称：</td>
+<td >&nbsp;<input type="text" size="60" name="page_name" id="page_name" class="inputtext" value=""/><span id="page_namespan">*</span></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td width="12%" align="right">页面地址：</td>
+<td >&nbsp;<input type="text" size="60" name="page_url" id="page_url" class="inputtext" value=""/><span id="page_urlspan">*</span></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td width="12%" align="right">页面关键字：</td>
+<td >&nbsp;<input type="text" size="60" name="keywords" id="keywords" class="inputtext" value=""/><span id="keywordsspan">*</span></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td width="12%" align="right">页面描述：</td>
+<td >&nbsp;<textarea cols="60" rows="5" name="description" id="description"></textarea><span id="descriptionspan">*</span></td>
+</tr>
+<tr onMouseOver="this.bgColor='#E4EDF9';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#ffffff">
+<td  align="right">&nbsp;</td>
+<td colspan="3"><input type="hidden" value="" id="autoid" name="autoid">
+<input name="Submit3" type="submit" class="button" value=" 提交 " id="addnew" />
+<input name="Submit3" type="reset" class="button" value=" 重置 " /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

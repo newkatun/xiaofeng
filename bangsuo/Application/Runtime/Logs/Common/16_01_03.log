@@ -1,0 +1,12 @@
+[ 2016-01-03T11:20:35+08:00 ] 94.102.50.56 //wc/install/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+ERR: 无法加载模块:Wc
+
+[ 2016-01-03T11:20:42+08:00 ] 94.102.50.56 //wcalendar/install/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:Wcalendar
+

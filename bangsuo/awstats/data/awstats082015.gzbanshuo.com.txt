@@ -1,0 +1,423 @@
+AWSTATS DATA FILE 6.8 (build 1.910)
+# If you remove this file, all statistics for date 201508 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1915                
+POS_TIME 2591                
+POS_VISITOR 8395                
+POS_DAY 10378               
+POS_DOMAIN 3244                
+POS_LOGIN 3565                
+POS_ROBOT 3720                
+POS_WORMS 3891                
+POS_EMAILSENDER 4022                
+POS_EMAILRECEIVER 4165                
+POS_SESSION 11073               
+POS_SIDER 11254               
+POS_FILETYPES 4300                
+POS_OS 4385                
+POS_BROWSER 4464                
+POS_SCREENSIZE 4655                
+POS_UNKNOWNREFERER 4729                
+POS_UNKNOWNREFERERBROWSER 5184                
+POS_ORIGIN 5476                
+POS_SEREFERRALS 5612                
+POS_PAGEREFS 5781                
+POS_SEARCHWORDS 5929                
+POS_KEYWORDS 6106                
+POS_MISC 2255                
+POS_ERRORS 6196                
+POS_CLUSTER 3421                
+POS_SIDER_404 6310                
+POS_PLUGIN_geoip_city_maxmind 7744                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150901034024 10 1381 8798805900792
+FirstTime 20150801004519
+LastTime 20150831224724
+LastUpdate 20150902055449 10 9 0 0 0
+TotalVisits 284                 
+TotalUnique 52                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 52                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 9 9 432 0 0 0
+1 13 13 624 3 3 678
+2 11 11 528 8 9 11967
+3 15 15 720 0 0 0
+4 13 13 624 6 6 11596
+5 11 11 528 6 7 13974
+6 20 20 960 6 6 5198
+7 13 13 624 12 12 19107
+8 13 13 624 7 8 14194
+9 15 15 720 6 6 7097
+10 16 16 768 19 19 37253
+11 7 7 336 7 7 14151
+12 16 16 768 16 16 23619
+13 15 15 1067 5 5 7180
+14 16 16 768 2 2 2322
+15 17 17 816 7 7 5232
+16 12 12 576 6 6 13912
+17 13 13 624 8 8 14185
+18 13 13 624 10 10 14075
+19 7 7 336 5 5 9327
+20 16 16 768 7 7 9655
+21 12 12 576 6 6 13904
+22 11 11 528 1 1 2319
+23 11 11 528 4 5 7051
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 9
+cn 267 267 12816
+us 17 17 816
+th 15 15 720
+nl 8 8 384
+de 2 2 96
+unknown 2 2 96
+ch 2 2 96
+ua 1 1 48
+pe 1 1 395
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+no_user_agent 25 1152 20150827231724 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 2
+html 314 15072 0 0
+Unknown 1 395 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 4
+macosx 14
+winxp 244
+winnt 15
+Unknown 42
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 11
+firefox28.0 1
+msie6.0 2
+mozilla 2
+netscape5.0 13
+msie7.0 239
+firefox9.0.1 3
+firefox27.0 1
+firefox36.0 2
+Unknown 27
+safari 15
+firefox31.0 10
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 7
+Mozilla/5.0 20150831133622
+()_{_:;};/usr/bin/perl_-e_'print_\ 20150829135711
+Mozilla/5.0_(compatible;_Nmap_Scripting_Engine;_http://nmap.org/book/nse.html) 20150824125301
+Mozilla/5.0_zgrab/0.x 20150828072733
+masscan/1.0_(https://github.com/robertdavidgraham/masscan) 20150828041008
+x00_-gawa.sa.pilipinas.2015 20150805051105
+www.probethenet.com_scanner 20150820045321
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+()_{_:;};/usr/bin/perl_-e_'print_\ 20150829135711
+masscan/1.0_(https://github.com/robertdavidgraham/masscan) 20150828041008
+x00_-gawa.sa.pilipinas.2015 20150805051105
+www.probethenet.com_scanner 20150820045321
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 72 72
+From1 0 0
+From2 243 243
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 4 4
+baidu 239 239
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 2
+www 239
+2+guys+1+horse 4
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 5
+www 239
+1 4
+guys 4
+2 4
+horse 4
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+403 10 4970
+400 17 4113
+404 109 247761
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 55
+/sitemap.xml 3 -
+/robots.txt 5 -
+/main.php 1 -
+/login.action 1 -
+/admin/config.php 1 -
+/SQLite/main.php 1 -
+/test/sqlite/SQLiteManager-1.2.0/SQLiteManager-1.2.0/main.php 1 -
+/SQlite/main.php 1 -
+/script 1 -
+/cgi-bin/recent.cgi 1 -
+/hndUnblock.cgi 2 -
+/web-console/ServerInfo.jsp 1 -
+/Robots.txt 1 -
+/SQLiteManager/main.php 1 -
+/MyAdmin/scripts/setup.php 1 -
+/cgi-bin/sat-ir-web.pl 1 -
+/phpmyadmin/scripts/setup.php 3 -
+/redirect.php 1 -
+/SQLiteManager-1.2.4/main.php 1 -
+//MyAdmin/scripts/setup.php 1 -
+/cgi-bin/tools/tools.pl 2 -
+/addport.html 1 -
+/muieblackcat 1 -
+/provisioning/ 1 -
+/Ringing.at.your.dorbell! 4 http://google.com/search
+/user/soapCaller.bs 1 -
+/tftpboot/ 1 -
+/tmUnblock.cgi 2 -
+/SiteMap.xml 1 -
+/config/ 1 -
+/sqlitemanager/main.php 1 -
+/tftp/ 1 -
+/cgi-sys/php5 2 -
+/phppath/php 3 -
+/Diagnostics.asp 4 -
+/cgi-bin-sdb/printenv 1 -
+/cgi-mod/index.cgi 1 -
+/cgi-bin/rtpd.cgi 2 -
+http://testp5.mielno.lubin.pl/testproxy.php 1 -
+http://1111.ip138.com/ic.asp 2 http://ip138.com/
+http://www.msftncsi.com/ncsi.txt 1 -
+/admin/bootstrap.inc.php 1 -
+/rom-0 14 -
+/phppath/cgi_wrapper 2 -
+/cgi-sys/entropysearch.cgi 1 -
+/hudson/script 1 -
+/nowherereally 1 -
+/HNAP1/ 2 -
+/pma/scripts/setup.php 6 -
+/prov/ 1 -
+/agSearch/SQlite/main.php 1 -
+/myadmin/scripts/setup.php 6 -
+/manager/html 3 -
+/sqlite/main.php 1 -
+/phpMyAdmin/scripts/setup.php 6 -
+END_SIDER_404
+
+# Plugin key - Pages - Hits - Bandwidth - Last access
+BEGIN_PLUGIN_geoip_city_maxmind 13
+cn_beijing_22 0 246 0 0
+unknown 0 39 0 0
+us_ann%20arbor_mi 0 10 0 0
+th_bang%20yai_38 0 5 0 0
+th_bangkok_40 0 5 0 0
+us_wilmington_de 0 3 0 0
+us_kansas%20city_mo 0 1 0 0
+pe_lima_15 0 1 0 0
+us_cranston_ri 0 1 0 0
+cn_hangzhou_02 0 1 0 0
+cn_changsha_11 0 1 0 0
+us_saint%20louis_mo 0 1 0 0
+us_woodbridge_nj 0 1 0 0
+END_PLUGIN_geoip_city_maxmind
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 52
+61.135.190.72 99 99 4752 20150831202507
+61.135.190.199 63 63 3024 20150831224724
+61.135.190.201 52 52 2496 20150831015633
+61.135.190.69 25 25 1200 20150816222740
+101.108.112.46 5 5 240 20150804202521
+125.27.52.38 5 5 240 20150803062011
+183.154.234.139 5 5 240 20150803080520
+101.108.190.206 5 5 240 20150805051105
+141.212.122.82 3 3 144 20150815023409
+94.102.49.54 3 3 144 20150823015952
+182.118.53.97 1 1 48 20150814130523
+182.118.54.14 1 1 48 20150806142557
+50.30.32.186 1 1 48 20150823153750
+141.212.122.90 2 2 96 20150808031718
+91.194.90.108 2 2 96 20150827080446
+89.248.172.110 1 1 48 20150821233636
+121.42.47.63 1 1 48 20150809205539
+193.201.227.127 1 1 48 20150809103528
+54.144.105.83 1 1 48 20150818111500
+182.118.60.44 1 1 48 20150802122407
+61.240.144.64 2 2 96 20150805033326
+141.212.122.202 1 1 48 20150828072733
+141.212.121.144 1 1 48 20150807062715
+141.212.122.3 1 1 48 20150812211847
+95.211.168.172 1 1 48 20150824042151
+61.49.45.47 1 1 48 20150824125301
+52.8.224.35 1 1 48 20150802203420
+74.91.29.234 1 1 48 20150814151055
+89.248.172.154 2 2 96 20150818220444
+113.240.250.155 1 1 48 20150825011455
+182.118.55.197 1 1 48 20150810135244
+222.186.31.57 3 3 144 20150831133622
+60.186.28.88 1 1 48 20150818152840
+182.118.60.82 2 2 96 20150816144000
+104.128.144.131 1 1 48 20150820045321
+169.54.233.118 2 2 96 20150827044311
+89.248.172.78 1 1 48 20150820153132
+52.8.235.218 1 1 48 20150803233229
+52.19.45.2 1 1 48 20150805170720
+141.212.121.152 1 1 48 20150804094215
+104.167.98.27 1 1 48 20150828041008
+182.118.55.169 1 1 48 20150804124938
+200.121.76.27 1 1 395 20150829135711
+182.118.55.186 1 1 48 20150830142958
+68.15.32.96 1 1 48 20150830073953
+182.118.54.28 1 1 48 20150831135322
+182.118.53.32 1 1 48 20150824142627
+141.212.122.59 1 1 48 20150801193916
+182.118.53.57 1 1 48 20150822144604
+182.118.60.50 1 1 48 20150818144235
+182.118.60.66 1 1 48 20150830140337
+182.118.53.151 1 1 48 20150808142622
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20150801 11 11 528 11
+20150802 10 10 480 10
+20150803 17 17 816 9
+20150804 15 15 720 11
+20150805 16 16 768 11
+20150806 9 9 432 9
+20150807 9 9 432 9
+20150808 8 8 384 8
+20150809 9 9 432 9
+20150810 12 12 576 10
+20150811 7 7 336 7
+20150812 11 11 528 11
+20150813 8 8 384 8
+20150814 10 10 480 10
+20150815 8 8 384 8
+20150816 11 11 528 11
+20150817 6 6 288 6
+20150818 11 11 528 11
+20150819 7 7 336 7
+20150820 12 12 576 12
+20150821 11 11 528 11
+20150822 9 9 432 7
+20150823 10 10 480 9
+20150824 11 11 528 9
+20150825 8 8 384 8
+20150826 8 8 384 8
+20150827 11 11 528 11
+20150828 10 10 480 7
+20150829 9 9 779 6
+20150830 10 10 480 9
+20150831 11 11 528 11
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+5mn-15mn 2
+0s-30s 271
+15mn-30mn 5
+30mn-1h 6
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 2
+/ 314 15072 283 283
+/cgi-bin/test-cgi 1 395 1 1
+END_SIDER
