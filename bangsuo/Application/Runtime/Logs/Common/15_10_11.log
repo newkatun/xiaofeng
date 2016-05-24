@@ -1,6 +1,0 @@
-[ 2015-10-11T23:01:42+08:00 ] 118.98.104.21 /user/soapCaller.bs
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
-INFO: [ app_init ] --END-- [ RunTime:0.002991s ]
-ERR: 无法加载模块:User
-

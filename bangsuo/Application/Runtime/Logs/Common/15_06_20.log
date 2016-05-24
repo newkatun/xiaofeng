@@ -1,6 +1,0 @@
-[ 2015-06-20T00:59:31+08:00 ] 104.193.9.236 /phpmyadmin/scripts/setup.php
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
-ERR: 无法加载模块:Phpmyadmin
-
